@@ -18,3 +18,7 @@ function welcomeUser() {
   document.getElementById('welcomeuser').innerHTML = '<p> Hello, ' + username + ', looking forward to hearing your playlists! </p>';
   welcomeUserDiv.style.cursor = "pointer";
 }
+function hideWelcome(){
+  let welcomeUserDiv = document.getElementById("welcomeuser");
+  welcomeUserDiv.style.display = "block";
+}
