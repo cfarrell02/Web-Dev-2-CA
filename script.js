@@ -5,6 +5,7 @@
 console.log("hi");
 function showHide() {
   let readMoreDiv = document.getElementById("readmore");
+  readMoreDiv.style.color = "green";
   if (readMoreDiv.style.display === "block") {
     readMoreDiv.style.display = "none";
   } else {
@@ -15,10 +16,13 @@ function welcomeUser() {
   let username = prompt("What's your name?");
   let welcomeUserDiv = document.getElementById("welcomeuser");
   welcomeUserDiv.style.display = "block";
-  document.getElementById('welcomeuser').innerHTML = '<p> Hello, ' + username + ', looking forward to hearing your playlists! </p>';
+  document.getElementById("welcomeuser").innerHTML =
+    "<p> Hello, " +
+    username +
+    ", looking forward to hearing your playlists! Click this message to close it.</p>";
   welcomeUserDiv.style.cursor = "pointer";
 }
-function hideWelcome(){
+function hideWelcome() {
   let welcomeUserDiv = document.getElementById("welcomeuser");
-  welcomeUserDiv.style.display = "block";
+  welcomeUserDiv.style.display = "none";
 }
