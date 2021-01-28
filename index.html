@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Hello!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" type="text/css">
+    <title>Welcome to the playlist app!</title>
     
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css">
@@ -14,15 +14,46 @@
     <script src="/script.js" defer></script>
   </head>  
   <body>
-    <h1>Hi there!</h1>
+    <section class="ui container">
+      <section class="ui two column grid segment">
+        <div class="ui column">
+          
+        
+    <h1>Welcome to the Playlist App!</h1>
     
     <p>
-      I'm your cool new webpage. Made with <a href="https://glitch.com">Glitch</a>!
+     This app will allow users to create and maintain a collection of playlists.
     </p>
-
+    <div class="buttons">
+      <button class="ui blue button">
+        Read more <i class="arrow circle right icon"></i>
+      </button>
+      <button class="ui green button">
+        Like it? <i class="thumbs up icon"></i>
+      </button>
+      <button class="ui red button">
+        Who are you? <i class="user icon"></i>
+      </button>
+    </div>
+        </div>
+        <div class="ui column">
+          <div class="ui grid">
+            <div class="ui eight wide column">
+              <img class="ui small circular image" src="https://cdn.glitch.com/7d6c82ba-1aed-4e57-87c9-8a40b26e3bb7%2FAbbey%20Road.jpg?v=1611848855057">
+            </div>
+            <div class="ui eight wide column">
+              <img class="ui small circular image" src="https://cdn.glitch.com/7d6c82ba-1aed-4e57-87c9-8a40b26e3bb7%2FSgt%20Pepper's%20Lonely%20Hearts%20Club%20Band.jpg?v=1611848862691">
+            </div>
+          </div>
+       
+           </div>
+      </section>
+</section>
     <!-- include the Glitch button to show what the webpage is about and
           to make it easier for folks to view source and remix -->
     <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
-    <script src="https://button.glitch.me/button.js" defer></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+
   </body>
 </html>
