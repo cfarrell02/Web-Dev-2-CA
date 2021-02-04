@@ -9,3 +9,11 @@
   - welcomeUser() function to prompt user for their name and display this in a message
   - hideWelcome() to hide message when clicked
   - changed showHide() function to make text colour green
+
+
+# Lab 2
+
+- Added dashboard.html
+- Added java script code to build a list of beethoven pieces
+- Added java script to make a rate button
+- Changed java to display rating as stars
