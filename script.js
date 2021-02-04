@@ -40,8 +40,22 @@ const sonatas = {
     {
       title: 'Piano Sonata No. 10',
       artist: 'Beethoven',
+    },
+    {
+      title: 'Piano Sonata No. 69',
+      artist: 'Beethoven',
     }
-  ]
+  ],
+getRating() {
+  let userRating = parseInt(prompt("Rate this collection (from 1 to 5 stars)"));
+
+  if (userRating>5 || userRating<1 || isNaN(userRating)){
+    alert("Try again with a number between 1 and 5!");
+  }
+  else{
+    $("#rating").html("You gave a rating of: " + for(let i in userRating));
+  }
+}
 };
 $(document).ready(function(){
 
@@ -55,6 +69,7 @@ $(document).ready(function(){
 
   $("#tableoutput").append("</tbody></table>");
   
-  
+  $("#tableoutput").append('<p><span id="rating"> </span></p>');
 
+  $("#tableoutput").append('<button class="ui blue button" onclick="sonatas.getRating()"> Rate it! <i class="star icon"></i></button>');
 });
