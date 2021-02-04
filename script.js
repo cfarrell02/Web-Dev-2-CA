@@ -48,14 +48,15 @@ const sonatas = {
   ],
 getRating() {
   let userRating = parseInt(prompt("Rate this collection (from 1 to 5 stars)"));
-  let stars = for(i in userRating){"<i class = "ui icon star""></i>}
 
   if (userRating>5 || userRating<1 || isNaN(userRating)){
     alert("Try again with a number between 1 and 5!");
   }
   else{
-    $("#rating").html("You gave a rating of: " + stars);
-  }
+    $("#rating").html("You gave a rating of: ");
+    for(let i;i<userRating;i++){
+    $("#rating").append("<i class = \"ui icon star\"></i> ");
+  }}
 }
 };
 $(document).ready(function(){
