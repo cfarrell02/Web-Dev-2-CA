@@ -54,8 +54,8 @@ getRating() {
   }
   else{
     $("#rating").html("You gave a rating of: ");
-    for(let i;i<userRating;i++){
-    $("#rating").append("<i class = \"ui icon star\"></i> ");
+    for(let i=0;i<userRating;i++){
+    $("#rating").append("<i class = \"ui yellow icon star\"></i>");
   }}
 }
 };
