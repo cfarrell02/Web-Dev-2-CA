@@ -42,7 +42,7 @@ const sonatas = {
       artist: 'Beethoven',
     },
     {
-      title: 'Piano Sonata No. 69',
+      title: 'Piano Sonata No. 11',
       artist: 'Beethoven',
     }
   ],
