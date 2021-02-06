@@ -56,7 +56,11 @@ getRating() {
     $("#rating").html("You gave a rating of: ");
     for(let i=0;i<userRating;i++){
     $("#rating").append("<i class = \"ui yellow icon star\"></i>");
-  }}
+  }
+  for(let i=0;i<(5-userRating);i++){
+    $("#rating").append("<i class = \"ui yellow icon star outline\"></i>");
+  }
+  }
 }
 };
 $(document).ready(function(){
