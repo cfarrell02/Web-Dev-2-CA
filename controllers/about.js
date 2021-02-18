@@ -17,9 +17,9 @@ const about = {
     // create view data object (contains data to be sent to the view e.g. page title)
     const viewData = {
       title: 'Playlist App About',
-      playlists: developerStore.getAllDevelopers()
+      developers: developerStore.getAllDevelopers()
     };
-
+    logger.info('about to render', viewData.developers);
     // render the dashboard view and pass through the data
     response.render('about', viewData);
   },

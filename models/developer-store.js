@@ -3,14 +3,14 @@
 const developerStore = {
 
   // import the playlist collection object
-  developerCollection: require('./developer-store.json').developers,
+  developers: require('./developer-store.json').developers,
 
-  // function to get all of the playlists
+  // function to get all of the developers
   getAllDevelopers() {
-    return this.developerCollection;
+    return this.developers;
   },
 
 };
 
-// export the playlistStore object so it can be used elsewhere
+// export the developerStore object so it can be used elsewhere
 module.exports = developerStore;
