@@ -3,7 +3,7 @@
 const developerStore = {
 
   // import the playlist collection object
-  developerCollection: require('./developer-store.json').playlistCollection,
+  developerCollection: require('./developer-store.json').developers,
 
   // function to get all of the playlists
   getAllDevelopers() {
