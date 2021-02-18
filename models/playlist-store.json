@@ -33,6 +33,28 @@
           "artist": "Beethoven"
         }
       ]
+    },
+        {
+      "title": "The Beatles",
+      "songs": [
+        {
+          "title": "Yesterday",
+          "artist": "The Beatles"
+        },
+        {
+          "title": "Here Comes The Sun",
+          "artist": "The Beatles"
+        },
+        {
+          "title": "Let It Be",
+          "artist": "The Beatles"
+        },
+        {
+          "title": "Let It Be",
+          "artist": "The Beatles"
+        }
+      ]
     }
+    
   ]
 }
