@@ -1,57 +1,93 @@
 {
   "playlistCollection": [
     {
+      "id": "01",
       "title": "Beethoven Sonatas",
+      "duration": "15 Minutes",
       "songs": [
         {
+          "id": "001",
           "title": "Piano Sonata No. 3",
-          "artist": "Beethoven"
+          "artist": "Beethoven",
+          "duration": "5 Minutes",
+          "genre": "Classical"
         },
         {
+          "id": "002",
           "title": "Piano Sonata No. 7",
-          "artist": "Beethoven"
+          "artist": "Beethoven",
+          "duration": "5 Minutes",
+          "genre": "Classical"
         },
         {
+          "id": "003",
           "title": "Piano Sonata No. 10",
-          "artist": "Beethoven"
+          "artist": "Beethoven",
+          "duration": "5 Minutes",
+          "genre": "Classical"
         }
       ]
     },
     {
+      "id": "02",
       "title": "Beethoven Concertos",
+      "duration": "15 Minutes",
       "songs": [
         {
+          "id": "001",
           "title": "Piano Concerto No. 0",
-          "artist": "Beethoven"
+          "artist": "Beethoven",
+          "duration": "5 Minutes",
+          "genre": "Classical"
         },
         {
+          "id": "002",
           "title": "Piano Concerto No. 4",
-          "artist": "Beethoven"
+          "artist": "Beethoven",
+          "duration": "5 Minutes",
+          "genre": "Classical"
         },
         {
+          "id": "002",
           "title": "Piano Concerto No. 6",
-          "artist": "Beethoven"
+          "artist": "Beethoven",
+          "duration": "5 Minutes",
+          "genre": "Classical"
         }
       ]
     },
         {
+      "id": "03",
       "title": "The Beatles",
+     "duration": "16 Minutes",
       "songs": [
         {
+          "id": "001",
           "title": "Yesterday",
-          "artist": "The Beatles"
+          "artist": "The Beatles",
+          "duration": "4 Minutes",
+          "genre": "Classic Rock"
         },
         {
+          "id": "002",
           "title": "Here Comes The Sun",
-          "artist": "The Beatles"
+          "artist": "The Beatles",
+          "duration": "4 Minutes",
+          "genre": "Classic Rock"
         },
         {
+          "id": "003",
           "title": "Let It Be",
-          "artist": "The Beatles"
+          "artist": "The Beatles",
+          "duration": "4 Minutes",
+          "genre": "Classic Rock"
         },
         {
-          "title": "Let It Be",
-          "artist": "The Beatles"
+          "id": "004",
+          "title": "Something",
+          "artist": "The Beatles",
+          "duration": "4 Minutes",
+          "genre": "Classic Rock"
         }
       ]
     }
