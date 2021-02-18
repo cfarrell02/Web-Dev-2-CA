@@ -3,6 +3,8 @@
 // import all required modules
 const logger = require('../utils/logger');
 
+const developerStore = require('../models/developer-store.js');
+
 // create about object
 const about = {
 

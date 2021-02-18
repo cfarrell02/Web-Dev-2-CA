@@ -26,27 +26,8 @@ function hideWelcome() {
   let welcomeUserDiv = document.getElementById("welcomeuser");
   welcomeUserDiv.style.display = "none";
 }
-const sonatas = {
-  title: 'Beethoven Sonatas',
-  songs: [
-    {
-      title: 'Piano Sonata No. 3',
-      artist: 'Beethoven',
-    },
-    {
-      title: 'Piano Sonata No. 7',
-      artist: 'Beethoven',
-    },
-    {
-      title: 'Piano Sonata No. 10',
-      artist: 'Beethoven',
-    },
-    {
-      title: 'Piano Sonata No. 11',
-      artist: 'Beethoven',
-    }
-  ],
-getRating() {
+
+function getRating() {
   let userRating = parseInt(prompt("Rate this collection (from 1 to 5 stars)"));
 
   if (userRating>5 || userRating<1 || isNaN(userRating)){
@@ -62,4 +43,3 @@ getRating() {
   }
   }
 }
-};
