@@ -1,5 +1,5 @@
 'use strict';
-
+const _ = require('lodash');
 const playlistStore = {
 
   // import the playlist collection object

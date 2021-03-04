@@ -1,19 +1,17 @@
 'use strict';
 
-// import express and initialise router
-const express = require('express');
-const router = express.Router();
+const logger = require('../utils/logger');
+const playlistCollection = require('../models/playlist-store.js');
 
+const playlist = {
+  index(request, response) {
+    const playlistId = request.params.id;
+    logger.debug('Playlist id = ' + playlistId);
+    const viewData = {
+      title: 'Playlist',
+    };
+    response.render('playlist', viewData);
+  },
+};
 
-// import controllers
-const start = require('./controllers/start.js');
-const dashboard = require('./controllers/dashboard.js');
-const about = require('./controllers/about.js');
-
-// connect routes to controllers
-router.get('/', start.index);
-router.get('/dashboard', dashboard.index);
-router.get('/about', about.index)
-
-// export router module
-module.exports = router;
+module.exports = playlist;
