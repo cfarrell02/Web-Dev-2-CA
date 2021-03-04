@@ -42,4 +42,6 @@ function getRating() {
     $("#rating").append("<i class = \"ui yellow icon star outline\"></i>");
   }
   }
+  
 }
+$(".delsong").click(() => confirm('Really delete this song?'))

@@ -6,7 +6,7 @@
       "duration": "15 Minutes",
       "songs": [
         {
-          "id": "001",
+          "id": "01",
           "title": "Piano Sonata No. 3",
           "artist": "Beethoven",
           "duration": "5 Minutes",
@@ -48,7 +48,7 @@
           "genre": "Classical"
         },
         {
-          "id": "002",
+          "id": "003",
           "title": "Piano Concerto No. 6",
           "artist": "Beethoven",
           "duration": "5 Minutes",
