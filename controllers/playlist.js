@@ -9,6 +9,7 @@ const playlistStore = {
 
   getAllPlaylists() {
     return this.playlistCollection;
+    
   },
 
     getPlaylist(id) {
@@ -21,6 +22,7 @@ const playlistStore = {
     logger.debug(`Deleting Song ${songId} from Playlist ${playlistId}`);
     playlistStore.removeSong(playlistId, songId);
     response.redirect('/playlist/' + playlistId);
+    
   },
 
 };
