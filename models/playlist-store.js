@@ -1,6 +1,7 @@
 'use strict';
 
 const _ = require('lodash');
+
 const playlistStore = {
 
   playlistCollection: require('./playlist-store.json').playlistCollection,
