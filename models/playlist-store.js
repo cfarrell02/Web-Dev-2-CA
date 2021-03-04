@@ -9,6 +9,10 @@ const playlistStore = {
   getAllPlaylists() {
     return this.playlistCollection;
   },
+  removeSong(id, songId) {
+    const playlist = this.getPlaylist(id);
+    // remove the song with id songId from the playlist
+  }
 
 };
 
