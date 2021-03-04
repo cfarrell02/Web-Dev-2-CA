@@ -1,15 +1,36 @@
 'use strict';
 
+// import all required modules
 const logger = require('../utils/logger');
-const playlistCollection = require('../models/playlist-store.js');
+const playlistStore = require('../models/playlist-store.js');
 
-const playlist = {
+// create dashboard object
+const dashboard = {
+  
+  // index method - responsible for creating and rendering the view
   index(request, response) {
+    
+    // display confirmation message in log
+    logger.info('dashboard rendering');
+    
+    // create view data object (contains data to be sent to the view e.g. page title)
     const viewData = {
-      title: 'Playlist',
+      title: 'Playlist App Dashboard',
+      playlists: playlistStore.getAllPlaylists(),
     };
-    response.render('playlist', viewData);
+    
+    // render the dashboard view and pass through the data
+    logger.info('about to render', viewData.playlists);
+    response.render('dashboard', viewData);
+  },
+  
+  deletePlaylist(request, response) {
+    const playlistId = request.params.id;
+    logger.debug(`Deleting Playlist ${playlistId}`);
+    playlistStore.removePlaylist(playlistId);
+    response.redirect('/dashboard');
   },
 };
 
-module.exports = playlist;
+// export the dashboard module
+module.exports = dashboard;
