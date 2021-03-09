@@ -15,3 +15,7 @@ h1 {
 #welcomeuser {
   display: none;
 }
+.bold{
+  font-weight: bold;
+  text-size:120%;
+}

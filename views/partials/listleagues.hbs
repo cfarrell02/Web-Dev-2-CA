@@ -1,14 +1,20 @@
 {{#each leagues}}
-  <section class="ui stacked segment">
-    <h2 class="ui header">
+  <section class="ui grid"><div class="ui center aligned middle aligned ten wide column">
+    <h2 class="bold">
       {{name}}
     </h2>
-    <p> Country: {{country}} </p>
+    <p > <span class = "bold"> Country: </span>{{country}} 
     <a href="/league/{{id}}" class="ui icon button">
       <i class="icon folder open"></i>
     </a>
     <a href="/dashboard/deleteleague/{{id}}" class="ui icon button">
       <i class="icon trash"></i>
-    </a>
+      </a></p></div>
+    <p class="ui center aligned six wide column">
+      <img
+                class="ui medium circular image"
+                src={{logo}}
+              />
+    </p>
   </section>
 {{/each}}
