@@ -2,22 +2,22 @@
   "leagueCollection": [
     {
       "id": "01",
-      "name": "Beethoven Sonatas",
-      "country": "15 Minutes",
+      "name": "Premier League",
+      "country": "England",
       "teams": [
         {
           "id": "04",
-          "name": "Piano Sonata No. 3",
-          "position": "Beethoven",
-          "manager": "5 Minutes",
-          "established": "Classical"
+          "name": "Liverpool F.C.",
+          "position": "6th",
+          "manager": "Jurgen Klopp",
+          "crest": "https://i.imgur.com/q2r26wE.png"
         },
         {
           "id": "04",
-          "name": "Piano Sonata No. 3",
-          "position": "Beethoven",
-          "manager": "5 Minutes",
-          "established": "Classical"
+          "name": "Tottenham Hotspur F.C.",
+          "position": "7th",
+          "manager": "José Mourinho",
+          "crest": "https://i.imgur.com/KmHpFOn.png"
         },
         {
           "id": "04",

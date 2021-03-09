@@ -16,7 +16,7 @@ const dashboard = {
     // create view data object (contains data to be sent to the view e.g. page title)
     const viewData = {
       title: 'league App Dashboard',
-      leagues: leagueStore.getAllleagues(),
+      leagues: leagueStore.getAllLeagues(),
     };
     
     // render the dashboard view and pass through the data

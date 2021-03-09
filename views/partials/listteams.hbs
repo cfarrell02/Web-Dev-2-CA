@@ -1,7 +1,7 @@
 <table class="ui fixed striped table">
   <thead>
     <tr>
-      <th>Song</th>
+      <th>g</th>
       <th>Artist</th>
       <th>Genre</th>
       <th>Duration</th>
@@ -15,13 +15,16 @@
           {{name}}
         </td>
         <td>
-          {{artist}}
+          {{position}}
         </td>
         <td>
-          {{genre}}
+          {{manager}}
         </td>
         <td>
-          {{duration}}
+          <img
+                class="ui small circular image"
+                src="{{crest}}"
+              />
         </td>
         <td>
           <a href="/league/{{../league.id}}/deleteteam/{{id}}" class="ui tiny red button">Delete Team</a>

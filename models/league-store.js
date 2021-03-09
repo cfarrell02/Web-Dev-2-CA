@@ -2,7 +2,7 @@
 
 const _ = require('lodash');
 
-const teamStore = {
+const leagueStore = {
 
   leagueCollection: require('./league-store.json').leagueCollection,
 
@@ -10,7 +10,7 @@ const teamStore = {
     return this.leagueCollection;
   },
 
-  getPlaylist(id) {
+  getLeague(id) {
     return _.find(this.leagueCollection, { id: id });
   },
   
