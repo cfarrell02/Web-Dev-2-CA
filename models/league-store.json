@@ -14,18 +14,18 @@
           "crest": "https://i.imgur.com/q2r26wE.png"
         },
         {
-          "id": "04",
+          "id": "05",
           "name": "Tottenham Hotspur F.C.",
           "position": "7th",
           "manager": "José Mourinho",
           "crest": "https://i.imgur.com/KmHpFOn.png"
         },
         {
-          "id": "04",
-          "name": "Piano Sonata No. 3",
-          "position": "Beethoven",
-          "manager": "5 Minutes",
-          "established": "Classical"
+          "id": "06",
+          "name": "Chelsea F.C.",
+          "position": "4th",
+          "manager": "Thomas Tuchel",
+          "crest": "https://i.imgur.com/P9DMXO2.png"
         }
       ]
     }

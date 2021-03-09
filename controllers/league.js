@@ -14,7 +14,7 @@ const league = {
     response.render('league', viewData);
   },
     deleteTeam(request, response) {
-    const LeagueId = request.params.id;
+    const leagueId = request.params.id;
     const teamId = request.params.teamid;
     logger.debug(`Deleting Team ${teamId} from League ${leagueId}`);
     leagueStore.removeTeam(leagueId, teamId);
