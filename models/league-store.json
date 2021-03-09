@@ -73,17 +73,17 @@
         },
         {
           "teamid": "02",
-          "name": "Real Madrid F.C.",
+          "name": "RB Leipzig",
           "position": "3rd",
-          "manager": "Zinedine Zidane",
-          "crest": "https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Real_Madrid_CF.svg/1200px-Real_Madrid_CF.svg.png"
+          "manager": "Julian Nagelsmann",
+          "crest": "https://upload.wikimedia.org/wikipedia/en/thumb/0/04/RB_Leipzig_2014_logo.svg/1200px-RB_Leipzig_2014_logo.svg.png"
         },
         {
           "teamid": "03",
-          "name": "Atlético Madrid",
-          "position": "1st",
-          "manager": "Diego Simeone",
-          "crest": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f4/Atletico_Madrid_2017_logo.svg/1200px-Atletico_Madrid_2017_logo.svg.png"
+          "name": "Borussia Dortmund",
+          "position": "2nd",
+          "manager": "Edin Terzić",
+          "crest": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Borussia_Dortmund_logo.svg/1200px-Borussia_Dortmund_logo.svg.png"
         }
       ]
     }
