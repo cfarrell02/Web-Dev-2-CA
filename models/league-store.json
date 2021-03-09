@@ -7,21 +7,21 @@
       "logo":"https://i.imgur.com/P25gS5E.png",
       "teams": [
         {
-          "id": "04",
+          "teamid": "04",
           "name": "Liverpool F.C.",
           "position": "6th",
           "manager": "Jurgen Klopp",
           "crest": "https://i.imgur.com/q2r26wE.png"
         },
         {
-          "id": "05",
+          "teamid": "05",
           "name": "Tottenham Hotspur F.C.",
           "position": "7th",
           "manager": "José Mourinho",
           "crest": "https://i.imgur.com/KmHpFOn.png"
         },
         {
-          "id": "06",
+          "teamid": "06",
           "name": "Chelsea F.C.",
           "position": "4th",
           "manager": "Thomas Tuchel",
