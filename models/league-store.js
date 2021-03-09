@@ -14,7 +14,7 @@ const leagueStore = {
     return _.find(this.leagueCollection, { id: id });
   },
   
-  removeTeam(id, songId) {
+  removeTeam(id, teamId) {
     const league = this.getLeague(id);
     _.remove(league.teams, { id: teamId });
   },
