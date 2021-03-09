@@ -9,15 +9,15 @@ const router = express.Router();
 const start = require('./controllers/start.js');
 const dashboard = require('./controllers/dashboard.js');
 const about = require('./controllers/about.js');
-const playlist = require('./controllers/playlist.js');
+const playlist = require('./controllers/league.js');
 
 // connect routes to controllers
 router.get('/', start.index);
 router.get('/dashboard', dashboard.index);
 router.get('/about', about.index);
-router.get('/playlist/:id', playlist.index);
-router.get('/playlist/:id/deleteSong/:songid', playlist.deleteSong);
-router.get('/dashboard/deletePla')
+router.get('/league/:id', playlist.index);
+router.get('/league/:id/deleteTeam/:teamid', playlist.deleteTeam);
+router.get('/dashboard/deleteLeague')
 
 // export router module
 module.exports = router;

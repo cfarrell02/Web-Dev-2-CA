@@ -16,10 +16,10 @@ const playlist = {
     deleteTeam(request, response) {
     const LeagueId = request.params.id;
     const teamId = request.params.teamid;
-    logger.debug(`Deleting Song ${teamId} from Playlist ${leagueId}`);
-    leagueStore.removeTeam(playlistId, teamId);
-    response.redirect('/playlist/' + playlistId);
+    logger.debug(`Deleting Team ${teamId} from League ${leagueId}`);
+    leagueStore.removeTeam(leagueId, teamId);
+    response.redirect('/playlist/' + leagueId);
   },
 };
 
-module.exports = playlist;
+module.exports = league;

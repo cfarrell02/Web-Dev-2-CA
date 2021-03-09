@@ -2,7 +2,7 @@
 
 // import all required modules
 const logger = require('../utils/logger');
-const playlistStore = require('../models/playlist-store.js');
+const leagueStore = require('../models/league-store.js');
 
 // create dashboard object
 const dashboard = {
@@ -15,19 +15,19 @@ const dashboard = {
     
     // create view data object (contains data to be sent to the view e.g. page title)
     const viewData = {
-      title: 'Playlist App Dashboard',
-      playlists: playlistStore.getAllPlaylists(),
+      title: 'league App Dashboard',
+      leagues: leagueStore.getAllleagues(),
     };
     
     // render the dashboard view and pass through the data
-    logger.info('about to render', viewData.playlists);
+    logger.info('about to render', viewData.leagues);
     response.render('dashboard', viewData);
   },
   
-  deletePlaylist(request, response) {
-    const playlistId = request.params.id;
-    logger.debug(`Deleting Playlist ${playlistId}`);
-    playlistStore.removePlaylist(playlistId);
+  deleteLeague(request, response) {
+    const leagueId = request.params.id;
+    logger.debug(`Deleting league ${leagueId}`);
+    leagueStore.removeLeague(leagueId);
     response.redirect('/dashboard');
   },
 };
