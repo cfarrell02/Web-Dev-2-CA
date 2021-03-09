@@ -7,21 +7,21 @@
       "logo":"https://i.imgur.com/P25gS5E.png",
       "teams": [
         {
-          "teamid": "04",
+          "teamid": "01",
           "name": "Liverpool F.C.",
           "position": "6th",
           "manager": "Jurgen Klopp",
           "crest": "https://i.imgur.com/q2r26wE.png"
         },
         {
-          "teamid": "05",
+          "teamid": "02",
           "name": "Tottenham Hotspur F.C.",
           "position": "7th",
           "manager": "José Mourinho",
           "crest": "https://i.imgur.com/KmHpFOn.png"
         },
         {
-          "teamid": "06",
+          "teamid": "03",
           "name": "Chelsea F.C.",
           "position": "4th",
           "manager": "Thomas Tuchel",
@@ -36,21 +36,50 @@
       "logo":"https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/LaLiga.svg/1200px-LaLiga.svg.png",
       "teams": [
         {
-          "teamid": "04",
+          "teamid": "01",
           "name": "FC Barcelona",
           "position": "6th",
           "manager": "Ronald Koeman",
           "crest": "https://upload.wikimedia.org/wikipedia/en/thumb/4/47/FC_Barcelona_%28crest%29.svg/1200px-FC_Barcelona_%28crest%29.svg.png"
         },
         {
-          "teamid": "05",
+          "teamid": "02",
           "name": "Real Madrid F.C.",
           "position": "3rd",
           "manager": "Zinedine Zidane",
           "crest": "https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Real_Madrid_CF.svg/1200px-Real_Madrid_CF.svg.png"
         },
         {
-          "teamid": "06",
+          "teamid": "03",
+          "name": "Atlético Madrid",
+          "position": "1st",
+          "manager": "Diego Simeone",
+          "crest": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f4/Atletico_Madrid_2017_logo.svg/1200px-Atletico_Madrid_2017_logo.svg.png"
+        }
+      ]
+    },
+        {
+      "id": "03",
+      "name": "Bundesliga",
+      "country": "Germany",
+      "logo":"https://upload.wikimedia.org/wikipedia/en/d/df/Bundesliga_logo_%282017%29.svg",
+      "teams": [
+        {
+          "teamid": "01",
+          "name": "FC Barcelona",
+          "position": "6th",
+          "manager": "Ronald Koeman",
+          "crest": "https://upload.wikimedia.org/wikipedia/en/thumb/4/47/FC_Barcelona_%28crest%29.svg/1200px-FC_Barcelona_%28crest%29.svg.png"
+        },
+        {
+          "teamid": "02",
+          "name": "Real Madrid F.C.",
+          "position": "3rd",
+          "manager": "Zinedine Zidane",
+          "crest": "https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Real_Madrid_CF.svg/1200px-Real_Madrid_CF.svg.png"
+        },
+        {
+          "teamid": "03",
           "name": "Atlético Madrid",
           "position": "1st",
           "manager": "Diego Simeone",
