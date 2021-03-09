@@ -26,6 +26,13 @@
           "position": "4th",
           "manager": "Thomas Tuchel",
           "crest": "https://i.imgur.com/P9DMXO2.png"
+        },
+        {
+          "teamid": "04",
+          "name": "Manchester United F.C.",
+          "position": "3rd",
+          "manager": "Ole Gunnar Solskjær",
+          "crest": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/Manchester_United_FC_crest.svg/1200px-Manchester_United_FC_crest.svg.png"
         }
       ]
     },
