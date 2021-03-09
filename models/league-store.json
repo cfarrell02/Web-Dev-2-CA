@@ -1,0 +1,33 @@
+{
+  "leagueCollection": [
+    {
+      "id": "01",
+      "name": "Beethoven Sonatas",
+      "country": "15 Minutes",
+      "teams": [
+        {
+          "id": "04",
+          "name": "Piano Sonata No. 3",
+          "position": "Beethoven",
+          "manager": "5 Minutes",
+          "established": "Classical"
+        },
+        {
+          "id": "04",
+          "name": "Piano Sonata No. 3",
+          "position": "Beethoven",
+          "manager": "5 Minutes",
+          "established": "Classical"
+        },
+        {
+          "id": "04",
+          "name": "Piano Sonata No. 3",
+          "position": "Beethoven",
+          "manager": "5 Minutes",
+          "established": "Classical"
+        }
+      ]
+    }
+    
+  ]
+}
