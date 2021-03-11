@@ -33,7 +33,7 @@ const dashboard = {
   },
   
     addLeague(request, response) {
-    const newPlayList = {
+    const newLeague = {
       id: uuid(),
       title: request.body.title,
       country:request.body.country,

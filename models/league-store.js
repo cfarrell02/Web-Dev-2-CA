@@ -5,8 +5,8 @@ const JsonStore = require('./json-store');
 
 const leagueStore = {
 
- store: new JsonStore('./models/playlist-store.json', { leagueCollection: [] }),
-  collection: 'playlistCollection',
+ store: new JsonStore('./models/league-store.json', { leagueCollection: [] }),
+  collection: 'leagueCollection',
 
   getAllLeagues() {
     return this.store.findAll(this.collection);
@@ -28,15 +28,15 @@ removeAllLeagues() {
     this.store.removeAll(this.collection);
   },
 
-  addTeam(id, song) {
-    const playlist = this.getPlaylist(id);
-    playlist.songs.push(song);
+  addTeam(id, team) {
+    const league = this.getLeague(id);
+    league.teams.push(team);
   },
 
-  removeTeam(id, songId) {
-    const playlist = this.getPlaylist(id);
-    const songs = playlist.songs;
-    _.remove(songs, { id: songId});
+  removeTeam(id, teamId) {
+    const league = this.getLeague(id);
+    const teams = league.teams;
+    _.remove(teams, { id: teamId});
   },
 };
 

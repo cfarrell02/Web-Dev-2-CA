@@ -23,7 +23,7 @@ const league = {
   },
   addSong(request, response) {
     const leagueId = request.params.id;
-    const league = leagueStore.getPlaylist(leagueId);
+    const league = leagueStore.getLeague(leagueId);
     const newTeam = {
       id: uuid(),
       title: request.body.title,
@@ -32,7 +32,7 @@ const league = {
       crest: request.body.crest,
       
     };
-    leagueStore.addSong(leagueId, newTeam);
+    leagueStore.addTeam(leagueId, newTeam);
     response.redirect('/league/' + leagueId);
   },
 };
