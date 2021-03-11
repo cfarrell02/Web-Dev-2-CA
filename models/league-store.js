@@ -1,26 +1,27 @@
 'use strict';
 
 const _ = require('lodash');
+const JsonStore = require('./json-store');
 
 const leagueStore = {
 
-  leagueCollection: require('./league-store.json').leagueCollection,
+ store: new JsonStore('./models/playlist-store.json', { pleagueCollection: [] }),
+  collection: 'playlistCollection',
 
   getAllLeagues() {
-    return this.leagueCollection;
+    return this.store.findAll(this.collection);
   },
 
   getLeague(id) {
-    return _.find(this.leagueCollection, { id: id });
+    return this.store.findOneBy(this.collection, { id: id });
   },
-  
-  removeTeam(id, teamId) {
-    const league = this.getLeague(id);
-    _.remove(league.teams, { id: teamId });
-  },
+   addLeague(league) {
+    this.store.add(this.collection, league);
+  }, 
   
   removeLeague(id) {
-  _.remove(this.leagueCollection, { id: id });
+  const league = this.getLeague(id);
+    this.store.remove(this.collection, league);
 },
   
 removeAllLeagues() {
