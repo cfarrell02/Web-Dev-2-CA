@@ -2,6 +2,7 @@
 
 const logger = require('../utils/logger');
 const leagueStore = require('../models/league-store');
+const uuid = require('uuid');
 
 const league = {
   index(request, response) {

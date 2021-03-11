@@ -17,7 +17,7 @@ router.get('/about', about.index);
 
 router.get('/league/:id', league.index);
 
-router.get('/league/:id/deleteteam/:teamid', league.deleteTeam);
+router.get('/league/:id/deleteTeam/:teamid', league.deleteTeam);
 router.get('/dashboard/deleteleague/:id', dashboard.deleteLeague);
 router.post('/league/:id/addteam', league.addTeam);
 router.post('/dashboard/addleague', dashboard.addLeague);
