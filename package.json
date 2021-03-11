@@ -1,7 +1,7 @@
 
 {
   
-  "name": "playlist-app",
+  "name": "league-app",
   "version": "0.0.1",
   "description": "A little playlist maker",
   "main": "server.js",
