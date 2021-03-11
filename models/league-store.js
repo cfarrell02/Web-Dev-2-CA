@@ -23,6 +23,20 @@ const leagueStore = {
   _.remove(this.leagueCollection, { id: id });
 },
   
+removeAllLeagues() {
+    this.store.removeAll(this.collection);
+  },
+
+  addTeam(id, song) {
+    const playlist = this.getPlaylist(id);
+    playlist.songs.push(song);
+  },
+
+  removeTeam(id, songId) {
+    const playlist = this.getPlaylist(id);
+    const songs = playlist.songs;
+    _.remove(songs, { id: songId});
+  },
 };
 
 module.exports = leagueStore;

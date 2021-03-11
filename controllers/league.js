@@ -20,6 +20,20 @@ const league = {
     leagueStore.removeTeam(leagueId, teamId);
     response.redirect('/league/' + leagueId);
   },
+  addSong(request, response) {
+    const leagueId = request.params.id;
+    const league = leagueStore.getPlaylist(leagueId);
+    const newTeam = {
+      id: uuid(),
+      title: request.body.title,
+      position: request.body.position,
+      manager: request.body.manager,
+      crest: request.body.crest,
+      
+    };
+    leagueStore.addSong(leagueId, newTeam);
+    response.redirect('/league/' + leagueId);
+  },
 };
 
 module.exports = league;
