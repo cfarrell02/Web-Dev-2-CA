@@ -30,6 +30,17 @@ const dashboard = {
     leagueStore.removeLeague(leagueId);
     response.redirect('/dashboard');
   },
+  
+    addLeague(request, response) {
+    const newPlayList = {
+      id: uuid(),
+      title: request.body.title,
+      country:request.body.country,
+      teams: [],
+    };
+    leagueStore.addLeague(newLeague);
+    response.redirect('/dashboard');
+  },
 };
 
 // export the dashboard module
