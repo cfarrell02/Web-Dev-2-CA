@@ -5,7 +5,7 @@ const JsonStore = require('./json-store');
 
 const leagueStore = {
 
- store: new JsonStore('./models/playlist-store.json', { pleagueCollection: [] }),
+ store: new JsonStore('./models/playlist-store.json', { leagueCollection: [] }),
   collection: 'playlistCollection',
 
   getAllLeagues() {
