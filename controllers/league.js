@@ -26,7 +26,7 @@ const league = {
     const league = leagueStore.getLeague(leagueId);
     const newTeam = {
       id: uuid(),
-      title: request.body.title,
+      name: request.body.title,
       position: request.body.position,
       manager: request.body.manager,
       crest: request.body.crest,
