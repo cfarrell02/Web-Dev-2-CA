@@ -108,6 +108,13 @@
           "crest": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Juventus_FC_2017_icon_%28black%29.svg/1200px-Juventus_FC_2017_icon_%28black%29.svg.png"
         }
       ]
+    },
+    {
+      "id": "8ebccd87-d91d-4156-9ec8-76b3dd0d9655",
+      "name": "Six Nations",
+      "country": "Bruh ",
+      "logo": "https://d2cx26qpfwuhvu.cloudfront.net/sixnations/wp-content/uploads/2018/12/07092501/fallback.png",
+      "teams": []
     }
   ]
 }
