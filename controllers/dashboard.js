@@ -35,7 +35,7 @@ const dashboard = {
     addLeague(request, response) {
     const newLeague = {
       id: uuid(),
-      title: request.body.title,
+      name: request.body.name,
       country:request.body.country,
       teams: [],
     };
