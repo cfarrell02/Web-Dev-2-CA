@@ -21,7 +21,7 @@ const league = {
     leagueStore.removeTeam(leagueId, teamId);
     response.redirect('/league/' + leagueId);
   },
-  addSong(request, response) {
+  addTeam(request, response) {
     const leagueId = request.params.id;
     const league = leagueStore.getLeague(leagueId);
     const newTeam = {
