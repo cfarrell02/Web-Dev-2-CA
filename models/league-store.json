@@ -4,7 +4,7 @@
       "id": "01",
       "name": "Premier League",
       "country": "England",
-      "logo":"https://i.imgur.com/P25gS5E.png",
+      "logo": "https://i.imgur.com/P25gS5E.png",
       "teams": [
         {
           "teamid": "01",
@@ -36,11 +36,11 @@
         }
       ]
     },
-        {
+    {
       "id": "02",
       "name": "La Liga",
       "country": "Spain",
-      "logo":"https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/LaLiga.svg/1200px-LaLiga.svg.png",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/LaLiga.svg/1200px-LaLiga.svg.png",
       "teams": [
         {
           "teamid": "01",
@@ -65,11 +65,11 @@
         }
       ]
     },
-        {
+    {
       "id": "03",
       "name": "Bundesliga",
       "country": "Germany",
-      "logo":"https://upload.wikimedia.org/wikipedia/en/d/df/Bundesliga_logo_%282017%29.svg",
+      "logo": "https://upload.wikimedia.org/wikipedia/en/d/df/Bundesliga_logo_%282017%29.svg",
       "teams": [
         {
           "teamid": "01",
@@ -93,7 +93,21 @@
           "crest": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Borussia_Dortmund_logo.svg/1200px-Borussia_Dortmund_logo.svg.png"
         }
       ]
+    },
+    {
+      "id": "c8d5ee80-8d6c-425f-9a3b-55f6c3313437",
+      "name": "Serie A",
+      "country": "Italy",
+      "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e1/Serie_A_logo_%282019%29.svg/1200px-Serie_A_logo_%282019%29.svg.png",
+      "teams": [
+        {
+          "id": "8044ac66-7315-4134-bb21-2e2fd47f2da8",
+          "name": "Juventus F.C.",
+          "position": "3rd",
+          "manager": "Andrea Pirlo",
+          "crest": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Juventus_FC_2017_icon_%28black%29.svg/1200px-Juventus_FC_2017_icon_%28black%29.svg.png"
+        }
+      ]
     }
-    
   ]
 }
