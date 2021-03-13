@@ -122,6 +122,21 @@
           "crest": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/FC_Internazionale_Milano_2014.svg/1200px-FC_Internazionale_Milano_2014.svg.png"
         }
       ]
+    },
+    {
+      "id": "b8b751a5-4507-493c-aca8-a54c77572dd8",
+      "name": "Major League Soccer",
+      "country": "USA",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/MLS_crest_logo_RGB_gradient.svg/1200px-MLS_crest_logo_RGB_gradient.svg.png",
+      "teams": [
+        {
+          "id": "fb759153-9559-4678-a6ca-ae13a462f144",
+          "name": "LA Galaxy",
+          "position": "1st",
+          "manager": "Greg Vanney",
+          "crest": "https://upload.wikimedia.org/wikipedia/en/thumb/7/70/Los_Angeles_Galaxy_logo.svg/1200px-Los_Angeles_Galaxy_logo.svg.png"
+        }
+      ]
     }
   ]
 }
