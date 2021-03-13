@@ -3,7 +3,8 @@
 body {
   font-family: helvetica, arial, sans-serif;
   margin: 2em;
-  background-color:lightgrey;
+    background-image: repeating-linear-gradient(to right,red, orange);
+
 }
 
 h1 {
