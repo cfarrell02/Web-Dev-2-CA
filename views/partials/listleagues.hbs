@@ -1,7 +1,9 @@
 {{#each leagues}}
-  <section class="ui segment">
+  <section class="ui center aligned middle aligned eight wide column">
+<div class="ui segment">
+
     <div class="ui grid">
-    <div class="ui center aligned middle aligned ten wide column">
+    <div class="ui center aligned middle aligned sixteen wide column">
     <h2 class="bold">
       {{name}}
     </h2>
@@ -12,12 +14,14 @@
     <a href="/dashboard/deleteleague/{{id}}" class="ui icon button">
       <i class="icon trash"></i>
       </a></p></div>
-    <p class="ui center aligned six wide column">
+    <p class="ui center aligned middle aligned sixteen wide column"">
       <img
                 class="ui medium image"
                 src={{logo}}
               />
     </p>
+                                         
+    </div>
        </div>
   </section>
 {{/each}}
