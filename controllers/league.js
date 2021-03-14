@@ -29,6 +29,7 @@ const league = {
       name: request.body.title,
       position: request.body.position,
       manager: request.body.manager,
+      europeanleague: request.body.europeanleague,
       crest: request.body.crest,
       
     };

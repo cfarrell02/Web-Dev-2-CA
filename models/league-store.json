@@ -4,7 +4,7 @@
       "id": "01",
       "name": "Premier League",
       "country": "England",
-      "continent": "Europe",
+      "continent":"Europe",
       "logo": "https://i.imgur.com/P25gS5E.png",
       "teams": [
         {
@@ -12,6 +12,7 @@
           "name": "Liverpool F.C.",
           "position": "6",
           "manager": "Jurgen Klopp",
+          "europeanleague":"Champion's League",
           "crest": "https://i.imgur.com/q2r26wE.png"
         },
         {
@@ -48,7 +49,7 @@
       "id": "02",
       "name": "La Liga",
       "country": "Spain",
-      "continent": "Europe",
+      "continent":"Europe",
       "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/LaLiga.svg/1200px-LaLiga.svg.png",
       "teams": [
         {
@@ -78,7 +79,7 @@
       "id": "03",
       "name": "Bundesliga",
       "country": "Germany",
-      "continent": "Europe",
+      "continent":"Europe",
       "logo": "https://upload.wikimedia.org/wikipedia/en/d/df/Bundesliga_logo_%282017%29.svg",
       "teams": [
         {
@@ -108,7 +109,7 @@
       "id": "c8d5ee80-8d6c-425f-9a3b-55f6c3313437",
       "name": "Serie A",
       "country": "Italy",
-      "continent": "Europe",
+      "continent":"Europe",
       "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e1/Serie_A_logo_%282019%29.svg/1200px-Serie_A_logo_%282019%29.svg.png",
       "teams": [
         {
@@ -128,12 +129,20 @@
       ]
     },
     {
-      "id": "d09a8a30-d517-4521-a4bd-1ccdd36d8a35",
+      "id": "b8b751a5-4507-493c-aca8-a54c77572dd8",
       "name": "Major League Soccer",
       "country": "USA",
-      "continent": "North America",
+      "continent":"North America",
       "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/MLS_crest_logo_RGB_gradient.svg/1200px-MLS_crest_logo_RGB_gradient.svg.png",
-      "teams": []
+      "teams": [
+        {
+          "id": "fb759153-9559-4678-a6ca-ae13a462f144",
+          "name": "LA Galaxy",
+          "position": "1",
+          "manager": "Greg Vanney",
+          "crest": "https://upload.wikimedia.org/wikipedia/en/thumb/7/70/Los_Angeles_Galaxy_logo.svg/1200px-Los_Angeles_Galaxy_logo.svg.png"
+        }
+      ]
     }
   ]
 }
