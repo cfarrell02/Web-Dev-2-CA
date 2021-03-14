@@ -1,4 +1,5 @@
 <form class="ui stacked segment form" action="/dashboard/addleague" method="POST">
+  <div class="two fields">
   <div class="field">
     <label>League Name</label>
     <input placeholder="Name" type="text" name="name" autofocus required>
@@ -11,5 +12,9 @@
     <label>League Logo</label>
     <input placeholder="Logo URL" type="text" name="logo" autofocus required>
   </div>
+    <div class = "field">
+      <input type="radio" name="continent" value="europe">
+    </div>
+      </div>
   <button class="ui blue submit button">Add League</button>
 </form>
