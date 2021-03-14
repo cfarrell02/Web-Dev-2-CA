@@ -37,6 +37,7 @@ const dashboard = {
       id: uuid(),
       name: request.body.name,
       country:request.body.country,
+      continent:request.body.continent,
       logo:request.body.logo,
       teams: [],
     };
