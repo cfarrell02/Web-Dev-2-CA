@@ -1,11 +1,11 @@
 <table class="ui fixed sortable striped table">
   <thead>
     <tr>
-      <th>Club Name</th>
       <th>League Position</th>
-      <th>Manager</th>
-      <th></th>
-      <th></th>
+      <th>Club Name</th>
+      <th >Manager</th>
+      <th>European League</th>
+      <th>Crest</th>
        <th></th>
     </tr>
   </thead>
@@ -13,16 +13,20 @@
     {{#each league.teams}}
       <tr>
         <td>
-          {{name}}
+          {{position}}.
+        
         </td>
-        <td class="sorted descending">
-          {{position}}
+        <td>
+            {{name}}
         </td>
         <td>
           {{manager}}
         </td>
         <td>
-          {{europeanleague}}
+          <img
+                class="ui centered small image"
+                src=" {{europeanleague}}"
+              />
         </td>
         <td>
           <img
@@ -45,3 +49,4 @@
 <button class="ui blue button" onclick="getRating()">
   Rate it! <i class="star icon"></i>
 </button>
+
