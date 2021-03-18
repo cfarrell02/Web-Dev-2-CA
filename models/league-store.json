@@ -78,6 +78,14 @@
           "manager": "Steve Bruce",
           "europeanleague": "https://i.imgur.com/EwEBIry.png",
           "crest": "https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Newcastle_United_Logo.svg/1200px-Newcastle_United_Logo.svg.png"
+        },
+        {
+          "id": "9d7930ff-4a94-4bed-a3ae-d22fabc2aa00",
+          "name": "wdawd",
+          "position": "3",
+          "manager": "12312",
+          "europeanleague": "https://i.imgur.com/EwEBIry.png",
+          "crest": "https://www.computerhope.com/jargon/r/random-dice.jpg"
         }
       ]
     },
