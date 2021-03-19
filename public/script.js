@@ -19,7 +19,7 @@ function welcomeUser() {
   document.getElementById("welcomeuser").innerHTML =
     "<p> Hello, " +
     username +
-    ", looking forward to hearing your playlists! Click this message to close it.</p>";
+    ", looking forward to seeing all of your football leagues!.</p>";
   welcomeUserDiv.style.cursor = "pointer";
 }
 function hideWelcome() {
