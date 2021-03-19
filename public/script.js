@@ -2,7 +2,7 @@
     to your site with Javascript */
 
 // prints "hi" in the browser's dev tools console
-console.log("hi");
+console.log("hi");c
 function showHide() {
   let readMoreDiv = document.getElementById("readmore");
   readMoreDiv.style.color = "green";
@@ -19,6 +19,10 @@ function showHide() {
   } else {
     leagueMoreDiv.style.display = "block";
   }
+    function hideLeague() {
+  let leagueDiv = document.getElementById("theLeague");
+  leagueDiv.style.display = "none";
+}
 }
 function welcomeUser() {
   let username = prompt("What's your name?");
