@@ -21,7 +21,7 @@ function showHide() {
   }
   }
     function hideLeague() {
-  let leagueDiv = document.getElementById("theLeague");
+  let leagueDiv = document.getElementById("theleague");
   leagueDiv.style.display = "none";
 }
 
