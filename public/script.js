@@ -11,6 +11,14 @@ function showHide() {
   } else {
     readMoreDiv.style.display = "block";
   }
+  
+  function showHideLeague() {
+  let readMoreDiv = document.getElementById("league");
+  if (readMoreDiv.style.display === "block") {
+    readMoreDiv.style.display = "none";
+  } else {
+    readMoreDiv.style.display = "block";
+  }
 }
 function welcomeUser() {
   let username = prompt("What's your name?");
