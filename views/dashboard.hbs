@@ -4,18 +4,10 @@
    {{> menu id="dashboard"}}
 
 <section class="ui segment">
-  <button class="ui red button" onclick="showHideLeague()">
-              Add A League! <i class="user icon"></i>
-            </button>
-<div id="league">
-<div  onclick="hideLeague()"
-     id = "theLeague">
-   </div>
-  {{> addleague}}
-</div>
+ {{addleague}}
   <div class="ui grid">
   {{> listleagues}}
   </div>
 </section>
- <script src="/script.js"></script>
+
   

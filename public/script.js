@@ -55,6 +55,6 @@ function getRating() {
     $("#rating").append("<i class = \"ui yellow icon star outline\"></i>");
   }
   }
-  
-}
-$(".delteam").click(() => confirm('Really delete this team?'))
+}}
+
+ $(".delteam").click(() => confirm('Really delete this team?'))
