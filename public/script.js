@@ -57,4 +57,4 @@ function getRating() {
   }
   
 }
-$(".delsong").click(() => confirm('Really delete this song?'))
+$(".delteam").click(() => confirm('Really delete this team?'))
