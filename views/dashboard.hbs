@@ -1,12 +1,18 @@
-{{> menu id="dashboard"}}
-<div id="league">
-<div  onclick="hideWelcomeLeague()">
-   </div>
-  {{> addleague}}
-</div>
- 
 
 <section class="ui segment">
+    {{> menu id="dashboard"}}
+  <button class="ui red button" onclick="showHide()">
+              Add A League! <i class="user icon"></i>
+            </button>
+
+<div id="readmore" class="ui message">
+              <div
+                id="welcomeuser"
+                class="ui message"
+                onclick="hideWelcome()"
+              ></div>
+              {{>addleague}}
+            </div>
   <div class="ui grid">
   {{> listleagues}}
   </div>
