@@ -17,6 +17,12 @@ h1 {
 #welcomeuser {
   display: none;
 }
+#league {
+  display: none;
+}
+#theLeague {
+  display:none;
+}
 .bold{
   font-weight: bold;
   text-size:120%;
