@@ -1,5 +1,11 @@
 {{> menu id="dashboard"}}
-{{> addleague}}
+<div id="league">
+<div  onclick="hideWelcomeLeague()">
+   </div>
+  {{> addleague}}
+</div>
+ 
+
 <section class="ui segment">
   <div class="ui grid">
   {{> listleagues}}

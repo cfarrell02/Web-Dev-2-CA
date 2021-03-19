@@ -13,11 +13,11 @@ function showHide() {
   }
   
   function showHideLeague() {
-  let readMoreDiv = document.getElementById("league");
-  if (readMoreDiv.style.display === "block") {
-    readMoreDiv.style.display = "none";
+  let leagueDiv = document.getElementById("league");
+  if (leagueDiv.style.display === "block") {
+    leagueDiv.style.display = "none";
   } else {
-    readMoreDiv.style.display = "block";
+    leagueMoreDiv.style.display = "block";
   }
 }
 function welcomeUser() {
