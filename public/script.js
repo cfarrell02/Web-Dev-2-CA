@@ -19,11 +19,12 @@ function showHide() {
   } else {
     leagueDiv.style.display = "block";
   }
+  }
     function hideLeague() {
   let leagueDiv = document.getElementById("theLeague");
   leagueDiv.style.display = "none";
 }
-}
+
 function welcomeUser() {
   let username = prompt("What's your name?");
   let welcomeUserDiv = document.getElementById("welcomeuser");
