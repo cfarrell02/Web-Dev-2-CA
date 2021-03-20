@@ -37,35 +37,30 @@ function darkmode(){
   
 }
 function changeBackground() {
-  var segments = document.getElementsByClassName("segment");
-  var tables = document.getElementsByClassName("table");
-  var labels = document.getElementsByClassName("lbl");
-  var cards = document.getElementsByClassName("card");
   document.getElementById("menu").style.backgroundColor = sessionStorage.getItem('colour');
   document.getElementById("about").style.color = sessionStorage.getItem('textColour');
   document.getElementById("dashboard").style.color = sessionStorage.getItem('textColour');
-  document.getElementById("textWhite").style.color = sessionStorage.getItem('textColour');
   
   var card;
-  for(card of tables){
-    table.style.backgroundColor = sessionStorage.getItem('colour');
-    table.style.color = sessionStorage.getItem('textColour');  
+  for(card of document.getElementsByClassName("card")){
+    card.style.backgroundColor = sessionStorage.getItem('colour');
+    card.style.color = sessionStorage.getItem('textColour');  
   }
   
   
   var table;
-  for(table of tables){
+  for(table of document.getElementsByClassName("table")){
     table.style.backgroundColor = sessionStorage.getItem('colour');
     table.style.color = sessionStorage.getItem('textColour');  
   }
   
   var label;
-  for(label of labels){
+  for(label of document.getElementsByClassName("lbl")){
     label.style.color = sessionStorage.getItem('textColour');
   }
   
   var segment;
-  for(segment of segments){
+  for(segment of document.getElementsByClassName("segment")){
   segment.style.backgroundColor = sessionStorage.getItem('colour');
   segment.style.color = sessionStorage.getItem('textColour');  
   }

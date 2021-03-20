@@ -1,3 +1,9 @@
+<button class="ui fluid blue button" onclick="showHideLeague()" id="leaguebutton">
+                Add a Team? <i class="arrow circle down icon"></i>
+            </button>
+
+<div id="league">
+
 <form class="ui stacked segment form" action="/league/{{league.id}}/addteam" method="POST">
   <div class="two fields">
     <div class="field">
@@ -39,3 +45,4 @@
   </div>
   <button class="ui green submit button">Add Team</button>
 </form>
+</div>
