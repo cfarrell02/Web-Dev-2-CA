@@ -21,10 +21,14 @@ function showHide() {
     leagueDiv.style.display = "block";
   }
   }
+
+
 function darkmode(){
-  let body =  document.getElementsByTagName("body")[0];;
-  body.style.background-color = "#363636";
+  let bodyElement =  document.getElementsByClassName("ui container");
+  bodyElement.style.backgroundColor = "#363636";
 }
+
+
 function welcomeUser() {
   let username = prompt("What's your name?");
   let welcomeUserDiv = document.getElementById("welcomeuser");
