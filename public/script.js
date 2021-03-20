@@ -66,8 +66,9 @@ function changeBackground() {
   segment.style.backgroundColor = sessionStorage.getItem('colour');
   segment.style.color = sessionStorage.getItem('textColour');  
   }
-  document.getElementById("description").style.color = sessionStorage.getItem('textColour');
+  
   document.getElementsByClassName("segment")[0].style.backgroundColor = sessionStorage.getItem('backgroundColour');
+  document.getElementById("description").style.color = sessionStorage.getItem('textColour');
      }
 
 function welcomeUser() {
@@ -103,3 +104,4 @@ function getRating() {
 }
 
  $(".delteam").click(() => confirm('Really delete this team?'))
+
