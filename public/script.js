@@ -37,15 +37,22 @@ function darkmode(){
   
 }
 function changeBackground() {
-  var x = document.getElementsByClassName("segment");
-  var y = document.getElementsByClassName("table");
+  var segments = document.getElementsByClassName("segment");
+  var tables = document.getElementsByClassName("table");
+  var labels = document.getElementsByName("label");
   document.getElementById("menu").style.backgroundColor = sessionStorage.getItem('colour');
-  document.getElementById("menu").style.color = sessionStorage.getItem('textColour');
+  document.getElementById("about").style.color = sessionStorage.getItem('textColour');
+  document.getElementById("dashboard").style.color = sessionStorage.getItem('textColour');
   
-  var item;
-  for(item of x){
-  item.style.backgroundColor = sessionStorage.getItem('colour');
-  item.style.color = sessionStorage.getItem('textColour');  
+  var label;
+  for(label of labels){
+    label.style.color = sessionStorage.getItem('textColour');
+  }
+  
+  var segment;
+  for(segment of segments){
+  segment.style.backgroundColor = sessionStorage.getItem('colour');
+  segment.style.color = sessionStorage.getItem('textColour');  
   }
      }
 
