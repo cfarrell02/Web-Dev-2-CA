@@ -40,9 +40,18 @@ function changeBackground() {
   var segments = document.getElementsByClassName("segment");
   var tables = document.getElementsByClassName("table");
   var labels = document.getElementsByClassName("lbl");
+  var cards = document.getElementsByClassName("card");
   document.getElementById("menu").style.backgroundColor = sessionStorage.getItem('colour');
   document.getElementById("about").style.color = sessionStorage.getItem('textColour');
   document.getElementById("dashboard").style.color = sessionStorage.getItem('textColour');
+  document.getElementById("textWhite").style.color = sessionStorage.getItem('textColour');
+  
+  var card;
+  for(card of tables){
+    table.style.backgroundColor = sessionStorage.getItem('colour');
+    table.style.color = sessionStorage.getItem('textColour');  
+  }
+  
   
   var table;
   for(table of tables){
