@@ -22,16 +22,18 @@ function showHide() {
   }
   }
 
-function darkmode(){
+function darkMode(){
 
   if( document.getElementById("menu").style.backgroundColor === "white" ){
     sessionStorage.setItem('colour', "#525252");
     sessionStorage.setItem('backgroundColour', "#878787");
     sessionStorage.setItem('textColour',"white");
+    console.log("Turning Website to Dark Mode");
   }else{
     sessionStorage.setItem('backgroundColour', "white");
     sessionStorage.setItem('colour', "white");
     sessionStorage.setItem('textColour',"black");
+    console.log("Turning Website to Light Mode");
   }
   
   changeBackground();
@@ -68,7 +70,7 @@ function changeBackground() {
   }
   
   document.getElementsByClassName("segment")[0].style.backgroundColor = sessionStorage.getItem('backgroundColour');
-  document.getElementById("description").style.color = sessionStorage.getItem('textColour');
+  document.getElementsByClassName("header")[1].style.color = sessionStorage.getItem('textColour');
      }
 
 function welcomeUser() {
