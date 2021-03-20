@@ -24,8 +24,16 @@ function showHide() {
 
 
 function darkmode(){
-  let bodyElement =  document.getElementsByClassName("ui container");
-  bodyElement.style.backgroundColor = "#363636";
+  var x = document.getElementsByClassName("segment");
+  var i;
+  for(i = 0; i < x.length;i++){
+  if(x[i].style.backgroundColor !== "#363636"){
+  x[i].style.backgroundColor = "#363636";
+  }
+    else{
+      x[i].style.backgroundColor = "white";
+    }
+  }
 }
 
 
