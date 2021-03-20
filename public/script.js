@@ -44,6 +44,12 @@ function changeBackground() {
   document.getElementById("about").style.color = sessionStorage.getItem('textColour');
   document.getElementById("dashboard").style.color = sessionStorage.getItem('textColour');
   
+  var table;
+  for(table of tables){
+    table.style.backgroundColor = sessionStorage.getItem('colour');
+    table.style.color = sessionStorage.getItem('textColour');  
+  }
+  
   var label;
   for(label of labels){
     label.style.color = sessionStorage.getItem('textColour');
