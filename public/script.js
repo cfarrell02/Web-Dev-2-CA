@@ -26,31 +26,25 @@ function showHide() {
 function darkmode(){
 
 var x = document.getElementsByClassName("segment");
+  var bodyElement = document.getElementsByTagName("body")[0];
   var i;
-  for(i = 0; i < x.length;i++){
-  if(x[i].style.backgroundColor === "white"){
-    return true;
+  if( document.getElementById("menu").style.backgroundColor === "white" ){
+    sessionStorage.setItem('colour', "#363636");
+  }else{
+    sessionStorage.setItem('colour', "white");
   }
-    else{
-      return false;
-    }
-  }
-  location.reload(); 
+  
+  changeBackground();
   
 }
 function changeBackground() {
   var x = document.getElementsByClassName("segment");
   var i;
   for(i = 0; i < x.length;i++){
-  if(darkmode()){
-  x[i].style.backgroundColor = "#363636";
-    document.getElementById("menu").style.backgroundColor = "#363636";
-  }
-    else{
-      x[i].style.backgroundColor = "white";
-      document.getElementById("menu").style.backgroundColor = "white"
-    }
-  }
+  
+  x[i].style.backgroundColor = sessionStorage.getItem('colour');;
+    document.getElementById("menu").style.backgroundColor = sessionStorage.getItem('colour');
+}
       
     }
 
