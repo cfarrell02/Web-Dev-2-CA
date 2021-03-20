@@ -14,15 +14,17 @@ function showHide() {
 }
   function showHideLeague() {
   let leagueDiv = document.getElementById("league");
-  let buttonDiv = document.getElementById("showleaguebutton");
     leagueDiv.style.margin = "1em 0 2em 0";
   if (leagueDiv.style.display === "block") {
     leagueDiv.style.display = "none";
   } else {
     leagueDiv.style.display = "block";
   }
-    buttonDiv.style.display = "block";
   }
+function darkmode(){
+  let body =  document.getElementsByTagName("body")[0];;
+  body.style.background-color = "#363636";
+}
 function welcomeUser() {
   let username = prompt("What's your name?");
   let welcomeUserDiv = document.getElementById("welcomeuser");

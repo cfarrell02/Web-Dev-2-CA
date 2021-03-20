@@ -20,6 +20,9 @@ h1 {
 #league{
   display:none;
 }
+#leaguebutton{
+  margin:1em 0 2em;
+}
 .bold{
   font-weight: bold;
   text-size:120%;
