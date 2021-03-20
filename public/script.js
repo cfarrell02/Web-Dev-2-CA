@@ -25,13 +25,12 @@ function showHide() {
 
 function darkmode(){
 
-var x = document.getElementsByClassName("segment");
-  var bodyElement = document.getElementsByTagName("body")[0];
-  var i;
   if( document.getElementById("menu").style.backgroundColor === "white" ){
     sessionStorage.setItem('colour', "#363636");
+    sessionStorage.setItem('textColour',"white");
   }else{
     sessionStorage.setItem('colour', "white");
+    sessionStorage.setItem('textColour',"black");
   }
   
   changeBackground();
@@ -39,14 +38,16 @@ var x = document.getElementsByClassName("segment");
 }
 function changeBackground() {
   var x = document.getElementsByClassName("segment");
-  var i;
-  for(i = 0; i < x.length;i++){
+  var y = document.getElementsByClassName("table");
+  document.getElementById("menu").style.backgroundColor = sessionStorage.getItem('colour');
+  document.getElementById("menu").style.color = sessionStorage.getItem('textColour');
   
-  x[i].style.backgroundColor = sessionStorage.getItem('colour');;
-    document.getElementById("menu").style.backgroundColor = sessionStorage.getItem('colour');
-}
-      
-    }
+  var item;
+  for(item of x){
+  item.style.backgroundColor = sessionStorage.getItem('colour');
+  item.style.color = sessionStorage.getItem('textColour');  
+  }
+     }
 
 function welcomeUser() {
   let username = prompt("What's your name?");
