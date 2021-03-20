@@ -26,7 +26,7 @@ function showHide() {
 function darkmode(){
 
   if( document.getElementById("menu").style.backgroundColor === "white" ){
-    sessionStorage.setItem('colour', "#363636");
+    sessionStorage.setItem('colour', "#525252");
     sessionStorage.setItem('textColour',"white");
   }else{
     sessionStorage.setItem('colour', "white");
@@ -39,7 +39,7 @@ function darkmode(){
 function changeBackground() {
   var segments = document.getElementsByClassName("segment");
   var tables = document.getElementsByClassName("table");
-  var labels = document.getElementsByName("label");
+  var labels = document.getElementsByClassName("lbl");
   document.getElementById("menu").style.backgroundColor = sessionStorage.getItem('colour');
   document.getElementById("about").style.color = sessionStorage.getItem('textColour');
   document.getElementById("dashboard").style.color = sessionStorage.getItem('textColour');

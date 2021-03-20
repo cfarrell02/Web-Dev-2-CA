@@ -1,39 +1,39 @@
 <form class="ui stacked segment form" action="/league/{{league.id}}/addteam" method="POST">
   <div class="two fields">
     <div class="field">
-      <label for="title">Name</label>
+      <label for="title" class ="lbl">Name</label>
       <input type="text" name="title" autofocus required title = "Please include a valid Name"
       placeholder="Name">
     </div>
     <div class="field">
-      <label for="position">Position</label>
+      <label for="position" class ="lbl">Position</label>
       <input type="number" name="position" required title = "Please include a valid Position"
       placeholder="Position"  >
     </div>
      </div>
-  <div class="two fields">
+  <div class="two fields" >
     <div class="field">
-      <label for="manager">Manager</label>
+      <label for="manager" class ="lbl">Manager</label>
       <input type="text" name="manager" required title = "Please include a valid Manager"
       placeholder="Manager"  >
     </div>
     <div class="field">
-      <label for="image">Crest</label>
+      <label for="image" class ="lbl">Crest</label>
       <input type="text" name="crest" required title = "Please include a valid URL"
       placeholder="Image URL"  >
     </div>
   </div>
   <div class="three fields">
-    <div class="field">
-    <label>Champions League</label>  
+    <div class="field" >
+    <label class ="lbl">Champions League</label>  
     <input type="radio" name="europeanleague" value="https://upload.wikimedia.org/wikipedia/en/thumb/b/bf/UEFA_Champions_League_logo_2.svg/1200px-UEFA_Champions_League_logo_2.svg.png">
           </div>
     <div class="field">
-    <label>Europa League</label>
+    <label class ="lbl">Europa League</label>
     <input type="radio" name="europeanleague" value="https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Europa_League.svg/1200px-Europa_League.svg.png">
           </div>
     <div class="field">
-    <label>N/A</label>
+    <label class ="lbl">N/A</label>
     <input type="radio" name="europeanleague" value="https://i.imgur.com/EwEBIry.png">
     </div>
   </div>
