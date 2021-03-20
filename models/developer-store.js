@@ -2,7 +2,7 @@
 
 const developerStore = {
 
-  // import the playlist collection object
+  // import the developer collection object
   developers: require('./developer-store.json').developers,
 
   // function to get all of the developers

@@ -1,9 +1,9 @@
 
 {
   
-  "name": "playlist-app",
+  "name": "league-app",
   "version": "0.0.1",
-  "description": "A little playlist maker",
+  "description": "A little league maker",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
