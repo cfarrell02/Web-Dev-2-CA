@@ -1,10 +1,13 @@
- <button class="ui blue button" onclick="showHide()">
-              Read more <i class="arrow circle right icon"></i>
-            </button>
-
-<div id="readmore">
+<div id = "showleaguebutton" class="ui center aligned segment" >
   
-<form class="ui stacked segment form" action="/dashboard/addleague" method="POST">
+
+<button class="ui blue button" onclick="showHideLeague()">
+              Add a League?<i class="arrow circle right icon"></i>
+            </button>
+</div> 
+<div id="league">
+  
+<form class="ui segment form" action="/dashboard/addleague" method="POST">
 
 
   <div class="two fields">
