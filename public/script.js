@@ -20,11 +20,6 @@ function showHide() {
     leagueDiv.style.display = "block";
   }
   }
-    function hideLeague() {
-  let leagueDiv = document.getElementById("theleague");
-  leagueDiv.style.display = "none";
-}
-
 function welcomeUser() {
   let username = prompt("What's your name?");
   let welcomeUserDiv = document.getElementById("welcomeuser");
