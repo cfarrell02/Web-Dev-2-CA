@@ -24,18 +24,29 @@ function showHide() {
 
 
 function darkmode(){
+  const darkmode = false
   var x = document.getElementsByClassName("segment");
   var i;
   for(i = 0; i < x.length;i++){
-  if(x[i].style.backgroundColor !== "#363636"){
+  if(x[i].style.backgroundColor === "white"){
+    darkmode = 
   x[i].style.backgroundColor = "#363636";
+    document.getElementById("menu").style.backgroundColor = "#363636";
   }
     else{
       x[i].style.backgroundColor = "white";
+      document.getElementById("menu").style.backgroundColor = "white"
     }
   }
 }
-
+function changeBackground() {
+        if (sessionStorage.getItem('colour')) {
+            document.body.style.backgroundColor = sessionStorage.getItem('colour');
+        }else{
+            document.body.style.backgroundColor =  "#BB0A21";
+            sessionStorage.setItem('colour', "#BB0A21");
+        }
+    }
 
 function welcomeUser() {
   let username = prompt("What's your name?");
