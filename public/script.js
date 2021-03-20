@@ -41,7 +41,7 @@ function changeBackground() {
   document.getElementById("menu").style.backgroundColor = sessionStorage.getItem('colour');
   document.getElementById("about").style.color = sessionStorage.getItem('textColour');
   document.getElementById("dashboard").style.color = sessionStorage.getItem('textColour');
-  document.getElementById("backgroundSegment").style.color = sessionStorage.getItem('backgroundColour');
+  
   
   var card;
   for(card of document.getElementsByClassName("card")){
@@ -66,6 +66,8 @@ function changeBackground() {
   segment.style.backgroundColor = sessionStorage.getItem('colour');
   segment.style.color = sessionStorage.getItem('textColour');  
   }
+  document.getElementById("description").style.color = sessionStorage.getItem('textColour');
+  document.getElementsByClassName("segment")[0].style.backgroundColor = sessionStorage.getItem('backgroundColour');
      }
 
 function welcomeUser() {
