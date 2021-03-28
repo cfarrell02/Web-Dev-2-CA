@@ -9,35 +9,41 @@
        <th class="table"></th>
     </tr>
   </thead>
-  <tbody>
+<tbody>
     {{#each league.teams}}
-      <tr>
-        <td>
-          {{position}}.
-        
-        </td>
-        <td>
-            {{name}}
-        </td>
-        <td>
-          {{manager}}
-        </td>
-        <td>
-          <img
-                class="ui centered small image"
-                src=" {{europeanleague}}"
-              />
-        </td>
-        <td>
-          <img
-                class="ui centered small image"
-                src="{{crest}}"
-              />
-        </td>
-        <td>
-          <a href="/league/{{../league.id}}/deleteteam/{{id}}" class="ui tiny red button"><i class="icon trash"></i></a>
-        </td>
-      </tr>
+    <form class = "ui stacked segment form" action="/league/{{../league.id}}/updateteam/{{id}}" method="POST">
+    <tr class="fields">
+      <td class="field">
+        <span class="ui input">
+         <input type="text" name="position" autofocus required title = "Please include a valid Title" placeholder="Title" value = "{{position}}">
+        </span>
+      </td>
+      <td class="field">
+        <span class="ui input">
+          <input type="text" name="name" required title = "Please include a valid Artist" placeholder="Artist" value = "{{name}}">
+        </span>
+      </td>
+      <td class="field">
+        <span class="ui input">
+          <input type="text" name="manager" autofocus required title = "Please include a valid Genre" placeholder="Genre" value = "{{manager}}">         
+        </span>
+      </td>
+      <td class="field">
+        {{europeanleague}}
+      </td>
+      <td>
+      {{crest}}
+      </td>
+      <td class="center aligned">
+        <button class="ui submit icon button"><i class="icon pencil alternate"></i></button>
+      </td>
+      <td class="center aligned">
+        <a href="/league/{{../league.id}}/deleteteam/{{id}}" class="ui icon button delteam">
+          <i class="icon trash"></i>
+        </a>
+      </td>
+    </tr>
+    </form> 
     {{/each}}
   </tbody>
 </table>
