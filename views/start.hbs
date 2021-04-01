@@ -1,6 +1,6 @@
 
 {{> menu}}      
-<section class="ui center aligned two column grid segment">
+<section class="ui center aligned middle aligned two column grid segment">
         <div class="ui column">
           <h1>Welcome to the Football App!</h1>
 
@@ -8,6 +8,7 @@
             This app will allow users to create and maintain a collection of
             soccer leagues.
           </p>
+        
           <div class="buttons">
             <button class="ui blue button" onclick="showHide()">
               Read more <i class="arrow circle right icon"></i>
@@ -34,6 +35,27 @@
               </p>
             </div>
           </div>
+          <div class="ui divider"></div>
+
+<h3 class="ui center aligned header">The League App now contains:</h3>
+<div class="ui two statistics">
+    <div class="ui huge statistic">
+        <div class="value">
+            {{totalPlaylists}}
+        </div>
+        <div class="label">
+            Playlists
+        </div>
+    </div>
+    <div class="ui huge statistic">
+        <div class="value">
+            {{totalSongs}}
+        </div>
+        <div class="label">
+            Songs
+        </div>
+    </div>
+</div>
         </div>
         <div class="ui column">
           <div class="ui grid">

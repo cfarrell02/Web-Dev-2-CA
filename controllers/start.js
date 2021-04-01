@@ -2,7 +2,7 @@
 
 // import all required modules
 const logger = require('../utils/logger');
-const playlistStore = require('../models/playlist-store.js');
+const leagueStore = require('../models/league-store.js');
 
 // create start object
 const start = {
@@ -12,14 +12,14 @@ const start = {
     
     // app statistics calculations
 
-const playlists = playlistStore.getAllPlaylists();
+const leagues = leagueStore.getAllLeagues();
 
-let numPlaylists = playlists.length;
+let numLeagues = leagues.length;
 
-let numSongs = 0;
+let numTeams = 0;
 
-for (let item of playlists) {
-    numSongs += item.songs.length;
+for (let item of leagues) {
+    numTeams += item.teams.length;
 }
 
     // display confirmation message in log
@@ -27,9 +27,9 @@ for (let item of playlists) {
 
     // create view data object (contains data to be sent to the view e.g. page title)
     const viewData = {
-    title: 'Welcome to the Playlist App!',
-    totalPlaylists: numPlaylists,
-    totalSongs: numSongs,
+    title: 'Welcome to the League App!',
+    totalPlaylists: numLeagues,
+    totalSongs: numTeams,
 };
 
     // render the start view and pass through the data
