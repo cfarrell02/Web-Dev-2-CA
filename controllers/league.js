@@ -37,17 +37,16 @@ const league = {
     response.redirect('/league/' + leagueId);
   },
   updateTeam(request, response) {
-    const playlistId = request.params.id;
+    const leagueId = request.params.id;
     const teamId = request.params.teamid;
     logger.debug("updating team " + teamId);
     const updatedteam = {
-      title: request.body.title,
-      artist: request.body.artist,
-      genre: request.body.genre,
-      duration: request.body.duration
+      name: request.body.title,
+      position: request.body.position,
+      manager: request.body.manager,
     };
-    playlistStore.editteam(playlistId, teamId, updatedteam);
-    response.redirect('/playlist/' + playlistId);
+    leagueStore.editTeam(leagueId, teamId, updatedteam);
+    response.redirect('/league/' + leagueId);
   },
 };
 

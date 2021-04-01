@@ -38,6 +38,14 @@ removeAllLeagues() {
     const teams = league.teams;
     _.remove(teams, { id: teamId});
   },
+    editTeam(id, teamId, updatedTeam) {
+    const league = this.getLeague(id);
+    const teams = league.teams;
+    const index = teams.findIndex(team => team.id === teamId);
+    teams[index].name = updatedTeam.name;
+    teams[index].position = updatedTeam.position;
+    teams[index].manager = updatedTeam.manager;
+  }
 };
 
 module.exports = leagueStore;

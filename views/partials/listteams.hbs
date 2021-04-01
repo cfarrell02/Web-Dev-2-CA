@@ -15,29 +15,33 @@
     <tr class="fields">
       <td class="field">
         <span class="ui input">
-         <input type="text" name="position" autofocus required title = "Please include a valid Title" placeholder="Title" value = "{{position}}">
+         <input type="text" name="position" autofocus required title = "Please include a valid Position" placeholder="Position" value = "{{position}}">
         </span>
       </td>
       <td class="field">
         <span class="ui input">
-          <input type="text" name="name" required title = "Please include a valid Artist" placeholder="Artist" value = "{{name}}">
+          <input type="text" name="name" required title = "Please include a valid Name" placeholder="Name" value = "{{name}}">
         </span>
       </td>
       <td class="field">
         <span class="ui input">
-          <input type="text" name="manager" autofocus required title = "Please include a valid Genre" placeholder="Genre" value = "{{manager}}">         
+          <input type="text" name="manager" autofocus required title = "Please include a valid Manager" placeholder="Manager" value = "{{manager}}">         
         </span>
       </td>
       <td class="field">
-        {{europeanleague}}
+        <img
+                class="ui centered small image"
+                src=" {{europeanleague}}"
+              />
       </td>
       <td>
-      {{crest}}
+      <img
+                class="ui centered small image"
+                src="{{crest}}"
+              />
       </td>
       <td class="center aligned">
         <button class="ui submit icon button"><i class="icon pencil alternate"></i></button>
-      </td>
-      <td class="center aligned">
         <a href="/league/{{../league.id}}/deleteteam/{{id}}" class="ui icon button delteam">
           <i class="icon trash"></i>
         </a>
