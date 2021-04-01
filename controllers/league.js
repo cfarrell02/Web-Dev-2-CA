@@ -36,6 +36,19 @@ const league = {
     leagueStore.addTeam(leagueId, newTeam);
     response.redirect('/league/' + leagueId);
   },
+  updateTeam(request, response) {
+    const playlistId = request.params.id;
+    const teamId = request.params.teamid;
+    logger.debug("updating team " + teamId);
+    const updatedteam = {
+      title: request.body.title,
+      artist: request.body.artist,
+      genre: request.body.genre,
+      duration: request.body.duration
+    };
+    playlistStore.editteam(playlistId, teamId, updatedteam);
+    response.redirect('/playlist/' + playlistId);
+  },
 };
 
 module.exports = league;

@@ -21,6 +21,7 @@ router.get('/league/:id/deleteTeam/:teamid', league.deleteTeam);
 router.get('/dashboard/deleteleague/:id', dashboard.deleteLeague);
 router.post('/league/:id/addteam', league.addTeam);
 router.post('/dashboard/addleague', dashboard.addLeague);
+router.post('/league/:id/updateteam/:teamid', league.updateTeam);
 
 // export router module
 module.exports = router;
