@@ -7,14 +7,16 @@ const accounts = require ('./accounts.js');
 
 const league = {
   index(request, response) {
+    const loggedInUser = accounts.getCurrentUser(request);  
     const leagueId = request.params.id;
     logger.debug('League id = ' + leagueId);
+     if (loggedInUser) {
     const viewData = {
       title: 'Leagues',
       league: leagueStore.getLeague(leagueId),
     };
     response.render('league', viewData);
-  },
+  }else response.redirect('/')},
     deleteTeam(request, response) {
     const leagueId = request.params.id;
     const teamId = request.params.teamid;

@@ -10,9 +10,10 @@ const start = {
 
   // index method - responsible for creating and rendering the view
   index(request, response) {
-    
+     const loggedInUser = accounts.getCurrentUser(request);
+    logger.info('start rendering');
     // app statistics calculations
-
+ if(loggedInUser){
 const leagues = leagueStore.getAllLeagues();
 
 let numLeagues = leagues.length;
@@ -35,7 +36,7 @@ for (let item of leagues) {
 
     // render the start view and pass through the data
     response.render('start', viewData);
-  },
+  }else response.redirect('/')},
 };
 
 // export the start module
