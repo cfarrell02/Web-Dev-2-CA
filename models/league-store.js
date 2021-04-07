@@ -15,6 +15,9 @@ const leagueStore = {
   getLeague(id) {
     return this.store.findOneBy(this.collection, { id: id });
   },
+  getUserLeagues(userid){
+    return this.store.findBy(this.collection, { userid: userid});
+  },
    addLeague(league) {
     this.store.add(this.collection, league);
   }, 

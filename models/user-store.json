@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "firstName": "cian",
+      "lastName": "farrell",
+      "email": "cianfarrell@developer.com",
+      "password": "secret",
+      "id": "1"
+    },
+    {
+      "firstName": "test",
+      "lastName": "account",
+      "email": "test@account.com",
+      "password": "secret",
+      "id": "2"
+    }
+  ]
+}

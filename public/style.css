@@ -6,7 +6,13 @@ body {
     background-image: repeating-linear-gradient(to right,lightgray, #262626);
 
 }
-
+.name{
+  padding-top:20px;
+  padding-right:5px;
+  line-height:20px;
+  font-weight:bold;
+  text-transform:capitalize;
+}
 h1 {
   font-style: italic;
   color: #4d54ff;
