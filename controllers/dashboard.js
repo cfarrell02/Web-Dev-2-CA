@@ -15,7 +15,7 @@ const dashboard = {
     const loggedInUser = accounts.getCurrentUser(request);
     if (loggedInUser) {
     const viewData = {
-      title: 'league Dashboard',
+      title: 'League Dashboard',
       leagues: leagueStore.getUserLeagues(loggedInUser.id),
       fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
     };
