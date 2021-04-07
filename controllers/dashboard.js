@@ -4,25 +4,25 @@
 const logger = require('../utils/logger');
 const leagueStore = require('../models/league-store.js');
 const uuid = require('uuid');
+const accounts = require ('./accounts.js');
 
 // create dashboard object
 const dashboard = {
   
   // index method - responsible for creating and rendering the view
-  index(request, response) {
-    
-    // display confirmation message in log
+    index(request, response) {
     logger.info('dashboard rendering');
-    
-    // create view data object (contains data to be sent to the view e.g. page title)
+    const loggedInUser = accounts.getCurrentUser(request);
+    if (loggedInUser) {
     const viewData = {
-      title: 'League App Dashboard',
-      leagues: leagueStore.getAllLeagues(),
+      title: 'league Dashboard',
+      leagues: leagueStore.getUserLeagues(loggedInUser.id),
+      fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
     };
-    
-    // render the dashboard view and pass through the data
-    logger.info('about to render', viewData.leagues);
+    logger.info('about to render' + viewData.leagues);
     response.render('dashboard', viewData);
+    }
+    else response.redirect('/');
   },
   
   deleteLeague(request, response) {
@@ -33,8 +33,10 @@ const dashboard = {
   },
   
     addLeague(request, response) {
+    const loggedInUser = accounts.getCurrentUser(request);
     const newLeague = {
       id: uuid(),
+      userid: loggedInUser.id,
       name: request.body.name,
       country:request.body.country,
       continent:request.body.continent,

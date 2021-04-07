@@ -2,6 +2,7 @@
 
 // import all required modules
 const logger = require('../utils/logger');
+const accounts = require ('./accounts.js');
 
 const developerStore = require('../models/developer-store.js');
 
@@ -9,19 +10,18 @@ const developerStore = require('../models/developer-store.js');
 const about = {
 
   // index method - responsible for creating and rendering the view
-  index(request, response) {
-
-    // display confirmation message in log
-    logger.info('dashboard rendering');
-
-    // create view data object (contains data to be sent to the view e.g. page title)
-    const viewData = {
-      title: 'League App About',
-      developers: developerStore.getAllDevelopers()
-    };
-    logger.info('about to render', viewData.developers);
-    // render the dashboard view and pass through the data
-    response.render('about', viewData);
+    index(request, response) {
+    const loggedInUser = accounts.getCurrentUser(request);
+    logger.info('about rendering');
+    if (loggedInUser) {
+      const viewData = {
+        title: 'About the League App',
+        developers: developerStore.getAllDevelopers(),
+        fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
+      };
+      response.render('about', viewData);
+    }
+    else response.redirect('/');    
   },
 };
 

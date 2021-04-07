@@ -1,5 +1,22 @@
 {
   "leagueCollection": [
-    
+    {
+      "id": "3d258eba-5c18-4c9d-953d-f3b12d071492",
+      "userid":"1",
+      "name": "Premier League",
+      "country": "England",
+      "continent": "Europe",
+      "logo": "https://i.pinimg.com/originals/ae/24/49/ae2449de25dbd1ca23da69d6dcc7c70d.jpg",
+      "teams": []
+    },
+    {
+      "id": "67afad55-66c7-41e2-9d50-e43a24c28d31",
+      "userid":"2c",
+      "name": "Test League",
+      "country": "Ireland",
+      "continent": "North America",
+      "logo": "https://creativereview.imgix.net/content/uploads/2016/02/PremierLeague.jpg",
+      "teams": []
+    }
   ]
 }
