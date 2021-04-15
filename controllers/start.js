@@ -32,6 +32,7 @@ for (let item of leagues) {
     title: 'Welcome to the League App!',
     totalPlaylists: numLeagues,
     totalSongs: numTeams,
+    fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName
 };
 
     // render the start view and pass through the data
