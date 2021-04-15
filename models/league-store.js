@@ -2,6 +2,17 @@
 
 const _ = require('lodash');
 const JsonStore = require('./json-store');
+const cloudinary = require('cloudinary');
+const logger = require('../utils/logger');
+
+try {
+  const env = require('../.data/.env.json');
+  cloudinary.config(env.cloudinary);
+}
+catch(e) {
+  logger.info('You must provide a Cloudinary credentials file - see README.md');
+  process.exit(1);
+}
 
 const leagueStore = {
 
@@ -18,9 +29,18 @@ const leagueStore = {
   getUserLeagues(userid){
     return this.store.findBy(this.collection, { userid: userid});
   },
-   addLeague(league) {
+  addLeague(league, response) {
+    league.picture.mv('tempimage', err => {
+        if (!err) {
+          cloudinary.uploader.upload('tempimage', result => {
+            console.log(result);
+            league.picture = result.url;
+            response();
+          });
+        }
+      });
     this.store.add(this.collection, league);
-  }, 
+  },
   
   removeLeague(id) {
   const league = this.getLeague(id);
