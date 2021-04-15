@@ -31,11 +31,11 @@ const leagueStore = {
     return this.store.findBy(this.collection, { userid: userid});
   },
   addLeague(league, response) {
-    league.picture.mv('tempimage', err => {
+    league.logo.mv('tempimage', err => {
         if (!err) {
           cloudinary.uploader.upload('tempimage', result => {
             console.log(result);
-            league.picture = result.url;
+            league.logo = result.url;
             response();
           });
         }

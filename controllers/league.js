@@ -33,11 +33,12 @@ const league = {
       position: request.body.position,
       manager: request.body.manager,
       europeanleague: request.body.europeanleague,
-      crest: request.body.crest,
-      
-    };
-    leagueStore.addTeam(leagueId, newTeam);
-    response.redirect('/league/' + leagueId);
+      crest: request.files.crest,
+      };
+    leagueStore.addTeam(leagueId, newTeam, function(){
+      response.redirect('/league/' + leagueId);
+      });
+    
   },
   updateTeam(request, response) {
     const leagueId = request.params.id;

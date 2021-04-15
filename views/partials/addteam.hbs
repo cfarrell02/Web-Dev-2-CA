@@ -4,7 +4,7 @@
 
 <div id="league">
 
-<form class="ui center aligned stacked segment form" action="/league/{{league.id}}/addteam" method="POST">
+<form class="ui center aligned stacked segment form" action="/league/{{league.id}}/addteam" method="POST" enctype="multipart/form-data">
   <div class="two fields">
     <div class="field">
       <label for="title" class ="lbl">Name</label>
@@ -25,8 +25,8 @@
     </div>
     <div class="field">
       <label for="image" class ="lbl">Crest</label>
-      <input type="text" name="crest" required title = "Please include a valid URL"
-      placeholder="Image URL"  >
+      <input type="file" name="crest" required 
+      placeholder="Crest"  >
     </div>
   </div>
   <div class="three fields">
