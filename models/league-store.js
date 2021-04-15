@@ -50,12 +50,28 @@ const leagueStore = {
   
 removeAllLeagues() {
     this.store.removeAll(this.collection);
+ 
   },
-
-  addTeam(id, team) {
-    const league = this.getLeague(id);
+  
+ addTeam(id, team) {
+ const league = this.getLeague(id);
     league.teams.push(team);
-  },
+ },
+ 
+//   addTeam(id, team) {
+//     const league = this.getLeague(id);
+
+//     league.teams.mv('tempimage', err => {
+//         if (!err) {
+//           cloudinary.uploader.upload('tempimage', result => {
+//             console.log(result);
+//             team.crest = result.url;
+//           });
+//         }
+//       });
+//     //this.store.add(this.collection, league);    
+//     league.teams.push(team);
+//   },
 
   removeTeam(id, teamId) {
     const league = this.getLeague(id);
