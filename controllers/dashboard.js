@@ -40,11 +40,12 @@ const dashboard = {
       name: request.body.name,
       country:request.body.country,
       continent:request.body.continent,
-      logo:request.body.logo,
+      logo:request.files.logo,
       teams: [],
     };
-    leagueStore.addLeague(newLeague);
+    leagueStore.addLeague(newLeague , function(){
     response.redirect('/dashboard');
+    })
   },
 };
 

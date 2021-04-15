@@ -5,6 +5,7 @@
 const logger = require('./utils/logger');
 const express = require("express");
 const exphbs = require('express-handlebars');
+const fileUpload = require('express-fileupload');
 const cookieParser = require('cookie-parser');
 
 // initialise project
@@ -26,6 +27,7 @@ app.set('view engine', '.hbs');
 // import routes file and use this for routing
 const routes = require('./routes');
 app.use('/', routes);
+app.use(fileUpload());
 
 // listen for requests :)
 const listener = app.listen(process.env.PORT, function() {

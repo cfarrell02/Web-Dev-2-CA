@@ -7,7 +7,7 @@
 
 <div id="league">
   
-<form class="ui center aligned stacked segment form" action="/dashboard/addleague" method="POST">
+<form class="ui center aligned stacked segment form" action="/dashboard/addleague" method="POST" enctype="multipart/form-data">
 
 
   <div class="two fields">
@@ -32,10 +32,10 @@
   <option value="Oceania">Oceania</option>
   </select>
     </div>
-    <div class="field">
-    <label for="logo" class ="lbl">League Logo</label>
-    <input placeholder="Logo URL" type="text" name="logo" autofocus required>
-  </div>
+        <div class="field">
+      <label>Image</label>
+      <input placeholder="Image" type="file" name="logo" required>
+    </div>
       </div>
   <button class="ui blue submit button">Add League</button>
 </form>

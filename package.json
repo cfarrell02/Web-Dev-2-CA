@@ -16,7 +16,9 @@
     "express": "^4.17.1",
     "winston": "^3.2.1",
     "express-handlebars": "^3.1.0",
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "express-fileupload": "^1.2.1",
+   "cloudinary": "^1.25.1"
   },
   "engines": {
     "node": "10.x"
