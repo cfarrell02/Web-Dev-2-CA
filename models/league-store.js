@@ -5,6 +5,7 @@ const JsonStore = require('./json-store');
 const cloudinary = require('cloudinary');
 const logger = require('../utils/logger');
 
+
 try {
   const env = require('../.data/.env.json');
   cloudinary.config(env.cloudinary);
