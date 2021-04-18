@@ -118,6 +118,24 @@
       "country": "Ireland",
       "continent": "Europe",
       "logo": "http://res.cloudinary.com/dqhx4zitt/image/upload/v1618761715/xros2iwh7bttryhlmdu2.jpg",
+      "teams": [
+        {
+          "id": "c0f5d3f7-7e50-499d-a413-ab76fe81c051",
+          "name": "dwa",
+          "position": "33",
+          "manager": "awd",
+          "europeanleague": "https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Europa_League.svg/1200px-Europa_League.svg.png",
+          "crest": "http://res.cloudinary.com/dqhx4zitt/image/upload/v1618766489/ac1c3gpkxjar2vgsfdjg.png"
+        }
+      ]
+    },
+    {
+      "id": "8978a86f-46a7-4368-b7ee-2c5d4c49f3ec",
+      "userid": "1",
+      "name": "Hello",
+      "country": "Ireland",
+      "continent": "Europe",
+      "logo": "http://res.cloudinary.com/dqhx4zitt/image/upload/v1618766465/ze1pggcz1qlxexbwwoci.png",
       "teams": []
     }
   ]
