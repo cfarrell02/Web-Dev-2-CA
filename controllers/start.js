@@ -14,15 +14,17 @@ const start = {
     logger.info('start rendering');
     // app statistics calculations
  if(loggedInUser){
-const leagues = leagueStore.getAllLeagues();
+  const leagues = leagueStore.getAllLeagues();
 
-let numLeagues = leagues.length;
+  let numLeagues = leagues.length;
 
-let numTeams = 0;
+  let numTeams = 0;
 
-for (let item of leagues) {
+  for (let item of leagues) {
     numTeams += item.teams.length;
-}
+  }
+
+ let averageNumTeams = numTeams/(users.length);
 
     // display confirmation message in log
     logger.info('start rendering');
@@ -32,6 +34,7 @@ for (let item of leagues) {
     title: 'Welcome to the League App!',
     totalLeagues: numLeagues,
     totalTeams: numTeams,
+    averageTeams: averageNumTeams,
     fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName
 };
 
