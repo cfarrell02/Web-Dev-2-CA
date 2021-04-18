@@ -42,6 +42,12 @@ const start = {
      userMostItems = user;
    }
  }
+   let userLeastItems = users[0];
+ for(let user of users){
+   if(teamsPerUser(user)<teamsPerUser(userLeastItems)){
+     userLeastItems = user;
+   }
+ }
 
     // display confirmation message in log
     logger.info('start rendering');
@@ -53,6 +59,7 @@ const start = {
     totalTeams: numTeams,
     averageTeams: averageNumTeams,
     userMostItems: userMostItems.firstName + " "+userMostItems.lastName,
+    userLeastItems: userLeastItems.firstName + " "+userLeastItems.lastName,
     fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName
 };
 

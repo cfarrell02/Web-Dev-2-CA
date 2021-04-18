@@ -9,6 +9,9 @@ const accounts = require ('./accounts.js');
 // create dashboard object
 const dashboard = {
   
+  // app statistics calculations
+  
+  
   // index method - responsible for creating and rendering the view
     index(request, response) {
     logger.info('dashboard rendering');
