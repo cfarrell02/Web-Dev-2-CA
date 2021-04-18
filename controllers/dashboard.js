@@ -18,14 +18,22 @@ logger.info('dashboard rendering');
     if (loggedInUser) {
       
              // app statistics calculations
-  let numLeagues = leagueStore.getUserLeagues(loggedInUser.id).length
+      const userLeagues = leagueStore.getUserLeagues(loggedInUser.id)
+  let numLeagues = userLeagues.length
   let numTeams = 0;
 
-    for (let item of leagueStore.getUserLeagues(loggedInUser.id)) {
+    for (let item of userLeagues(loggedInUser.id)) {
     numTeams += item.teams.length;
   }
-  let averageTeams = parseInt(numTeams/numLeagues);
-  
+
+  let averageTeams = (numTeams/numLeagues).toFixed(1); // https://www.w3schools.com/jsref/jsref_tofixed.asp
+
+       let leagueMostItems = [0];
+ for(let user of users){
+   if(teamsPerUser(user)>teamsPerUser(userMostItems)){
+     userMostItems = user;
+   }
+ }
   
     const viewData = {
       title: 'League Dashboard',

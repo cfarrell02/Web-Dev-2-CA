@@ -34,7 +34,7 @@ const start = {
     return numUserTeams
   }
 
- let averageNumTeams = (numTeams/(users.length)).toFixed(2); //https://www.w3schools.com/jsref/jsref_tofixed.asp
+ let averageNumTeams = (numTeams/(users.length)).toFixed(1); 
 
  
  let userMostItems = users[0];
