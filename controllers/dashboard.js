@@ -34,7 +34,7 @@ logger.info('dashboard rendering');
      leagueMostItems = league;
    }
  }
-            let leagueLeastItems = userLeagues[0];
+    let leagueLeastItems = userLeagues[0];
  for(let league of userLeagues){
    if(league.teams.length<leagueLeastItems.teams.length){
      leagueLeastItems = league;

@@ -23,6 +23,22 @@
           "manager": "awdaw",
           "europeanleague": "https://upload.wikimedia.org/wikipedia/en/thumb/b/bf/UEFA_Champions_League_logo_2.svg/1200px-UEFA_Champions_League_logo_2.svg.png",
           "crest": "http://res.cloudinary.com/dqhx4zitt/image/upload/v1618759074/bfw98utt4fdutfw697jq.webp"
+        },
+        {
+          "id": "f9dc9635-118c-46f9-9133-7bc5df899e38",
+          "name": "awd",
+          "position": "22",
+          "manager": "wada",
+          "europeanleague": "https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Europa_League.svg/1200px-Europa_League.svg.png",
+          "crest": "http://res.cloudinary.com/dqhx4zitt/image/upload/v1618765508/q1wsnxacvskcwkgji17e.png"
+        },
+        {
+          "id": "50bf0ba0-7943-4359-9eb6-61b37b1e2df2",
+          "name": "2",
+          "position": "23",
+          "manager": "awd",
+          "europeanleague": "https://upload.wikimedia.org/wikipedia/en/thumb/b/bf/UEFA_Champions_League_logo_2.svg/1200px-UEFA_Champions_League_logo_2.svg.png",
+          "crest": "http://res.cloudinary.com/dqhx4zitt/image/upload/v1618765519/t1rkaktt14hpjtsgvfrc.png"
         }
       ]
     },
