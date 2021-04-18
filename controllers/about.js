@@ -24,7 +24,28 @@ const about = {
     }
     else response.redirect('/');    
   },
-};
+    deleteComment(request, response) {
+    const leagueId = request.params.id;
+    logger.debug(`Deleting league ${leagueId}`);
+    leagueStore.removeComment(leagueId);
+    response.redirect("/dashboard");
+  },
+
+  addComment(request, response) {
+    const loggedInUser = accounts.getCurrentUser(request);
+    const newComment = {
+      id: uuid(),
+      userid: loggedInUser.id,
+      name: request.body.name,
+      country: request.body.country,
+      continent: request.body.continent,
+      logo: request.files.logo,
+      teams: []
+    };
+    leagueStore.addComment(newComment, function() {
+      response.redirect("/dashboard");
+    });
+}};
 
 // export the dashboard module
 module.exports = about;
