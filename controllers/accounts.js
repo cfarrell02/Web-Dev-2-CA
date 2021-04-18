@@ -41,8 +41,8 @@ const accounts = {
       response.redirect("/login");
     });
     logger.info('registering' + user.email);
-   //response.coookie('league', user.email);
-    logger.info('logging in' + user.email);
+   //response.coookie('playlist', user.email);
+  //  logger.info('logging in' + user.email);
     
   },
 //authenticate function to check user credentials and either render the login page again or the start page.
