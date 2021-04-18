@@ -28,15 +28,15 @@ const start = {
   
   function teamsPerUser(user){
     let numUserTeams = 0;
-    for(let item of user.leagues){
+    for(let item of leagueStore.getUserLeagues(user.id)){
       numUserTeams += item.teams.length
     }
     return numUserTeams
   }
    
- let averageNumTeams = parseInt(numTeams/(users.length))
+ let averageNumTeams = parseInt(numTeams/(users.length));
  
- let userMostItems = users[0]
+ let userMostItems = users[0];
  for(let user of users){
    if(teamsPerUser(user)>teamsPerUser(userMostItems)){
      userMostItems = user;
@@ -52,7 +52,7 @@ const start = {
     totalLeagues: numLeagues,
     totalTeams: numTeams,
     averageTeams: averageNumTeams,
-    userMostItems: userMostItems,
+    userMostItems: userMostItems.firstName + " "+userMostItems.lastName,
     fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName
 };
 
