@@ -3,10 +3,9 @@
 
 
 
-
   <div class="card">
     <div class="image">
-      <img src="{{logo}}">
+      <img class="ui medium image" src="{{logo}}">
     </div>
     <div class="content">
       <div class="header">{{name}}</div>
@@ -19,6 +18,11 @@
       </div>
     </div>
     <div class="extra content">
-      
+      <a href="/league/{{id}}" class="ui icon button">
+      <i class="icon folder open"></i>
+    </a>
+    <a href="/dashboard/deleteleague/{{id}}" class="ui icon button">
+      <i class="icon trash"></i>
+      </a>
     </div>
  {{/each}}
