@@ -1,22 +1,22 @@
 {
   "users": [
     {
-      "firstName": "cian",
-      "lastName": "farrell",
+      "firstName": "Cian",
+      "lastName": "Farrell",
       "email": "cianfarrell@developer.com",
       "password": "secret",
       "id": "1"
     },
     {
-      "firstName": "test",
-      "lastName": "account",
+      "firstName": "Test",
+      "lastName": "Account",
       "email": "test@account.com",
       "password": "secret",
       "id": "2"
     },
     {
-      "firstName": "Conor",
-      "lastName": "Gleeson",
+      "firstName": "Guy",
+      "lastName": "Incognito",
       "email": "conor@gleeson.com",
       "password": "123",
       "id": "12778fec-1e6a-4a65-8d26-4c014568136c"

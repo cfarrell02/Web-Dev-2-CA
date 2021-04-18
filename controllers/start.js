@@ -17,7 +17,7 @@ const start = {
  if(loggedInUser){
   const leagues = leagueStore.getAllLeagues();
   const users = userstore.getAllUsers();
-
+  let numUsers = users.length;
   let numLeagues = leagues.length;
 
   let numTeams = 0;
@@ -58,6 +58,7 @@ const start = {
     title: 'Welcome to the League App!',
     totalLeagues: numLeagues,
     totalTeams: numTeams,
+    totalUsers: numLeagues,
     averageTeams: averageNumTeams,
     userMostItems: userMostItems.firstName + " "+userMostItems.lastName,
     userLeastItems: userLeastItems.firstName + " "+userLeastItems.lastName,
