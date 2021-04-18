@@ -34,7 +34,7 @@ const start = {
     return numUserTeams
   }
 
- let averageNumTeams = (numTeams/(users.length)).toFixed(1); 
+ let averageNumTeams = (numTeams/numUsers).toFixed(1); 
 
  
  let userMostItems = users[0];
@@ -58,7 +58,7 @@ const start = {
     title: 'Welcome to the League App!',
     totalLeagues: numLeagues,
     totalTeams: numTeams,
-    totalUsers: numLeagues,
+    totalUsers: numUsers,
     averageTeams: averageNumTeams,
     userMostItems: userMostItems.firstName + " "+userMostItems.lastName,
     userLeastItems: userLeastItems.firstName + " "+userLeastItems.lastName,
