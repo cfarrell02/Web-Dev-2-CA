@@ -5,6 +5,7 @@ const logger = require('../utils/logger');
 const leagueStore = require('../models/league-store.js');
 const accounts = require ('./accounts.js');
 const userstore = require('../models/user-store');
+const script = require('../models/user-store');
 
 // create start object
 const start = {
