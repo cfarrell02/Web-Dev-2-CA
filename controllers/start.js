@@ -16,6 +16,7 @@ const start = {
     // app statistics calculations
  if(loggedInUser){
   const leagues = leagueStore.getAllLeagues();
+  const users = userstore.getAllUsers();
 
   let numLeagues = leagues.length;
 
@@ -26,7 +27,7 @@ const start = {
   }
    
 
- let averageNumTeams = numTeams/(userstore.getAllUsers.length);
+ let averageNumTeams = numTeams/(users.length);
 
     // display confirmation message in log
     logger.info('start rendering');
