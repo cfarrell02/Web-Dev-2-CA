@@ -5,14 +5,16 @@
       "lastName": "Farrell",
       "email": "cianfarrell@developer.com",
       "password": "secret",
-      "id": "1"
+      "id": "1",
+      "picture": "https://res.cloudinary.com/dqhx4zitt/image/upload/v1618749653/woqjpjx6jggetffcjgh7.jpg"
     },
     {
       "firstName": "Test",
       "lastName": "Account",
       "email": "test@account.com",
       "password": "secret",
-      "id": "2"
+      "id": "2",
+      "picture": "https://res.cloudinary.com/dqhx4zitt/image/upload/v1618495132/cy0axcxog6onrgcygowv.png"
     },
     {
       "firstName": "Alan",
