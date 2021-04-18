@@ -4,6 +4,7 @@
 const logger = require('../utils/logger');
 const leagueStore = require('../models/league-store.js');
 const accounts = require ('./accounts.js');
+const userstore = require('../models/user-store');
 
 // create start object
 const start = {
@@ -23,8 +24,9 @@ const start = {
   for (let item of leagues) {
     numTeams += item.teams.length;
   }
+   
 
- let averageNumTeams = numTeams/(users.length);
+ let averageNumTeams = numTeams/(userstore.getAllUsers.length);
 
     // display confirmation message in log
     logger.info('start rendering');
