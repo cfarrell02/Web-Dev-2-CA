@@ -3,6 +3,7 @@
 // import all required modules
 const logger = require('../utils/logger');
 const accounts = require ('./accounts.js');
+const commentStore = require("../models/comment-store.js")
 
 const developerStore = require('../models/developer-store.js');
 
@@ -25,9 +26,9 @@ const about = {
     else response.redirect('/');    
   },
     deleteComment(request, response) {
-    const leagueId = request.params.id;
-    logger.debug(`Deleting league ${leagueId}`);
-    leagueStore.removeComment(leagueId);
+    const commentId = request.params.id;
+    logger.debug(`Deleting comment ${commentId}`);
+    commentStore.removeComment(commentId);
     response.redirect("/dashboard");
   },
 
@@ -42,7 +43,7 @@ const about = {
       logo: request.files.logo,
       teams: []
     };
-    leagueStore.addComment(newComment, function() {
+    commentStore.addComment(newComment, function() {
       response.redirect("/dashboard");
     });
 }};
