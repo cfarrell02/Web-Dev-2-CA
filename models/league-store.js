@@ -58,18 +58,18 @@ removeAllLeagues() {
  //    league.teams.push(team);
  // },
  
-  addTeam(id, team) {
+  addTeam(id, team,response) {
     
     team.crest.mv('temppicture', err => {
        if (!err) {
           cloudinary.uploader.upload('temppicture', result => {
             console.log(result);
             team.crest = result.url;
+            response();
           });
        }
       });
-    const league = this.getLeague(id);
-    //this.store.add(this.collection, league);    
+    const league = this.getLeague(id);   
     league.teams.push(team);
   },
 

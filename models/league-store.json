@@ -25,24 +25,7 @@
       "country": "wada",
       "continent": "Europe",
       "logo": "http://res.cloudinary.com/dqhx4zitt/image/upload/v1618515748/qfnwnvlbpqhh9x1jwudd.png",
-      "teams": [
-        {
-          "id": "5ca36888-54fb-4fa4-bcde-ed668214049b",
-          "name": "ewda",
-          "position": "33",
-          "manager": "awd",
-          "europeanleague": "https://i.imgur.com/EwEBIry.png",
-          "crest": "http://res.cloudinary.com/dqhx4zitt/image/upload/v1618749754/oimdcuqewuvrgn0psdmb.jpg"
-        },
-        {
-          "id": "0199140d-2dbc-4fc7-80ad-7a8cd08fbe20",
-          "name": "dawd",
-          "position": "22",
-          "manager": "awd",
-          "europeanleague": "https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Europa_League.svg/1200px-Europa_League.svg.png",
-          "crest": "http://res.cloudinary.com/dqhx4zitt/image/upload/v1618750034/vfl39nwqo5wyhzdht6vf.jpg"
-        }
-      ]
+      "teams": []
     }
   ]
 }
