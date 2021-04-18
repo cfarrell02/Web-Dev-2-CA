@@ -24,6 +24,7 @@ logger.info('dashboard rendering');
     for (let item of leagueStore.getUserLeagues(loggedInUser.id)) {
     numTeams += item.teams.length;
   }
+  let averageTeams = parseInt(numTeams/numLeagues);
   
   
     const viewData = {
@@ -31,6 +32,7 @@ logger.info('dashboard rendering');
       leagues: leagueStore.getUserLeagues(loggedInUser.id),
       totalLeagues: numLeagues,
       totalTeams:numTeams,
+      averageTeams:averageTeams,
       fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
     };
     logger.info('about to render' + viewData.leagues);
