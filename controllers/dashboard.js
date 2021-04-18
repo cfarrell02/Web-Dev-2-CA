@@ -50,6 +50,7 @@ logger.info('dashboard rendering');
       leagueMostItems: leagueMostItems.name,
       leagueLeastItems: leagueLeastItems.name,
       fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
+      picture: loggedInUser.picture
     };
     logger.info('about to render' + viewData.leagues);
     response.render('dashboard', viewData);

@@ -14,6 +14,7 @@ const league = {
     const viewData = {
       title: 'Leagues',
       league: leagueStore.getLeague(leagueId),
+      picture: loggedInUser.picture
     };
     response.render('league', viewData);
   }else response.redirect('/')},

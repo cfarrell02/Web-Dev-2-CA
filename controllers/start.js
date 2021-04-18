@@ -62,7 +62,8 @@ const start = {
     averageTeams: averageNumTeams,
     userMostItems: userMostItems.firstName + " "+userMostItems.lastName,
     userLeastItems: userLeastItems.firstName + " "+userLeastItems.lastName,
-    fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName
+    fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
+      picture: loggedInUser.picture
 };
 
     // render the start view and pass through the data
