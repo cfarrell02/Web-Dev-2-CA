@@ -59,16 +59,16 @@ removeAllLeagues() {
  // },
  
   addTeam(id, team) {
-    const league = this.getLeague(id);
-
-    team.crest.mv('tempimage', err => {
-        if (!err) {
-          cloudinary.uploader.upload('tempimage', result => {
+    
+    team.crest.mv('temppicture', err => {
+       if (!err) {
+          cloudinary.uploader.upload('temppicture', result => {
             console.log(result);
             team.crest = result.url;
           });
-        }
+       }
       });
+    const league = this.getLeague(id);
     //this.store.add(this.collection, league);    
     league.teams.push(team);
   },

@@ -30,8 +30,8 @@ for (let item of leagues) {
     // create view data object (contains data to be sent to the view e.g. page title)
     const viewData = {
     title: 'Welcome to the League App!',
-    totalPlaylists: numLeagues,
-    totalSongs: numTeams,
+    totalLeagues: numLeagues,
+    totalTeams: numTeams,
     fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName
 };
 
