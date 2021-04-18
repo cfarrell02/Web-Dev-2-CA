@@ -13,6 +13,14 @@
       "email": "test@account.com",
       "password": "secret",
       "id": "2"
+    },
+    {
+      "firstName": "Alan",
+      "lastName": "Davy",
+      "email": "alan@davy.com",
+      "password": "AlanDavy1",
+      "id": "d2c45ab9-59d9-4b53-bb39-1481c268c4c7",
+      "picture": "http://res.cloudinary.com/dqhx4zitt/image/upload/v1618773857/q0cvrkjra9tdg2awx8uw.jpg"
     }
-    ]
+  ]
 }
