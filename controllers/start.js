@@ -4,8 +4,8 @@
 const logger = require('../utils/logger');
 const leagueStore = require('../models/league-store.js');
 const accounts = require ('./accounts.js');
-const userstore = require('../models/user-store');
-const script = require('../models/user-store');
+const userstore = require('../models/user-store.js');
+const script = require('../public/script.js');
 
 // create start object
 const start = {
@@ -28,7 +28,7 @@ const start = {
   }
    
 
- let averageNumTeams = numTeams/(users.length);
+ let averageNumTeams = script.truncateString(numTeams/(users.length),3);
 
     // display confirmation message in log
     logger.info('start rendering');
