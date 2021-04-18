@@ -1,29 +1,24 @@
 
   {{#each leagues}}
 
-  <section class="ui center aligned middle aligned eight wide column">
-<div class="ui segment">
 
-    <div class="ui grid">
-    <div class="ui center aligned sixteen wide column">
-    <h2 class="bold">
-      {{name}}
-    </h2>
-    <p > <span class = "bold"> Country: </span>{{country}} <br>
-      <span class = "bold"> Continent: </span>{{continent}}<br>
-    <a href="/league/{{id}}" class="ui icon button">
-      <i class="icon folder open"></i>
-    </a>
-    <a href="/dashboard/deleteleague/{{id}}" class="ui icon button">
-      <i class="icon trash"></i>
-      </a></p>
-      <br>
-      <img
-      class="ui centered medium image"
-      src={{logo}}
-      />
-                  </div>                       
+
+
+  <div class="card">
+    <div class="image">
+      <img src="{{logo}}">
     </div>
-       </div>
-  </section>
-{{/each}}
+    <div class="content">
+      <div class="header">{{name}}</div>
+      <div class="meta">
+        <a>Friends</a>
+      </div>
+      <div class="description">
+        <span class = "bold"> Country: </span>{{country}} <br>
+      <span class = "bold"> Continent: </span>{{continent}}<br>
+      </div>
+    </div>
+    <div class="extra content">
+      
+    </div>
+ {{/each}}
