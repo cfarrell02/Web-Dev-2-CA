@@ -22,16 +22,22 @@ logger.info('dashboard rendering');
   let numLeagues = userLeagues.length
   let numTeams = 0;
 
-    for (let item of userLeagues(loggedInUser.id)) {
+    for (let item of userLeagues) {
     numTeams += item.teams.length;
   }
 
   let averageTeams = (numTeams/numLeagues).toFixed(1); // https://www.w3schools.com/jsref/jsref_tofixed.asp
 
-       let leagueMostItems = [0];
- for(let user of users){
-   if(teamsPerUser(user)>teamsPerUser(userMostItems)){
-     userMostItems = user;
+       let leagueMostItems = userLeagues[0];
+ for(let league of userLeagues){
+   if(league.teams.length>leagueMostItems.teams.length){
+     leagueMostItems = league;
+   }
+ }
+            let leagueLeastItems = userLeagues[0];
+ for(let league of userLeagues){
+   if(league.teams.length<leagueLeastItems.teams.length){
+     leagueMostItems = league;
    }
  }
   
@@ -41,6 +47,7 @@ logger.info('dashboard rendering');
       totalLeagues: numLeagues,
       totalTeams:numTeams,
       averageTeams:averageTeams,
+      leagueMostItems: leagueMostItems.name,
       fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
     };
     logger.info('about to render' + viewData.leagues);
