@@ -4,6 +4,28 @@
    {{> menu id="dashboard"}}
 
 <section class="ui segment">
+  <div class="ui center aligned segment">
+<h3 class="ui center aligned header">Hello {{fullname}}! Here are some stats about your leagues!</h3>
+<div class="ui three statistics">
+    <div class="ui medium statistic">
+        <div class="value">
+            {{totalLeagues}}
+        </div>
+        <div class="label">
+            Leagues
+        </div>
+    </div>
+  <div class="ui medium statistic">
+        <div class="value">
+            {{totalTeams}}
+        </div>
+        <div class="label">
+            Teams
+        </div>
+    </div>
+         </div>
+
+  </div>
  {{> addleague}}
   <div class="ui grid">
   {{> listleagues}}
