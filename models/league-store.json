@@ -94,6 +94,15 @@
           "crest": "http://res.cloudinary.com/dqhx4zitt/image/upload/v1618756251/ire3iwtq413dd00ysite.webp"
         }
       ]
+    },
+    {
+      "id": "afa75385-dff6-4dc2-955d-a95c515ec6f4",
+      "userid": "1",
+      "name": "Bruh",
+      "country": "Ireland",
+      "continent": "Europe",
+      "logo": "http://res.cloudinary.com/dqhx4zitt/image/upload/v1618761715/xros2iwh7bttryhlmdu2.jpg",
+      "teams": []
     }
   ]
 }

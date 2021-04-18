@@ -37,7 +37,7 @@ logger.info('dashboard rendering');
             let leagueLeastItems = userLeagues[0];
  for(let league of userLeagues){
    if(league.teams.length<leagueLeastItems.teams.length){
-     leagueMostItems = league;
+     leagueLeastItems = league;
    }
  }
   
@@ -48,6 +48,7 @@ logger.info('dashboard rendering');
       totalTeams:numTeams,
       averageTeams:averageTeams,
       leagueMostItems: leagueMostItems.name,
+      leagueLeastItems: leagueLeastItems.name,
       fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
     };
     logger.info('about to render' + viewData.leagues);
