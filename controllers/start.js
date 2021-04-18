@@ -26,8 +26,9 @@ const start = {
     numTeams += item.teams.length;
   }
    
-
- let averageNumTeams = (numTeams/(users.length)).substring(0,4);
+ let averageNumTeams = parseInt(numTeams/(users.length))
+ 
+ let userMostItems = userstore.get
 
     // display confirmation message in log
     logger.info('start rendering');
