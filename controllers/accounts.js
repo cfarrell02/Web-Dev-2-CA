@@ -23,7 +23,7 @@ const accounts = {
   },
   //logout function to render logout page
   logout(request, response) {
-    response.cookie('playlist', '');
+    response.cookie('league', '');
     response.redirect('/');
   },
  //signup function to render signup page
@@ -45,7 +45,7 @@ const accounts = {
   authenticate(request, response) {
     const user = userstore.getUserByEmail(request.body.email);
     if (user && user.password === request.body.password) {
-      response.cookie('playlist', user.email);
+      response.cookie('league', user.email);
       logger.info('logging in' + user.email);
       response.redirect('/start');
     } else {
@@ -54,7 +54,7 @@ const accounts = {
   },
  //utility function getCurrentUser to check who is currently logged in
   getCurrentUser (request) {
-    const userEmail = request.cookies.playlist;
+    const userEmail = request.cookies.league;
     return userstore.getUserByEmail(userEmail);
   }
 }
