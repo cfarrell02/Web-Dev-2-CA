@@ -21,7 +21,8 @@ const about = {
         title: 'About the League App',
         developers: developerStore.getAllDevelopers(),
         fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
-        picture: loggedInUser.picture
+        picture: loggedInUser.picture,
+        comments: commentStore.getAllComments
       };
       response.render('about', viewData);
     }

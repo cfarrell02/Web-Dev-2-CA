@@ -15,7 +15,7 @@ const accounts = {
 //login function to render login page
   login(request, response) {
     const viewData = {
-      title: 'Login to the Service',
+      title: 'Login to the Service'
     };
     response.render('login', viewData);
   },
