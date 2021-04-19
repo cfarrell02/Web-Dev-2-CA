@@ -40,7 +40,7 @@ app.engine(
         let monthName = months[month];
         let dayName = days[day];
         
-        return ${dayName}
+        return `${dayName} ${dateNum} ${Name}`
         
       }
     }
