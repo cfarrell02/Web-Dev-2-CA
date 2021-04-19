@@ -3,9 +3,11 @@
 // import all required modules
 const logger = require('../utils/logger');
 const accounts = require ('./accounts.js');
-const commentStore = require("../models/comment-store.js")
+const commentStore = require("../models/comment-store.js");
+const userstore = require('../models/user-store');
 
 const developerStore = require('../models/developer-store.js');
+const uuid = require('uuid');
 
 // create about object
 const about = {
@@ -36,12 +38,8 @@ const about = {
     const loggedInUser = accounts.getCurrentUser(request);
     const newComment = {
       id: uuid(),
-      userid: loggedInUser.id,
-      name: request.body.name,
-      country: request.body.country,
-      continent: request.body.continent,
-      logo: request.files.logo,
-      teams: []
+      username: userstore.geloggedInUser.id,
+      text:request.body.text
     };
     commentStore.addComment(newComment, function() {
       response.redirect("/dashboard");

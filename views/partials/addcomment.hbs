@@ -1,40 +1,11 @@
 
-  
-
-
-
-  
-<form class="ui center aligned stacked segment form" action="/dashboard/addcomment" method="POST" >
-
-
-  <div class="two fields">
-  <div class="field">
-    <label for="name" class ="lbl">League Name</label>
-    <input placeholder="Name" type="text" name="name" autofocus required>
-  </div>
-  <div class="field">
-    <label for="country" class ="lbl">Country</label>
-    <input placeholder="Country" type="text" name="country" autofocus required>
-  </div>
-    </div>
-  <div class="two fields">
+<form class="ui reply form" action="/about/addcomment" method="POST" >
     <div class="field">
-      <label for="continent" class ="lbl">Continent of the league</label>
-<select name="continent">
-  
-  <option value="Europe">Europe</option>
-  <option value="North America">North America</option>
-  <option value="South America">South America</option>
-  <option value="Asia">Asia</option>
-  <option value="Oceania">Oceania</option>
-  </select>
+      <textarea name="text" required></textarea>
     </div>
-        <div class="field">
-      <label>League Logo (1:1)</label>
-      <input placeholder="logo" type="file" name="logo" required>
+    <div class="ui blue labeled submit icon button">
+      <i class="icon edit"></i> Add Reply
     </div>
-      </div>
-  <button class="ui blue submit button">Add League</button>
-</form>
+  </form>
   
 </div>
