@@ -52,7 +52,7 @@ app.engine(
           return ``
         }
     }
-  })
+  }})
 );
 app.set("view engine", ".hbs");
 
