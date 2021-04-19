@@ -50,6 +50,11 @@ td .ui.small.image{
   height:10em;
   width: auto;
 }
+.ui.comments
+{
+    max-height: 100em;
+    overflow-y: scroll;
+}
 iframe{
   margin: 2em 0 0 0;
    border: 1em solid grey;

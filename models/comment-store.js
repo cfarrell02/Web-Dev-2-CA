@@ -34,6 +34,11 @@ removeAllComments() {
     this.store.removeAll(this.collection);
  
   },
+  updateComment(id, updatedTeam) {
+    const comments = this.getAllComments();
+    const index = comments.findIndex(comment => comment.id === id);
+    comments[index].text = updatedTeam.text;
+  }
   
 }
 
