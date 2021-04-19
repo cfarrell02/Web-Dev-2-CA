@@ -42,9 +42,8 @@ const about = {
       avatar:loggedInUser.picture,
       text:request.body.text
     };
-    commentStore.addComment(newComment, function() {
+    commentStore.addComment(newComment)
       response.redirect("/about");
-    });
 }};
 
 // export the about module
