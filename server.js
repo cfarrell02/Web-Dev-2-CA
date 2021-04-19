@@ -45,16 +45,11 @@ app.engine(
         return `${dayName}, ${dateNum} ${monthName}, ${year} at ${hour}:${minute}`
         
       },
-      if_eq: function(a, b, opts) {
-    if (a == b) {
-        return opts.fn(this);
-    } else {
-        return opts.inverse(this);
+      ifEquals: function(arg1, arg2, options) {
+    return (arg1 == arg2) ? options.fn(this) : options.inverse(this);
+      }
     }
-}
-    }
-  })
-);
+  }))
 
 app.set("view engine", ".hbs");
 
@@ -66,4 +61,3 @@ app.use("/", routes);
 const listener = app.listen(process.env.PORT || 4000, function() {
   logger.info("Your app is listening on port " + listener.address().port);
 });
-
