@@ -49,6 +49,7 @@ const dashboard = {
 
       const viewData = {
         title: "League Dashboard",
+        //leagues: leagueStore.getAllLeagues(),
         leagues: leagueStore.getUserLeagues(loggedInUser.id),
         totalLeagues: numLeagues,
         totalTeams: numTeams,
