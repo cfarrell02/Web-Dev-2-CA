@@ -11,8 +11,9 @@
       <div class="text">
         {{text}}
       </div>
-      {{if_eq userId loggedInUser}}
+
        <a href = "/about/deleteComment/{{id}}" class="reply">Delete</a>
+      <a href = "/about/editComment/{{id}}" class="reply">Edit</a>
     </div>
   </div>
 {{/each}}
