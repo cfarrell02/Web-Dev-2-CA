@@ -11,7 +11,7 @@
       <div class="text">
         {{text}}
       </div>
-
+{{#iff userId loggedInUser}}
        <a href = "/about/deleteComment/{{id}}" class="reply">Delete</a>
       <a onclick="showHideLeague()" class="reply">Edit</a>
       <form class = "ui fluid segment form" id="league" action="/about/updateComment/{{id}}" method="POST">
@@ -23,6 +23,7 @@
       </div>
          
       </form>
+      {{/iff}}
     </div>
   </div>
 {{/each}}
