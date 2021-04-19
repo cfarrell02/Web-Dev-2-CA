@@ -7,11 +7,12 @@ const logger = require('../utils/logger');
 
 const commentStore = {
 
- store: new JsonStore('./models/comment-store.json', { commentCollection: [] }),
+store: new JsonStore('./models/comment-store.json', {commentCollection: []}),
   collection: 'commentCollection',
 
   getAllComments() {
-    return this.store.findAll(this.collection);
+    return require('./comment-store.json').commentCollection
+    //return this.store.findAll(this.collection);
   },
 
   getComment(id) {
