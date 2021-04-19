@@ -8,6 +8,7 @@ const developerStore = {
   // function to get all of the developers
   getAllDevelopers() {
     return this.developers;
+    //return this.store.findAll(this.collection);
   },
 
 };

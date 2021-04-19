@@ -7,8 +7,8 @@ const logger = require('../utils/logger');
 
 const commentStore = {
 
-store: new JsonStore('./models/comment-store.json', {commentCollection: []}),
-  collection: 'commentCollection',
+store: new JsonStore('./models/comment-store.json', {comments: []}),
+  collection: 'comments',
 
   getAllComments() {
     //return require('./comment-store.json').commentCollection

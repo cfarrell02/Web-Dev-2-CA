@@ -1,41 +1,4 @@
 {
-  "commentCollection": [
-    {
-      "id": "eb7c5f82-9f98-47ac-8b5e-14918eaf7334",
-      "username": "Cian Farrell",
-      "avatar": "https://res.cloudinary.com/dqhx4zitt/image/upload/v1618749653/woqjpjx6jggetffcjgh7.jpg",
-      "text": "dawd"
-    },
-    {
-      "id": "6f24c5b5-12d5-441a-9168-ab067ae0adb5",
-      "username": "Cian Farrell",
-      "avatar": "https://res.cloudinary.com/dqhx4zitt/image/upload/v1618749653/woqjpjx6jggetffcjgh7.jpg",
-      "text": "Hello!\r\n"
-    },
-    {
-      "id": "a0764934-1005-4dfe-9f23-e1d8e4542925",
-      "username": "Cian Farrell",
-      "avatar": "https://res.cloudinary.com/dqhx4zitt/image/upload/v1618749653/woqjpjx6jggetffcjgh7.jpg",
-      "text": "helel"
-    },
-    {
-      "id": "0e915179-0700-4654-bc3c-03fa3def5519",
-      "username": "Alan Davy",
-      "avatar": "http://res.cloudinary.com/dqhx4zitt/image/upload/v1618773857/q0cvrkjra9tdg2awx8uw.jpg",
-      "text": "hdwaj"
-    },
-    {
-      "id": "ba6f35a4-3cd4-4365-9ee1-3913ef32674a",
-      "username": "Cian Farrell",
-      "avatar": "https://res.cloudinary.com/dqhx4zitt/image/upload/v1618749653/woqjpjx6jggetffcjgh7.jpg",
-      "text": "Test"
-    },
-    {
-      "id": "b7069f08-2343-4e35-8dd0-21b5f854d0f5",
-      "username": "Cian Farrell",
-      "avatar": "https://res.cloudinary.com/dqhx4zitt/image/upload/v1618749653/woqjpjx6jggetffcjgh7.jpg",
-      "text": "Testing"
-    }
-  ],
-  "users": []
+  "commentCollection": [],
+  "comments": []
 }
