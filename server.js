@@ -8,6 +8,7 @@ const exphbs = require("express-handlebars");
 const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
 const fileUpload = require("express-fileupload");
+const about = require("./controllers/about.js")
 
 // initialise project
 const app = express();
@@ -45,8 +46,9 @@ app.engine(
         return `${dayName}, ${dateNum} ${monthName}, ${year} at ${hour}:${minute}`
         
       },
-      ifEquals: function(arg1, arg2, options) {
-    return (arg1 == arg2) ? options.fn(this) : options.inverse(this);
+      ifEquals: function(arg1, options) {
+        
+    return (arg1 == about.loggedInUser.id) ? options.fn(this) : options.inverse(this);
       },
       renderPartial: function(partialName, options) {
     if (!partialName) {

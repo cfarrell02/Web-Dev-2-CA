@@ -1,4 +1,4 @@
- {{currentUserId}} 
+
 {{#each comments}}
    <div class="ui comment">
      <a class="ui avatar">
@@ -14,7 +14,7 @@
         <br>
         {{userId}}
       </div>
-{{#ifEquals currentUserId userId}}
+{{#ifEquals loggedInUser.id userId}}
        <a href = "/about/deleteComment/{{id}}" class="reply">Delete</a>
       <a onclick="showHideLeague()" class="reply">Edit</a>
       <form class = "ui fluid segment form" id="league" action="/about/updateComment/{{id}}" method="POST">
