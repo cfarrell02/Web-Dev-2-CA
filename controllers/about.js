@@ -30,7 +30,7 @@ const about = {
   },
     deleteComment(request, response) {
     const commentId = request.params.id;
-    logger.debug(`Deleting comment ${commentId}`);
+    logger.de bug(`Deleting comment ${commentId}`);
     commentStore.removeComment(commentId);
     response.redirect("/about");
   },

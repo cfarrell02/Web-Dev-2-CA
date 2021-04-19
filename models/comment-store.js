@@ -26,7 +26,7 @@ store: new JsonStore('./models/comment-store.json', {comments: []}),
   },
   
   removeComment(id) {
-  const comment = this.getComment(id);
+    const comment = this.getComment(id);
     this.store.remove(this.collection, comment);
 },
   
