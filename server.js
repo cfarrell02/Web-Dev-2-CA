@@ -34,13 +34,15 @@ app.engine(
         let dateNum = dateCreated.getDate();
         let month = dateCreated.getMonth();
         let year = dateCreated.getFullYear();
+        let hour = dateCreated.getHours();
+        let minute = dateCreated.getMinutes();
         
         let days = ["Sun","Mon","Tues","Wed","Thurs","Fri","Sat"]
         let months = ["Jan","Feb","March","April","May","June","July","Aug","Sept","Oct","Nov","Dec"]
         let monthName = months[month];
         let dayName = days[day];
         
-        return `${dayName}, ${dateNum} ${monthName}, ${year}`
+        return `${dayName}, ${dateNum} ${monthName}, ${year} at ${hour}:${minute}`
         
       }
     }
