@@ -11,8 +11,8 @@ store: new JsonStore('./models/comment-store.json', {commentCollection: []}),
   collection: 'commentCollection',
 
   getAllComments() {
-    return require('./comment-store.json').commentCollection
-    //return this.store.findAll(this.collection);
+    //return require('./comment-store.json').commentCollection
+    return this.store.findAll(this.collection);
   },
 
   getComment(id) {
