@@ -34,7 +34,7 @@ app.engine(
         let dateNum = dateCreated.getDate();
         let month = dateCreated.getMonth();
         let year = dateCreated.getFullYear();
-        let hour = dateCreated.getHours();
+        let hour = dateCreated.getHours() + 1;
         let minute = dateCreated.getMinutes();
         
         let days = ["Sun","Mon","Tues","Wed","Thurs","Fri","Sat"]
