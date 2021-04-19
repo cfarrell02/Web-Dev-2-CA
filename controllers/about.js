@@ -22,7 +22,7 @@ const about = {
         developers: developerStore.getAllDevelopers(),
         fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
         picture: loggedInUser.picture,
-        loggedInUser: loggedInUser.id,
+        currentUserId: loggedInUser.id,
         comments: commentStore.getAllComments(),
       };
       response.render('about', viewData);

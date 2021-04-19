@@ -9,9 +9,11 @@
         <span class="date">{{formatDate date}}</span>
       </div>
       <div class="text">
-        {{text}}
+        {{text}}<br>
+        {{currentUserId}} <br>
+        {{userId}}
       </div>
-{{#ifEquals userId loggedInUser}}
+{{#ifEquals currentUserId userId}}
        <a href = "/about/deleteComment/{{id}}" class="reply">Delete</a>
       <a onclick="showHideLeague()" class="reply">Edit</a>
       <form class = "ui fluid segment form" id="league" action="/about/updateComment/{{id}}" method="POST">
