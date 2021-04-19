@@ -11,8 +11,10 @@
       <div class="text">
         {{text}}
       </div>
-       {{/each}}
-      {{#if loggedInUser==userId}}
+       
+      {{#if (eq loggedInUser userId)}}
        <a href = "/about/deleteComment/{{id}}" class="reply">Delete</a>
+      {{/if}}
     </div>
   </div>
+{{/each}}

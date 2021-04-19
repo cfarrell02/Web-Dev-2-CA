@@ -44,6 +44,9 @@ app.engine(
         
         return `${dayName}, ${dateNum} ${monthName}, ${year} at ${hour}:${minute}`
         
+      },
+      sameUser: function(firstId, secondId){
+        return (firstId === secondId)
       }
     }
   })
