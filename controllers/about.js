@@ -38,7 +38,8 @@ const about = {
     const loggedInUser = accounts.getCurrentUser(request);
     const newComment = {
       id: uuid(),
-      username: userstore.geloggedInUser.id,
+      username: loggedInUser.firstName +" "+loggedInUser.lastName,
+      avatar:loggedInUser.picture,
       text:request.body.text
     };
     commentStore.addComment(newComment, function() {
