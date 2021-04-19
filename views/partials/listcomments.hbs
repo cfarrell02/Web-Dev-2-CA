@@ -12,8 +12,7 @@
         {{text}}
       </div>
        
-      {{#if (eq loggedInUser userId)}}
-       <a href = "/about/deleteComment/{{id}}" class="reply">Delete</a>
+       <a href = "/about/deleteComment/{{showDelete UserId, lid}}" class="reply">Delete</a>
       {{/if}}
     </div>
   </div>

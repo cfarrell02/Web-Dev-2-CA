@@ -45,9 +45,12 @@ app.engine(
         return `${dayName}, ${dateNum} ${monthName}, ${year} at ${hour}:${minute}`
         
       },
-      sameUser: function(firstId, secondId){
-        return (firstId === secondId)
-      }
+      showDelete: function(id1, id2, id3){
+        if(id1 === id2){
+          return `${id3}`
+        }else{
+          return ``
+        }
     }
   })
 );
