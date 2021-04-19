@@ -47,7 +47,19 @@ app.engine(
       },
       ifEquals: function(arg1, arg2, options) {
     return (arg1 == arg2) ? options.fn(this) : options.inverse(this);
-      }
+      },
+      renderPartial: function(partialName, options) {
+    if (!partialName) {
+        console.error('No partial name given.');
+        return '';
+    }
+    var partial = exphbs.partials[partialName];
+    if (!partial) {
+        console.error('Couldnt find the compiled partial: ' + partialName);
+        return '';
+    }
+    return new exphbs.SafeString( partial(options.hash) );
+}
     }
   }))
 
