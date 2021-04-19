@@ -12,7 +12,7 @@ store: new JsonStore('./models/comment-store.json', {comments: []}),
 
   getAllComments() {
     //return require('./comment-store.json').commentCollection
-    return this.store.findAll(this.collection);
+    return this.store.findAll(this.collection) + (accounts.getCurrentUser(request)).id;
   },
 
   getComment(id) {
