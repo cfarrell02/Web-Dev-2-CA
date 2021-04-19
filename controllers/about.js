@@ -41,7 +41,8 @@ const about = {
       id: uuid(),
       username: loggedInUser.firstName +" "+loggedInUser.lastName,
       avatar:loggedInUser.picture,
-      text:request.body.text
+      text:request.body.text,
+      date:new Date(Date.now())
     };
     commentStore.addComment(newComment)
       response.redirect("/about");
