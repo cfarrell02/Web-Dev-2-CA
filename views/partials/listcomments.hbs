@@ -13,7 +13,16 @@
       </div>
 
        <a href = "/about/deleteComment/{{id}}" class="reply">Delete</a>
-      <a href = "/about/editComment/{{id}}" class="reply">Edit</a>
+      <a onclick="showHideLeague()" class="reply">Edit</a>
+      <form class = "ui stacked segment form" id="league" action="/about/updateComment/{{id}}" method="POST">
+        <div class="field">
+        <span class="ui input">
+         <input type="text" name="text" autofocus required title = "Please include some edited text" placeholder="Position" value = "{{text}}">
+          <button class="ui submit icon button"><i class="icon pencil alternate"></i></button>
+        </span>
+      </div>
+         
+      </form>
     </div>
   </div>
 {{/each}}

@@ -35,6 +35,15 @@ const about = {
     commentStore.removeComment(commentId);
     response.redirect("/about");
   },
+  updateComment(request, response) {
+    const id = request.params.id;
+    logger.debug("updating comment " + id);
+    const updatedcomment = {
+      text:request.body.text
+    };
+    commentStore.updateComment(id, updatedcomment);
+    response.redirect('/about');
+  },
 
   addComment(request, response) {
     const loggedInUser = accounts.getCurrentUser(request);
