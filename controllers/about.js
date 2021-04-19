@@ -22,6 +22,7 @@ const about = {
         developers: developerStore.getAllDevelopers(),
         fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
         picture: loggedInUser.picture,
+        loggedInUser: loggedInUser.id,
         comments: commentStore.getAllComments(),
       };
       response.render('about', viewData);
@@ -30,7 +31,7 @@ const about = {
   },
     deleteComment(request, response) {
     const commentId = request.params.id;
-    logger.de bug(`Deleting comment ${commentId}`);
+    logger.debug(`Deleting comment ${commentId}`);
     commentStore.removeComment(commentId);
     response.redirect("/about");
   },
@@ -39,6 +40,7 @@ const about = {
     const loggedInUser = accounts.getCurrentUser(request);
     const newComment = {
       id: uuid(),
+      userId:loggedInUser.id,
       username: loggedInUser.firstName +" "+loggedInUser.lastName,
       avatar:loggedInUser.picture,
       text:request.body.text,

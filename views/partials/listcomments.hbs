@@ -11,6 +11,8 @@
       <div class="text">
         {{text}}
       </div>
+       {{/each}}
+      {{#if loggedInUser==userId}}
+       <a href = "/about/deleteComment/{{id}}" class="reply">Delete</a>
     </div>
   </div>
- {{/each}}
