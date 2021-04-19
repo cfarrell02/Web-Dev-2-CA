@@ -31,7 +31,7 @@ const about = {
     const commentId = request.params.id;
     logger.debug(`Deleting comment ${commentId}`);
     commentStore.removeComment(commentId);
-    response.redirect("/dashboard");
+    response.redirect("/about");
   },
 
   addComment(request, response) {
@@ -43,9 +43,9 @@ const about = {
       text:request.body.text
     };
     commentStore.addComment(newComment, function() {
-      response.redirect("/dashboard");
+      response.redirect("/about");
     });
 }};
 
-// export the dashboard module
+// export the about module
 module.exports = about;
