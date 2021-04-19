@@ -38,7 +38,9 @@ app.engine(
         let days = ["Sun","Mon","Tues","Wed","Thurs","Fri","Sat"]
         let months = ["Jan","Feb","March","April","May","June","July","Aug","Sept","Oct","Nov","Dec"]
         let monthName = months[month];
-        let 
+        let dayName = days[day];
+        
+        return ${dayName}
         
       }
     }
