@@ -3,6 +3,7 @@
 const _ = require('lodash');
 const JsonStore = require('./json-store');
 const logger = require('../utils/logger');
+const accounts = require('../controllers/accounts.js')
 
 
 const commentStore = {
@@ -12,7 +13,7 @@ store: new JsonStore('./models/comment-store.json', {comments: []}),
 
   getAllComments() {
     //return require('./comment-store.json').commentCollection
-    return this.store.findAll(this.collection) + (accounts.getCurrentUser(request)).id;
+    return this.store.findAll(this.collection) + (accounts.getCurrentUser()).id;
   },
 
   getComment(id) {
