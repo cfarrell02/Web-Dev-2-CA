@@ -45,15 +45,17 @@ app.engine(
         return `${dayName}, ${dateNum} ${monthName}, ${year} at ${hour}:${minute}`
         
       },
-      showDelete: function(id1, id2, id3){
-        if(id1 === id2){
-          return `${id3}`
-        }else{
-          return ``
-        }
+      if_eq: function(a, b, opts) {
+    if (a == b) {
+        return opts.fn(this);
+    } else {
+        return opts.inverse(this);
     }
-  }})
+}
+    }
+  })
 );
+
 app.set("view engine", ".hbs");
 
 // import routes file and use this for routing

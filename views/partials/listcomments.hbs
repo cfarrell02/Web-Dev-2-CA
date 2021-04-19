@@ -11,6 +11,7 @@
       <div class="text">
         {{text}}
       </div>
+      {{if_eq userId loggedInUser}}
        <a href = "/about/deleteComment/{{id}}" class="reply">Delete</a>
     </div>
   </div>
