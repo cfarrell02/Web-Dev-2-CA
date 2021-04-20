@@ -8,7 +8,6 @@ const exphbs = require("express-handlebars");
 const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
 const fileUpload = require("express-fileupload");
-const about = require("./controllers/about.js")
 
 // initialise project
 const app = express();
@@ -46,22 +45,7 @@ app.engine(
         return `${dayName}, ${dateNum} ${monthName}, ${year} at ${hour}:${minute}`
         
       },
-      ifEquals: function(arg1, options) {
-        
-    return (arg1 == about.loggedInUser.id) ? options.fn(this) : options.inverse(this);
-      },
-      renderPartial: function(partialName, options) {
-    if (!partialName) {
-        console.error('No partial name given.');
-        return '';
-    }
-    var partial = exphbs.partials[partialName];
-    if (!partial) {
-        console.error('Couldnt find the compiled partial: ' + partialName);
-        return '';
-    }
-    return new exphbs.SafeString( partial(options.hash) );
-}
+
     }
   }))
 

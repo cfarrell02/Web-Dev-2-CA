@@ -5,6 +5,7 @@ const logger = require('../utils/logger');
 const accounts = require ('./accounts.js');
 const commentStore = require("../models/comment-store.js");
 const userstore = require('../models/user-store');
+const exphbs = require("express-handlebars");
 
 const developerStore = require('../models/developer-store.js');
 const uuid = require('uuid');
@@ -24,6 +25,22 @@ const about = {
         picture: loggedInUser.picture,
         comments: commentStore.getAllComments(),
       };
+      exphbs.regiserHelper('ifEquals', function(arg1, options) {
+        
+    return (arg1 == (accounts.getCurrentUser()).id) ? options.fn(this) : options.inverse(this);}
+    //   },
+    //   renderPartial: function(partialName, options) {
+    // if (!partialName) {
+    //     console.error('No partial name given.');
+    //     return '';
+    // }
+    // var partial = exphbs.partials[partialName];
+    // if (!partial) {
+    //     console.error('Couldnt find the compiled partial: ' + partialName);
+    //     return '';
+    // }
+    // return new exphbs.SafeString( partial(options.hash) );
+
       response.render('about', viewData);
     }
     else response.redirect('/');    
