@@ -45,6 +45,7 @@ app.engine(
         return `${dayName}, ${dateNum} ${monthName}, ${year} at ${hour}:${minute}`
         
       },
+      ifCurrentUser: function(id, )
 
     }
   }))
