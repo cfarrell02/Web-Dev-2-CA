@@ -45,7 +45,9 @@ app.engine(
         return `${dayName}, ${dateNum} ${monthName}, ${year} at ${hour}:${minute}`
         
       },
-      ifCurrentUser: function(id, )
+      ifCurrentUser: function(id, options) {
+    return (id == loggedInUser.id) ? options.fn(this) : options.inverse(this);
+}
 
     }
   }))
