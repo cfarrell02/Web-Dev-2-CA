@@ -21,6 +21,15 @@ function showHide() {
     leagueDiv.style.display = "block";
   }
   }
+function showEdit(id) {
+  let leagueDiv = document.getElementById(id);
+    leagueDiv.style.margin = "1em 0 2em 0";
+  if (leagueDiv.style.display === "block") {
+    leagueDiv.style.display = "none";
+  } else {
+    leagueDiv.style.display = "block";
+  }
+  }
 
 function darkMode(){
 

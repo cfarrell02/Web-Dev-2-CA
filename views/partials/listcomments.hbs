@@ -15,8 +15,8 @@
       </div>
       {{#ifEquals userId}}
        <a href = "/about/deleteComment/{{id}}" class="reply">Delete</a>
-      <a onclick="showHideLeague()" class="reply">Edit</a>
-      <form class = "ui fluid segment form" id="league" action="/about/updateComment/{{id}}" method="POST">
+      <a onclick="showEdit({{id}})" class="reply">Edit</a>
+      <form class = "ui fluid segment form" id="{{id}}" action="/about/updateComment/{{id}}" method="POST">
         <div class="field">
         <span class="ui input">
          <input type="text" name="text" autofocus required title = "Please include some edited text" placeholder="Position" value = "{{text}}"> 
