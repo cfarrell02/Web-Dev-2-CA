@@ -1,6 +1,6 @@
 {{> menu id="about"}}
 
-<section class="ui center aligned middle aligned segment">
+<section class="ui center aligned middle aligned segment" onload="hideDelete('{{currentId}}')">
   <h2 class="ui header">
     The league app team:
   </h2>
@@ -24,7 +24,7 @@
 </button>
 <div class = "ui segment">
 <h3 class="ui dividing header">Comments</h3>
-<div class="ui comments" onload="hideDelete('{{currentId}}')">
+<div class="ui comments" >
 {{>listcomments}}
 </div>
 {{>addcomment}}
