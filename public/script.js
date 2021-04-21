@@ -31,14 +31,7 @@ function showEdit(idNumber) {
   }
   }
 
-function hideDelete(id){
-      let forms = document.getElementsByClassName('deleteEdit')
-        for(let item of forms){
-          if(!(item.id==id)){
-            item.style.display = "none";
-          }
-        }
-      }
+
 
 function darkMode(){
 

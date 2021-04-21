@@ -35,6 +35,9 @@ h1 {
 #league{
   display:none;
 }
+.deleteEdit{
+  display:none;
+}
 .ui.fluid.segment.form{
   display:none;
 }
