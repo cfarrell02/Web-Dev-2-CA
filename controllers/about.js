@@ -49,7 +49,7 @@ const about = {
   addComment(request, response) {
     const loggedInUser = accounts.getCurrentUser(request);
     const newComment = {
-      id:"id"+uuid(),
+      id:uuid(),
       userId:loggedInUser.id,
       username: loggedInUser.firstName +" "+loggedInUser.lastName,
       avatar:loggedInUser.picture,
