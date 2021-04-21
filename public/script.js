@@ -36,7 +36,11 @@ function hideDelete(id){
       console.log("Buttons Hidden")
         for(let form of forms){
           if(form.id==('i'+id)){
+            if(!(form.style.display === "block")){
             form.style.display = "block";
+            }else{
+              form.style.display = "none";
+            }
           }
         }
       }

@@ -20,13 +20,13 @@
 
 </section>
 <div class = "ui segment">
-  <button onclick="hideDelete('{{currentId}}')" class="ui fluid button">
-  Allow Editing/Deleting
-</button>
+ 
 <h3 class="ui dividing header">Comments</h3>
 <div class="ui comments" >
 {{>listcomments}}
 </div>
 {{>addcomment}}
-    
+     <button onclick="hideDelete('{{currentId}}')" class="ui button">
+  Allow Editing/Deleting
+</button>
 </div>
