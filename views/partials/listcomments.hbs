@@ -13,8 +13,8 @@
         {{text}}
       </div>
       <div class="deleteEdit" id="i{{userId}}">
-       <a href = "/about/deleteComment/{{id}}" class="reply">Delete</a>
-      <button onclick="showEdit('_{{id}}')" class="reply">Edit</button>
+       <button class="ui red button" href = "/about/deleteComment/{{id}}" class="reply">Delete</a>
+      <button class="ui blue button" onclick="showEdit('_{{id}}')" class="reply">Edit</button>
       </div>
       <form class = "ui fluid segment form" id="_{{id}}" action="/about/updateComment/{{id}}" method="POST">
         <div class="field">
