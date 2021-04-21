@@ -8,7 +8,7 @@ const exphbs = require("express-handlebars");
 const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
 const fileUpload = require("express-fileupload");
-const about = require("./controllers/about.js")
+
 
 // initialise project
 const app = express();

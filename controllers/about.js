@@ -25,17 +25,10 @@ const about = {
         currentId:loggedInUser.id,
         comments: commentStore.getAllComments(),
       };
-      let forms = document.getElementsByClassName('deleteEdit')
-      console.log("Buttons Hidden")
-        for(let i = 0; i++;i<forms.length){
-          if(forms[i].id==('i'+loggedInUser.id)){
-            console.log(forms[i]);
-            forms[i].style.display = "block";
-          }
-        }
       response.render('about', viewData);
     }
     else response.redirect('/');  
+      
       module.exports = loggedInUser;
   },
     deleteComment(request, response) {

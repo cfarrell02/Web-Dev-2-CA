@@ -31,7 +31,16 @@ function showEdit(idNumber) {
   }
   }
 
-
+function hideDelete(id){
+      let forms = document.getElementsByClassName('deleteEdit')
+      console.log("Buttons Hidden")
+        for(let form of forms){
+          console.log(form);
+          if(form.id==('i'+id)){
+            form.style.display = "block";
+          }
+        }
+      }
 
 function darkMode(){
 
