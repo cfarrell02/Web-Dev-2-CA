@@ -12,7 +12,7 @@
       <div class="text">
         {{text}}
       </div>
-      {{#ifEquals userId 1}}
+      {{#ifEquals userId}}
        <a href = "/about/deleteComment/{{id}}" class="reply">Delete</a>
       <a onclick="showHideLeague()" class="reply">Edit</a>
       <form class = "ui fluid segment form" id="league" action="/about/updateComment/{{id}}" method="POST">
