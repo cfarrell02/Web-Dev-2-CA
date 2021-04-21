@@ -21,8 +21,8 @@ function showHide() {
     leagueDiv.style.display = "block";
   }
   }
-function showEdit(id) {
-  let leagueDiv = document.getElementById(id);
+function showEdit(idNumber) {
+  let leagueDiv = document.getElementById(idNumber);
     leagueDiv.style.margin = "1em 0 2em 0";
   if (leagueDiv.style.display === "block") {
     leagueDiv.style.display = "none";
