@@ -10,11 +10,9 @@
         <span class="date">{{formatDate date}}</span>
       </div>
       <div class="text">
-        {{text}}<br>
-        {{currentUserId}}
+        {{text}}
       </div>
-      {{#ifEquals userId}}
-      <div class="deleteEdit">
+      <div class="deleteEdit" id="i{{id}}">
        <a href = "/about/deleteComment/{{id}}" class="reply">Delete</a>
       <button onclick="showEdit('_{{id}}')" class="reply">Edit</button>
       </div>
@@ -26,7 +24,6 @@
         </span>
       </div>
     </form>
-      {{/ifEquals}}
     </div>
   </div>
      {{/each}}
