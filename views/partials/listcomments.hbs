@@ -10,7 +10,8 @@
         <span class="date">{{formatDate date}}</span>
       </div>
       <div class="text">
-        {{text}}
+        {{text}}<br>
+        {{currentUserId}}
       </div>
       {{#ifEquals userId}}
        <a href = "/about/deleteComment/{{id}}" class="reply">Delete</a>

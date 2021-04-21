@@ -14,7 +14,6 @@ const about = {
 
   // index method - responsible for creating and rendering the view
     index(request, response) {
-      
     const loggedInUser = accounts.getCurrentUser(request);
     logger.info('about rendering');
     if (loggedInUser) {
@@ -23,11 +22,13 @@ const about = {
         developers: developerStore.getAllDevelopers(),
         fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
         picture: loggedInUser.picture,
+        currentId:loggedInUser.id,
         comments: commentStore.getAllComments(),
       };
       response.render('about', viewData);
     }
     else response.redirect('/');  
+      module.exports = loggedInUser;
   },
     deleteComment(request, response) {
     const commentId = request.params.id;
