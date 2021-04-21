@@ -5,7 +5,6 @@ const logger = require('../utils/logger');
 const accounts = require ('./accounts.js');
 const commentStore = require("../models/comment-store.js");
 const userstore = require('../models/user-store');
-const exphbs = require("express-handlebars");
 
 const developerStore = require('../models/developer-store.js');
 const uuid = require('uuid');
@@ -24,12 +23,8 @@ const about = {
         developers: developerStore.getAllDevelopers(),
         fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
         picture: loggedInUser.picture,
-        currentUserId: loggedInUser.id,
         comments: commentStore.getAllComments(),
       };
-      function isCurrentUser(id){
-        return (id === loggedInUser.id)
-      }
       response.render('about', viewData);
     }
     else response.redirect('/');  
