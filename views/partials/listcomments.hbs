@@ -15,7 +15,7 @@
       </div>
       {{#ifEquals userId}}
        <a href = "/about/deleteComment/{{id}}" class="reply">Delete</a>
-      <a onclick="showEdit({{id}})" class="reply">Edit</a>
+      <button onclick="showEdit({{id}})" class="reply">Edit</button>
       <form class = "ui fluid segment form" id="{{id}}" action="/about/updateComment/{{id}}" method="POST">
         <div class="field">
         <span class="ui input">
