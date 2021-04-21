@@ -45,10 +45,9 @@ app.engine(
         return `${dayName}, ${dateNum} ${monthName}, ${year} at ${hour}:${minute}`
         
       },
-      ifCurrentUser: function(id, options) {
-    return (id == loggedInUser.id) ? options.fn(this) : options.inverse(this);
+      ifEquals: function(arg1, arg2, options) {
+    return (arg1 == arg2) ? options.fn(this) : options.inverse(this);
 }
-
     }
   }))
 

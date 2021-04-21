@@ -11,11 +11,8 @@
       </div>
       <div class="text">
         {{text}}
-        <br>
-        {{userId}}
-        <br>
-        
       </div>
+      {{#ifEquals userId 1}}
        <a href = "/about/deleteComment/{{id}}" class="reply">Delete</a>
       <a onclick="showHideLeague()" class="reply">Edit</a>
       <form class = "ui fluid segment form" id="league" action="/about/updateComment/{{id}}" method="POST">
@@ -26,6 +23,7 @@
         </span>
       </div>
     </form>
+      {{/ifEquals}}
     </div>
   </div>
      {{/each}}

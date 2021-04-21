@@ -25,9 +25,12 @@ const about = {
         currentUserId: loggedInUser.id,
         comments: commentStore.getAllComments(),
       };
+      function isCurrentUser(id){
+        return (id === loggedInUser.id)
+      }
       response.render('about', viewData);
     }
-    else response.redirect('/');    
+    else response.redirect('/');  
   },
     deleteComment(request, response) {
     const commentId = request.params.id;
