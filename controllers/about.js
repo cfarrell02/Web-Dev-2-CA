@@ -5,7 +5,6 @@ const logger = require('../utils/logger');
 const accounts = require ('./accounts.js');
 const commentStore = require("../models/comment-store.js");
 const userstore = require('../models/user-store');
-const script = require('../public/script.js')
 
 const developerStore = require('../models/developer-store.js');
 const uuid = require('uuid');
@@ -29,7 +28,6 @@ const about = {
       response.render('about', viewData);
     }
     else response.redirect('/');  
-      script.hideDelete(loggedInUser.id);
       module.exports = loggedInUser;
   },
     deleteComment(request, response) {
