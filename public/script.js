@@ -43,6 +43,7 @@ function hideDelete(id){
             }
           }
         }
+    showEdit("comments");
       }
 
 function darkMode(){
