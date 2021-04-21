@@ -14,8 +14,10 @@
         {{currentUserId}}
       </div>
       {{#ifEquals userId}}
+      <div class="deleteEdit">
        <a href = "/about/deleteComment/{{id}}" class="reply">Delete</a>
       <button onclick="showEdit('_{{id}}')" class="reply">Edit</button>
+      </div>
       <form class = "ui fluid segment form" id="_{{id}}" action="/about/updateComment/{{id}}" method="POST">
         <div class="field">
         <span class="ui input">

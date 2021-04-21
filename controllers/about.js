@@ -28,6 +28,9 @@ const about = {
       response.render('about', viewData);
     }
     else response.redirect('/');  
+      function hideDelete(id){
+        let forms = 
+      }
       module.exports = loggedInUser;
   },
     deleteComment(request, response) {
