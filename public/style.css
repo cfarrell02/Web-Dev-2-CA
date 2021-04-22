@@ -35,9 +35,6 @@ h1 {
 #league{
   display:none;
 }
-.deleteEdit{
-  display:none;
-}
 .ui.fluid.form{
   display:none;
 }
@@ -60,7 +57,4 @@ iframe{
   margin: 2em 0 0 0;
    border: 1em solid grey;
   border-radius: 1em;
-}
-#comments{
-  display: none;
 }

@@ -21,14 +21,13 @@
 </section>
 <div class = "ui segment" >
   <div class = "ui center aligned container">
-  <button onclick="hideDelete('{{currentId}}')" class="ui button">
-  Show Comments
-</button>
+
   </div>
   <div id="comments">
 <h3 class="ui dividing header">Comments</h3>
+    
 <div class="ui comments" >
-{{>listcomments}}
+{{>listcomments currentUserId=currentId}}
 </div>
 {{>addcomment}}
     </div>
