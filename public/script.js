@@ -61,7 +61,8 @@ function changeBackground() {
   segment.style.backgroundColor = sessionStorage.getItem('colour');
   segment.style.color = sessionStorage.getItem('textColour');  
   }
-  
+  var statistics = ""
+  for(statistic of odcument.getElementsByClassName(""))
   var card;
   for(card of document.getElementsByClassName("card")){
     card.style.backgroundColor = sessionStorage.getItem('colour');
