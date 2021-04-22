@@ -51,11 +51,9 @@ function changeBackground() {
 
   
   document.getElementById("menu").style.backgroundColor = sessionStorage.getItem('colour');
- // document.getElementById("welcomemenu").style.backgroundColor = sessionStorage.getItem('colour');
   document.getElementById("about").style.color = sessionStorage.getItem('textColour');
   document.getElementById("dashboard").style.color = sessionStorage.getItem('textColour');
   document.getElementById("logout").style.color = sessionStorage.getItem('textColour');
- //document.getElementById("comments").style.color = sessionStorage.getItem('textColour');
   
       var segment;
   for(segment of document.getElementsByClassName("segment")){
@@ -92,9 +90,11 @@ function changeBackground() {
     item.style.color = sessionStorage.getItem('textColour'); 
   }
   for(let item of dates){
-    time.style.color = sessionStorage.getItem('textColour'); 
+    item.style.color = sessionStorage.getItem('textColour'); 
   }
-  for(let item of )
+  for(let item of replies){
+    item.style.color = sessionStorage.getItem("textColour");
+  }
   var table;
   for(table of document.getElementsByClassName("table")){
     table.style.backgroundColor = sessionStorage.getItem('colour');
