@@ -68,9 +68,9 @@ function changeBackground() {
     labels[i].style.color = sessionStorage.getItem('textColour');
   }
   var cards = document.getElementsByClassName("card");
-  var headers = document.getElementsByClassName("headers");
+  var headers = document.getElementsByClassName("header");
   var metas = document.getElementsByClassName("meta");
-  var descriptions = document.getElementByClassName("center aligned description")
+  var descriptions = document.getElementsByClassName("description");
   for(let i = 0;i<cards.length;i++){
     cards[i].style.backgroundColor = sessionStorage.getItem('colour');
     headers[i].style.color = sessionStorage.getItem('textColour');
