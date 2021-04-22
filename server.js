@@ -9,7 +9,6 @@ const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
 const fileUpload = require("express-fileupload");
 
-
 // initialise project
 const app = express();
 
