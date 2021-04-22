@@ -33,7 +33,7 @@ function showEdit(idNumber) {
 
 function darkMode(){
 
-  if( document.getElementById("menu").style.backgroundColor === "white" ){
+  if( document.getElementById("menu").style.backgroundColor == "white" ){
     sessionStorage.setItem('colour', "#525252");
     sessionStorage.setItem('backgroundColour', "#878787");
     sessionStorage.setItem('textColour',"white");
@@ -49,10 +49,19 @@ function darkMode(){
   
 }
 function changeBackground() {
+
+  
   document.getElementById("menu").style.backgroundColor = sessionStorage.getItem('colour');
+  document.getElementById("welcomemenu").style.backgroundColor = sessionStorage.getItem('colour');
   document.getElementById("about").style.color = sessionStorage.getItem('textColour');
   document.getElementById("dashboard").style.color = sessionStorage.getItem('textColour');
+ document.getElementById("comments").style.color = sessionStorage.getItem('textColour');
   
+      var segment;
+  for(segment of document.getElementsByClassName("segment")){
+  segment.style.backgroundColor = sessionStorage.getItem('colour');
+  segment.style.color = sessionStorage.getItem('textColour');  
+  }
   
   var card;
   for(card of document.getElementsByClassName("card")){
@@ -68,7 +77,8 @@ function changeBackground() {
    texts[i].style.color = sessionStorage.getItem('textColour');  
    authors[i].style.color = sessionStorage.getItem('textColour'); 
    dates[i].style.color = sessionStorage.getItem('textColour'); 
-    replies[i].style.color = sessionStorage.getItem("textColour")
+    replies[(2*i)].style.color = sessionStorage.getItem("textColour")
+    replies[(2*i+1)].style.color = sessionStorage.getItem("textColour")
  }
   var table;
   for(table of document.getElementsByClassName("table")){
@@ -81,11 +91,7 @@ function changeBackground() {
     label.style.color = sessionStorage.getItem('textColour');
   }
   
-  var segment;
-  for(segment of document.getElementsByClassName("segment")){
-  segment.style.backgroundColor = sessionStorage.getItem('colour');
-  segment.style.color = sessionStorage.getItem('textColour');  
-  }
+
   
   document.getElementsByClassName("segment")[0].style.backgroundColor = sessionStorage.getItem('backgroundColour');
   document.getElementsByClassName("header")[1].style.color = sessionStorage.getItem('textColour');

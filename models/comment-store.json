@@ -39,6 +39,14 @@
       "avatar": "http://res.cloudinary.com/dqhx4zitt/image/upload/v1619103193/eruqmnzs4wmaquww4yzi.gif",
       "text": "I have the high ground ",
       "date": "2021-04-22T14:53:38.729Z"
+    },
+    {
+      "id": "d4d2c27f-977d-4031-9abb-47e53dea4097",
+      "userId": "2",
+      "username": "Test Account",
+      "avatar": "https://res.cloudinary.com/dqhx4zitt/image/upload/v1618495132/cy0axcxog6onrgcygowv.png",
+      "text": "Test comment",
+      "date": "2021-04-22T16:35:08.199Z"
     }
   ]
 }
