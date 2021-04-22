@@ -23,7 +23,6 @@ function showHide() {
   }
 function showEdit(idNumber) {
   let leagueDiv = document.getElementById(idNumber);
-    leagueDiv.style.margin = "1em 0 2em 0";
   if (leagueDiv.style.display === "block") {
     leagueDiv.style.display = "none";
   } else {
@@ -33,7 +32,7 @@ function showEdit(idNumber) {
 
 function darkMode(){
 
-  if( document.getElementById("menu").style.backgroundColor == "white" ){
+  if( sessionStorage.getItem('colour') == "white" ){
     sessionStorage.setItem('colour', "#525252");
     sessionStorage.setItem('backgroundColour', "#878787");
     sessionStorage.setItem('textColour',"white");
