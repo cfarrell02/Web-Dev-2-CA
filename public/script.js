@@ -49,7 +49,7 @@ function darkMode(){
   
 }
 function changeBackground() {
-  document.getElementById("menu").style.backgroundColor = sessionStorage.getItem('colour');
+  document.getElementById("menu").style.color = sessionStorage.getItem('colour');
   document.getElementById("about").style.color = sessionStorage.getItem('textColour');
   document.getElementById("dashboard").style.color = sessionStorage.getItem('textColour');
   
@@ -60,7 +60,14 @@ function changeBackground() {
     card.style.color = sessionStorage.getItem('textColour');  
   }
   
-  
+  var texts = document.getElementsByClassName("text");
+  var authors = document.getElementsByClassName("author");
+  var dates =  document.getElementsByClassName("metadata");
+  for(let i = 0;i<texts.length;i++){
+    texts.get(i).style.color = sessionStorage.getItem('textColour');  
+    authors.get(i).style.color = sessionStorage.getItem('textColour'); 
+    dates.get(i).style.color = sessionStorage.getItem('textColour'); 
+  }
   var table;
   for(table of document.getElementsByClassName("table")){
     table.style.backgroundColor = sessionStorage.getItem('colour');

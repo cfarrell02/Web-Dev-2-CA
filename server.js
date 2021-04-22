@@ -55,18 +55,7 @@ app.engine(
           result += (item[0].toUpperCase() + (item.slice(1).toLowerCase()))+ " ";
         }
         return result;
-      },
-    
-    populate: function(genre) {
-    const genres = ["Europe", 'North America', "South America", "Asia", "Oceania"]
-    genres.splice(genres.indexOf(genre), 1)
-    let options = ``
-    for (let item of genres) {
-        options+=`<option value ="${item}">${item}</option>`         
-    }    
-    return options      
-}
-    }
+      }}
   }))
 
 app.set("view engine", ".hbs");
