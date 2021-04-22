@@ -80,6 +80,7 @@ const dashboard = {
       country: request.body.country,
       continent: request.body.continent,
       logo: request.files.logo,
+      date: new Date(Date.now()),
       teams: []
     };
     leagueStore.addLeague(newLeague, function() {
