@@ -67,10 +67,12 @@ function changeBackground() {
     values[i].style.color = sessionStorage.getItem('textColour'); 
     labels[i].style.color = sessionStorage.getItem('textColour');
   }
-  var card;
-  for(card of document.getElementsByClassName("card")){
-    card.style.backgroundColor = sessionStorage.getItem('colour');
-    card.style.color = sessionStorage.getItem('textColour');  
+  var cards = document.getElementsByClassName("card");
+  
+  for(let i = 0;i<cards.length;i++){
+    card[i].style.backgroundColor = sessionStorage.getItem('colour');
+    
+  }
   }
   
  var texts = document.getElementsByClassName("text");
