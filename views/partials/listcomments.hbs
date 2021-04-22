@@ -5,7 +5,7 @@
       <img class="ui avatar" src={{avatar}}>
      </a>
     <div class="content">
-      <a class="author">{{capitalise username}}</a>
+      <a class="author">{{username}}</a>
       <div class="metadata">
         <span class="date">{{formatTime date}}</span>
       </div>
@@ -15,7 +15,7 @@
 {{#ifEquals userId ../currentId}}
         <div class="actions">
           <div class="deleteEdit" id="i{{userId}}">
-    <a class="reply" href = "/about/deleteComment/{{id}}">Delete</a>
+    <a class="delcomment" href = "/about/deleteComment/{{id}}">Delete</a>
     <a onclick="showEdit('_{{id}}')" class="reply">Edit</a>
         </div>
       </div>

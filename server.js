@@ -64,14 +64,15 @@ app.engine(
       ifEquals: function(arg1, arg2, options) {
     return ((arg1 == arg2)||(arg2==1)) ? options.fn(this) : options.inverse(this); //Second option added to give account with id 1, access to all delete/edits
   },     
-      capitalise: function(word) {
-        let words = word.split(" ")
-        var result = "";
-        for (let item of words){
-          result += (item[0].toUpperCase() + (item.slice(1).toLowerCase()))+ " ";
-        }
-        return result;
-      }}
+      // capitalise: function(word) {
+      //   let words = word.split(" ")
+      //   var result = "";
+      //   for (let item of words){
+      //     result += (item[0].toUpperCase() + (item.slice(1).toLowerCase()))+ " ";
+      //   }
+      //   return result;
+      // }
+    }
   }))
 
 app.set("view engine", ".hbs");

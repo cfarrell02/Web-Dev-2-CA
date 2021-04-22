@@ -20,12 +20,12 @@
       </td>
       <td class="field">
         <span class="ui input">
-          <input type="text" name="name" required title = "Please include a valid Name" placeholder="Name" value = "{{capitalise name}}">
+          <input type="text" name="name" required title = "Please include a valid Name" placeholder="Name" value = "{{name}}">
         </span>
       </td>
       <td class="field">
         <span class="ui input">
-          <input type="text" name="manager" autofocus required title = "Please include a valid Manager" placeholder="Manager" value = "{{capitalise manager}}">         
+          <input type="text" name="manager" autofocus required title = "Please include a valid Manager" placeholder="Manager" value = "{{manager}}">         
         </span>
       </td>
       <td class="field">
@@ -42,7 +42,7 @@
       </td>
       <td class="center aligned">
         <button class="ui submit icon button"><i class="icon pencil alternate"></i></button>
-        <a href="/league/{{../league.id}}/deleteteam/{{id}}" class="ui icon button delteam">
+        <a href="/league/{{../league.id}}/deleteteam/{{id}}" class="ui icon delteam button">
           <i class="icon trash"></i>
         </a>
       </td>

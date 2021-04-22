@@ -6,13 +6,13 @@
       <img class="ui medium image" src="{{logo}}">
     
     <div class="center aligned content">
-      <div class="header">{{capitalise name}}</div>
+      <div class="header">{{name}}</div>
       <div class="meta">
         <a>{{teams.length}} Team(s)<br>
         {{formatDate date}}</a>
       </div>
       <div class="center aligned description">
-        <span class = "bold"> Country: </span>{{capitalise country}} <br>
+        <span class = "bold"> Country: </span>{{country}} <br>
       <span class = "bold"> Continent: </span>{{continent}}<br>
       </div>
     </div>
@@ -20,7 +20,7 @@
       <a href="/league/{{id}}" class="ui icon button">
       <i class="icon folder open"></i>
     </a>
-    <a href="/dashboard/deleteleague/{{id}}" class="ui icon button">
+    <a href="/dashboard/deleteleague/{{id}}" class="ui icon delete button">
       <i class="icon trash"></i>
       </a>
     </div>

@@ -147,6 +147,6 @@ function getRating() {
   }
 }
 
-$(".delteam").click(() => confirm("Really delete this team?"));
-$(".delleague").click(() => confirm("Really delete this league?"));
+$(".ui.icon.delteam.button").click(() => confirm("Really delete this team?"));
+$(".ui.icon.delete.button").click(() => confirm("Really delete this league?"));
 $(".delcomment").click(() => confirm("Really delete this comment?"));
