@@ -85,7 +85,7 @@ function changeBackground() {
   var authors = document.getElementsByClassName("author");
   var dates = document.getElementsByClassName("metadata");
   var replies = document.getElementsByClassName("reply");
-  var deletes = document.getElementsByClassName("delete")
+  var deletes = document.getElementsByClassName("delcomment")
   for (let item of texts) {
     item.style.color = sessionStorage.getItem("textColour");
   }
