@@ -85,6 +85,7 @@ function changeBackground() {
   var authors = document.getElementsByClassName("author");
   var dates = document.getElementsByClassName("metadata");
   var replies = document.getElementsByClassName("reply");
+  var deletes = document.getElementsByClassName("delete")
   for (let item of texts) {
     item.style.color = sessionStorage.getItem("textColour");
   }
@@ -95,6 +96,9 @@ function changeBackground() {
     item.style.color = sessionStorage.getItem("textColour");
   }
   for (let item of replies) {
+    item.style.color = sessionStorage.getItem("textColour");
+  }
+  for (let item of deletes) {
     item.style.color = sessionStorage.getItem("textColour");
   }
   var table;
