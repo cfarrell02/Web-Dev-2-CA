@@ -52,24 +52,6 @@
       "teams": []
     },
     {
-      "id": "80285a76-2299-4dbd-a3e0-bc6440fe97c9",
-      "userid": "1",
-      "name": "wdawd",
-      "country": "wada",
-      "continent": "Europe",
-      "logo": "http://res.cloudinary.com/dqhx4zitt/image/upload/v1618515748/qfnwnvlbpqhh9x1jwudd.png",
-      "teams": [
-        {
-          "id": "32ba8160-4a60-4256-8b56-bf61cbd880ef",
-          "name": "Team ",
-          "position": "33",
-          "manager": "awdwa",
-          "europeanleague": "https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Europa_League.svg/1200px-Europa_League.svg.png",
-          "crest": "http://res.cloudinary.com/dqhx4zitt/image/upload/v1618753224/cqutx9ceocrgwsrguhgl.png"
-        }
-      ]
-    },
-    {
       "id": "45afe2d2-4229-487c-85ca-9969371bab51",
       "userid": "12778fec-1e6a-4a65-8d26-4c014568136c",
       "name": "League",

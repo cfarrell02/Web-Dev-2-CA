@@ -19,9 +19,6 @@ store: new JsonStore('./models/comment-store.json', {comments: []}),
   getComment(id) {
     return this.store.findOneBy(this.collection, { id: id });
   },
-  getUserComments(userid){
-    return this.store.findBy(this.collection, { userid: userid});
-  },
   addComment(comment) {
     this.store.add(this.collection, comment);
   },
@@ -31,10 +28,6 @@ store: new JsonStore('./models/comment-store.json', {comments: []}),
     this.store.remove(this.collection, comment);
 },
   
-removeAllComments() {
-    this.store.removeAll(this.collection);
- 
-  },
   updateComment(id, updatedTeam) {
     const comments = this.getAllComments();
     const index = comments.findIndex(comment => comment.id === id);
