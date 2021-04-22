@@ -52,10 +52,10 @@ function changeBackground() {
 
   
   document.getElementById("menu").style.backgroundColor = sessionStorage.getItem('colour');
-  document.getElementById("welcomemenu").style.backgroundColor = sessionStorage.getItem('colour');
+ // document.getElementById("welcomemenu").style.backgroundColor = sessionStorage.getItem('colour');
   document.getElementById("about").style.color = sessionStorage.getItem('textColour');
   document.getElementById("dashboard").style.color = sessionStorage.getItem('textColour');
- document.getElementById("comments").style.color = sessionStorage.getItem('textColour');
+ //document.getElementById("comments").style.color = sessionStorage.getItem('textColour');
   
       var segment;
   for(segment of document.getElementsByClassName("segment")){
@@ -72,7 +72,7 @@ function changeBackground() {
  var texts = document.getElementsByClassName("text");
  var authors = document.getElementsByClassName("author");
  var dates =  document.getElementsByClassName("metadata");
-  var replies = document.getElementsByClassName("reply");
+ var replies = document.getElementsByClassName("reply");
   for(let i = 0;i<texts.length;i++){
    texts[i].style.color = sessionStorage.getItem('textColour');  
    authors[i].style.color = sessionStorage.getItem('textColour'); 
