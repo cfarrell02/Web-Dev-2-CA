@@ -6,6 +6,7 @@
       "name": "Premier League",
       "country": "England",
       "continent": "Europe",
+      "date": "2021-04-19T22:37:03.750Z",
       "logo": "https://i.pinimg.com/originals/ae/24/49/ae2449de25dbd1ca23da69d6dcc7c70d.jpg",
       "teams": [
         {
@@ -48,6 +49,7 @@
       "name": "Test League",
       "country": "Ireland",
       "continent": "North America",
+      "date": "2021-04-21T22:37:03.750Z",
       "logo": "https://creativereview.imgix.net/content/uploads/2016/02/PremierLeague.jpg",
       "teams": []
     },
@@ -57,6 +59,7 @@
       "name": "League",
       "country": "Italy",
       "continent": "Europe",
+      "date": "2021-04-21T22:37:03.750Z",
       "logo": "http://res.cloudinary.com/dqhx4zitt/image/upload/v1618756207/kn3ihk0xwgbdv5mkby9e.png",
       "teams": [
         {
@@ -94,30 +97,13 @@
       ]
     },
     {
-      "id": "afa75385-dff6-4dc2-955d-a95c515ec6f4",
+      "id": "e2d85baa-5a93-41f7-aaab-78992816f5d9",
       "userid": "1",
-      "name": "Bruh",
+      "name": "Test",
       "country": "Ireland",
       "continent": "Europe",
-      "logo": "http://res.cloudinary.com/dqhx4zitt/image/upload/v1618761715/xros2iwh7bttryhlmdu2.jpg",
-      "teams": [
-        {
-          "id": "c0f5d3f7-7e50-499d-a413-ab76fe81c051",
-          "name": "dwa",
-          "position": "33",
-          "manager": "awd",
-          "europeanleague": "https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Europa_League.svg/1200px-Europa_League.svg.png",
-          "crest": "http://res.cloudinary.com/dqhx4zitt/image/upload/v1618766489/ac1c3gpkxjar2vgsfdjg.png"
-        }
-      ]
-    },
-    {
-      "id": "8978a86f-46a7-4368-b7ee-2c5d4c49f3ec",
-      "userid": "1",
-      "name": "Hello",
-      "country": "Ireland",
-      "continent": "Europe",
-      "logo": "http://res.cloudinary.com/dqhx4zitt/image/upload/v1618766465/ze1pggcz1qlxexbwwoci.png",
+      "logo": "http://res.cloudinary.com/dqhx4zitt/image/upload/v1619131024/dpadti6dcv0qgb8jb0fi.webp",
+      "date": "2021-04-22T22:37:03.750Z",
       "teams": []
     }
   ]

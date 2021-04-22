@@ -28,7 +28,7 @@ app.engine(
     defaultLayout: "main",
     helpers: {
       //helpers go here
-      formatDate: function(date) {
+      formatTime: function(date) {
         let dateCreated = new Date(date);
         let day = dateCreated.getDay();
         let dateNum = dateCreated.getDate();
@@ -43,6 +43,21 @@ app.engine(
         let dayName = days[day];
         
         return `${dayName}, ${dateNum} ${monthName}, ${year} at ${hour}:${minute}`
+        
+      },
+      formatDate: function(date) {
+        let dateCreated = new Date(date);
+        let day = dateCreated.getDay();
+        let dateNum = dateCreated.getDate();
+        let month = dateCreated.getMonth();
+        let year = dateCreated.getFullYear();
+        
+        let days = ["Sun","Mon","Tues","Wed","Thurs","Fri","Sat"]
+        let months = ["Jan","Feb","March","April","May","June","July","Aug","Sept","Oct","Nov","Dec"]
+        let monthName = months[month];
+        let dayName = days[day];
+        
+        return `${dayName}, ${dateNum} ${monthName}, ${year}`
         
       },
       // found at: https://stackoverflow.com/questions/34252817/handlebarsjs-check-if-a-string-is-equal-to-a-value 

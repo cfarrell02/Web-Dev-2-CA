@@ -7,10 +7,10 @@
     <div class="content">
       <a class="author">{{capitalise username}}</a>
       <div class="metadata">
-        <span class="date">{{formatDate date}}</span>
+        <span class="date">{{formatTime date}}</span>
       </div>
       <div class="ui text">
-        {{capitalise text}}
+        {{text}}
       </div>
 {{#ifEquals userId ../currentId}}
         <div class="actions">
