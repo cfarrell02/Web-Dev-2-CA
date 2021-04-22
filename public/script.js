@@ -64,8 +64,8 @@ function changeBackground() {
   var values = document.getElementsByClassName("value")
   var labels = document.getElementsByClassName("label")
   for(let i = 0; i < values.length;i++){
-    values[i].style.display = sessionStorage.getItem('textColour'); 
-    labels[i].style.display = sessionStorage.getItem('textColour');
+    values[i].style.color = sessionStorage.getItem('textColour'); 
+    labels[i].style.color = sessionStorage.getItem('textColour');
   }
   var card;
   for(card of document.getElementsByClassName("card")){
