@@ -12,7 +12,7 @@
       <div class="text">
         {{text}}
       </div>
-
+{{#ifEquals userId ../currentId}}
         <div class="actions">
           <div class="deleteEdit" id="i{{userId}}">
     <a class="reply" href = "/about/deleteComment/{{id}}">Delete</a>
@@ -27,6 +27,7 @@
         </span>
       </div>
     </form>
+      {{/ifEquals}}
     </div>
   </div>
      {{/each}}
