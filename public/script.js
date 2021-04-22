@@ -54,6 +54,7 @@ function changeBackground() {
  // document.getElementById("welcomemenu").style.backgroundColor = sessionStorage.getItem('colour');
   document.getElementById("about").style.color = sessionStorage.getItem('textColour');
   document.getElementById("dashboard").style.color = sessionStorage.getItem('textColour');
+  document.getElementById("logout").style.color = sessionStorage.getItem('textColour');
  //document.getElementById("comments").style.color = sessionStorage.getItem('textColour');
   
       var segment;
@@ -67,6 +68,7 @@ function changeBackground() {
     values[i].style.color = sessionStorage.getItem('textColour'); 
     labels[i].style.color = sessionStorage.getItem('textColour');
   }
+  
   var cards = document.getElementsByClassName("card");
   var headers = document.getElementsByClassName("header");
   var metas = document.getElementsByClassName("meta");
@@ -83,13 +85,16 @@ function changeBackground() {
  var authors = document.getElementsByClassName("author");
  var dates =  document.getElementsByClassName("metadata");
  var replies = document.getElementsByClassName("reply");
-  for(let i = 0;i<texts.length;i++){
-   texts[i].style.color = sessionStorage.getItem('textColour');  
-   authors[i].style.color = sessionStorage.getItem('textColour'); 
-   dates[i].style.color = sessionStorage.getItem('textColour'); 
-    replies[(2*i)].style.color = sessionStorage.getItem("textColour")
-    replies[(2*i+1)].style.color = sessionStorage.getItem("textColour")
+  for(let item of texts){
+   item.style.color = sessionStorage.getItem('textColour');  
  }
+  for(let item of authors){
+    item.style.color = sessionStorage.getItem('textColour'); 
+  }
+  for(let item of dates){
+    time.style.color = sessionStorage.getItem('textColour'); 
+  }
+  for(let item of )
   var table;
   for(table of document.getElementsByClassName("table")){
     table.style.backgroundColor = sessionStorage.getItem('colour');
