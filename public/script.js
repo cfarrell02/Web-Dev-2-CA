@@ -68,12 +68,16 @@ function changeBackground() {
     labels[i].style.color = sessionStorage.getItem('textColour');
   }
   var cards = document.getElementsByClassName("card");
-  
+  var headers = document.getElementsByClassName("headers");
+  var metas = document.getElementsByClassName("meta");
+  var descriptions = document.getElementByClassName("center aligned description")
   for(let i = 0;i<cards.length;i++){
-    card[i].style.backgroundColor = sessionStorage.getItem('colour');
-    
+    cards[i].style.backgroundColor = sessionStorage.getItem('colour');
+    headers[i].style.color = sessionStorage.getItem('textColour');
+    metas[i].style.color = sessionStorage.getItem('textColour');
+    descriptions[i].style.color = sessionStorage.getItem('textColour');
   }
-  }
+  
   
  var texts = document.getElementsByClassName("text");
  var authors = document.getElementsByClassName("author");
