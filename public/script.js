@@ -58,9 +58,6 @@ function changeBackground() {
   document.getElementById("logout").style.color = sessionStorage.getItem(
     "textColour"
   );
-  // document.getElemensByClass("ui dividing header")[0].style.color = sessionStorage.getItem(
-  //   "textColour"
-  // );
   var segment;
   for (segment of document.getElementsByClassName("segment")) {
     segment.style.backgroundColor = sessionStorage.getItem("colour");
