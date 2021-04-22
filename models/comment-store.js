@@ -15,6 +15,10 @@ store: new JsonStore('./models/comment-store.json', {comments: []}),
     //return require('./comment-store.json').commentCollection
     return this.store.findAll(this.collection);
   },
+
+  getComment(id) {
+    return this.store.findOneBy(this.collection, { id: id });
+  },
   addComment(comment) {
     this.store.add(this.collection, comment);
   },
