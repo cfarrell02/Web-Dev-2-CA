@@ -61,8 +61,12 @@ function changeBackground() {
   segment.style.backgroundColor = sessionStorage.getItem('colour');
   segment.style.color = sessionStorage.getItem('textColour');  
   }
-  var statistics = ""
-  for(statistic of odcument.getElementsByClassName(""))
+  var values = document.getElementsByClassName("value")
+  var labels = document.getElementsByClassName("label")
+  for(let i = 0; i < values.length;i++){
+    values[i].style.display = sessionStorage.getItem('textColour'); 
+    labels[i].style.display = sessionStorage.getItem('textColour');
+  }
   var card;
   for(card of document.getElementsByClassName("card")){
     card.style.backgroundColor = sessionStorage.getItem('colour');
