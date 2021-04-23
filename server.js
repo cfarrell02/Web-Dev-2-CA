@@ -61,8 +61,9 @@ app.engine(
         
       },
       // found at: https://stackoverflow.com/questions/34252817/handlebarsjs-check-if-a-string-is-equal-to-a-value 
+      // Alternate #if that allows for checking of equalities
       ifEquals: function(arg1, arg2, options) {
-    return ((arg1 == arg2)||(arg2==1)) ? options.fn(this) : options.inverse(this); //Second option added to give account with id 1, access to all delete/edits
+    return (arg1 == arg2) ? options.fn(this) : options.inverse(this);
   },     
       // capitalise: function(word) {
       //   let words = word.split(" ")
