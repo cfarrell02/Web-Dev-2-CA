@@ -65,14 +65,16 @@ app.engine(
       ifEquals: function(arg1, arg2, options) {
     return (arg1 == arg2) ? options.fn(this) : options.inverse(this);
   },     
-      capitalise: function(word) {
-        if(!(word.toLowerCase()===null)){
+       capitalise: function(word) {
+        if(typeof word !="undefined"){
         let words = word.split(" ")
         var result = "";
         for (let item of words){
           result += (item[0].toUpperCase() + (item.slice(1).toLowerCase()))+ " ";
         }
         return result;
+      }else{
+        return word;
       }}
     }
   }))
