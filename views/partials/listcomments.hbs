@@ -14,10 +14,8 @@
       </div>
 {{#ifEquals userId ../currentId}}
         <div class="actions">
-          <div class="deleteEdit" id="i{{userId}}">
     <a class="delcomment" href = "/about/deleteComment/{{id}}">Delete</a>
     <a onclick="showEdit('_{{id}}')" class="reply">Edit</a>
-        </div>
       </div>
       <form class = "ui fluid form" id="_{{id}}" action="/about/updateComment/{{id}}" method="POST">
         <div class="field">

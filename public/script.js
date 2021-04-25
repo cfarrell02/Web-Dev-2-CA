@@ -74,7 +74,7 @@ function changeBackground() {
   var headers = document.getElementsByClassName("header");
   var metas = document.getElementsByClassName("meta");
   var descriptions = document.getElementsByClassName("description");
-  for (let i = 0; i < cards.length; i++) {
+  for (let i = 0; i < headers.length; i++) {
     cards[i].style.backgroundColor = sessionStorage.getItem("colour");
     headers[i].style.color = sessionStorage.getItem("textColour");
     metas[i].style.color = sessionStorage.getItem("textColour");
