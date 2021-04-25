@@ -66,7 +66,7 @@ app.engine(
     return (arg1 == arg2) ? options.fn(this) : options.inverse(this);
   },     
       capitalise: function(word) {
-        if(!(word===null)){
+        if(!(word.toLowerCase()===null)){
         let words = word.split(" ")
         var result = "";
         for (let item of words){
