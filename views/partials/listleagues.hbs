@@ -1,18 +1,19 @@
 
   {{#each leagues}}
 
+
   <div class="card">
     
       <img class="ui medium image" src="{{logo}}">
     
     <div class="center aligned content">
-      <div class="header">{{name}}</div>
+      <div class="header">{{capitalise name}}</div>
       <div class="meta">
         <a>{{teams.length}} Team(s)<br>
         {{formatDate date}}</a>
       </div>
       <div class="center aligned description">
-        <span class = "bold"> Country: </span>{{country}} <br>
+        <span class = "bold"> Country: </span>{{capitalise country}} <br>
       <span class = "bold"> Continent: </span>{{continent}}<br>
       </div>
     </div>
@@ -25,4 +26,5 @@
       </a>
     </div>
 </div>
+
  {{/each}}
