@@ -37,6 +37,7 @@ const accounts = {
     const user = request.body;
     user.id = uuid();
     user.picture = request.files.picture;
+    response.cookie("user",user.email);
      userstore.addUser(user ,function() {
       response.redirect("/start");
     });

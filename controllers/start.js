@@ -26,16 +26,15 @@ const start = {
     numTeams += item.teams.length;
   }
   
-  function teamsPerUser(user){
+ let averageNumTeams = (numTeams/numUsers).toFixed(1); 
+   
+ function teamsPerUser(user){
     let numUserTeams = 0;
     for(let item of leagueStore.getUserLeagues(user.id)){
       numUserTeams += item.teams.length
     }
     return numUserTeams
   }
-
- let averageNumTeams = (numTeams/numUsers).toFixed(1); 
-
  
  let userMostItems = users[0];
  for(let user of users){

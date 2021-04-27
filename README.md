@@ -1,4 +1,4 @@
-# Assignment 1
+# Assignment 2
 
 - Created some HBS files to display information from the JSON stores.
 - Created a League store
