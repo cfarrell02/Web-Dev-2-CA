@@ -55,6 +55,14 @@
       "password": "Democracy123",
       "id": "fc962409-0454-45aa-92ec-b5b3318e6c4f",
       "picture": "http://res.cloudinary.com/dqhx4zitt/image/upload/v1619103193/eruqmnzs4wmaquww4yzi.gif"
+    },
+    {
+      "firstName": "Sean",
+      "lastName": "Coad",
+      "email": "scoad@gmail.com",
+      "password": "Newcastle1977",
+      "id": "75c833a8-7d2f-48e9-bc33-4f582e80218f",
+      "picture": "http://res.cloudinary.com/dqhx4zitt/image/upload/v1619821504/vpzvznsuv9asg8fxylvl.png"
     }
   ]
 }
