@@ -23,46 +23,6 @@
       "password": "AlanDavy1",
       "id": "d2c45ab9-59d9-4b53-bb39-1481c268c4c7",
       "picture": "http://res.cloudinary.com/dqhx4zitt/image/upload/v1618773857/q0cvrkjra9tdg2awx8uw.jpg"
-    },
-    {
-      "firstName": "Conor",
-      "lastName": "Gleeson",
-      "email": "cgleeson@gmail.com",
-      "password": "Password123",
-      "id": "93191db0-e6a5-41fd-b9d9-58b48e85f83f",
-      "picture": "https://cdn.discordapp.com/attachments/794391733131280405/817501995552079902/unknown.png"
-    },
-    {
-      "firstName": "Moses",
-      "lastName": "Ugwulo",
-      "email": "moses@gmail.com",
-      "password": "Password123",
-      "id": "a640004a-00e4-4d6e-8679-56f1d01cdf26",
-      "picture": "http://res.cloudinary.com/dqhx4zitt/image/upload/v1618845748/x5bszlllxa7ogdf6gt7l.jpg"
-    },
-    {
-      "firstName": "Emperor",
-      "lastName": "Palapatine",
-      "email": "iam@thesenate.ie",
-      "password": "DeathStar123",
-      "id": "26a8b09e-254f-480f-ba7b-652a06021dfd",
-      "picture": "http://res.cloudinary.com/dqhx4zitt/image/upload/v1619102675/qslrm9svugwz8i0vs5ne.jpg"
-    },
-    {
-      "firstName": "Obi",
-      "lastName": "Kenobi",
-      "email": "obi@republic.ie",
-      "password": "Democracy123",
-      "id": "fc962409-0454-45aa-92ec-b5b3318e6c4f",
-      "picture": "http://res.cloudinary.com/dqhx4zitt/image/upload/v1619103193/eruqmnzs4wmaquww4yzi.gif"
-    },
-    {
-      "firstName": "Sean",
-      "lastName": "Coad",
-      "email": "scoad@gmail.com",
-      "password": "Newcastle1977",
-      "id": "75c833a8-7d2f-48e9-bc33-4f582e80218f",
-      "picture": "http://res.cloudinary.com/dqhx4zitt/image/upload/v1619821504/vpzvznsuv9asg8fxylvl.png"
     }
   ]
 }

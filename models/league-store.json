@@ -26,14 +26,6 @@
           "crest": "http://res.cloudinary.com/dqhx4zitt/image/upload/v1618759074/bfw98utt4fdutfw697jq.webp"
         },
         {
-          "id": "f9dc9635-118c-46f9-9133-7bc5df899e38",
-          "name": "awd",
-          "position": "22",
-          "manager": "wada",
-          "europeanleague": "https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Europa_League.svg/1200px-Europa_League.svg.png",
-          "crest": "http://res.cloudinary.com/dqhx4zitt/image/upload/v1618765508/q1wsnxacvskcwkgji17e.png"
-        },
-        {
           "id": "50bf0ba0-7943-4359-9eb6-61b37b1e2df2",
           "name": "2",
           "position": "23",
@@ -52,49 +44,6 @@
       "date": "2021-04-21T22:37:03.750Z",
       "logo": "https://creativereview.imgix.net/content/uploads/2016/02/PremierLeague.jpg",
       "teams": []
-    },
-    {
-      "id": "45afe2d2-4229-487c-85ca-9969371bab51",
-      "userid": "12778fec-1e6a-4a65-8d26-4c014568136c",
-      "name": "League",
-      "country": "Italy",
-      "continent": "Europe",
-      "date": "2021-04-21T22:37:03.750Z",
-      "logo": "http://res.cloudinary.com/dqhx4zitt/image/upload/v1618756207/kn3ihk0xwgbdv5mkby9e.png",
-      "teams": [
-        {
-          "id": "21dbcfd3-ea58-4b9d-bafe-530a22fed10a",
-          "name": "adwa",
-          "position": "222",
-          "manager": "adwad",
-          "europeanleague": "https://upload.wikimedia.org/wikipedia/en/thumb/b/bf/UEFA_Champions_League_logo_2.svg/1200px-UEFA_Champions_League_logo_2.svg.png",
-          "crest": "http://res.cloudinary.com/dqhx4zitt/image/upload/v1618756221/zvz17hkrh0tjhrr6sefb.png"
-        },
-        {
-          "id": "257b965c-42a2-4b56-8c9c-60974ac29488",
-          "name": "awd",
-          "position": "22",
-          "manager": "awdaw",
-          "europeanleague": "https://i.imgur.com/EwEBIry.png",
-          "crest": "http://res.cloudinary.com/dqhx4zitt/image/upload/v1618756231/j6isotilzxklhm3iytmd.png"
-        },
-        {
-          "id": "23ca709a-54d1-48f3-9544-26d12402e92b",
-          "name": "awdwad",
-          "position": "22",
-          "manager": "awdw",
-          "europeanleague": "https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Europa_League.svg/1200px-Europa_League.svg.png",
-          "crest": "http://res.cloudinary.com/dqhx4zitt/image/upload/v1618756239/snkugem90flvelajinu5.png"
-        },
-        {
-          "id": "4a08b0c6-b409-4bc4-bce0-d13ccbb2c4e7",
-          "name": "awdaw",
-          "position": "2323",
-          "manager": "awda",
-          "europeanleague": "https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Europa_League.svg/1200px-Europa_League.svg.png",
-          "crest": "http://res.cloudinary.com/dqhx4zitt/image/upload/v1618756251/ire3iwtq413dd00ysite.webp"
-        }
-      ]
     },
     {
       "id": "e2d85baa-5a93-41f7-aaab-78992816f5d9",
