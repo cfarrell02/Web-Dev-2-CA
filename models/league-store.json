@@ -27,9 +27,9 @@
         },
         {
           "id": "50bf0ba0-7943-4359-9eb6-61b37b1e2df2",
-          "name": "2",
+          "name": "wada",
           "position": "23",
-          "manager": "awd",
+          "manager": "Awd ",
           "europeanleague": "https://upload.wikimedia.org/wikipedia/en/thumb/b/bf/UEFA_Champions_League_logo_2.svg/1200px-UEFA_Champions_League_logo_2.svg.png",
           "crest": "http://res.cloudinary.com/dqhx4zitt/image/upload/v1618765519/t1rkaktt14hpjtsgvfrc.png"
         }
@@ -43,17 +43,16 @@
       "continent": "North America",
       "date": "2021-04-21T22:37:03.750Z",
       "logo": "https://creativereview.imgix.net/content/uploads/2016/02/PremierLeague.jpg",
-      "teams": []
-    },
-    {
-      "id": "e2d85baa-5a93-41f7-aaab-78992816f5d9",
-      "userid": "1",
-      "name": "Test",
-      "country": "Ireland",
-      "continent": "Europe",
-      "logo": "http://res.cloudinary.com/dqhx4zitt/image/upload/v1619131024/dpadti6dcv0qgb8jb0fi.webp",
-      "date": "2021-04-22T22:37:03.750Z",
-      "teams": []
+      "teams": [
+        {
+          "id": "ae0149b5-a242-42c5-801f-34ec88155eaf",
+          "name": "Hello",
+          "position": "2",
+          "manager": "Test Manager",
+          "europeanleague": "https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Europa_League.svg/1200px-Europa_League.svg.png",
+          "crest": "http://res.cloudinary.com/dqhx4zitt/image/upload/v1620133382/jk0z5quzwscjyi4xcsp1.png"
+        }
+      ]
     },
     {
       "id": "e996c73b-09e6-4425-a807-9bd43352b4df",
