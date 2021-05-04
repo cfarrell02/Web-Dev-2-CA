@@ -28,7 +28,6 @@ const about = {
       response.render('about', viewData);
     }
     else response.redirect('/');  
-      
       module.exports = loggedInUser;
   },
     deleteComment(request, response) {

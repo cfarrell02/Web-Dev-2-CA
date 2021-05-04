@@ -23,6 +23,14 @@
       "password": "AlanDavy1",
       "id": "d2c45ab9-59d9-4b53-bb39-1481c268c4c7",
       "picture": "http://res.cloudinary.com/dqhx4zitt/image/upload/v1618773857/q0cvrkjra9tdg2awx8uw.jpg"
+    },
+    {
+      "firstName": "Maggie",
+      "lastName": "Simpson",
+      "email": "maggie@simpson.com",
+      "password": "Password1",
+      "id": "5e458473-9264-4291-a094-5172d2010ce8",
+      "picture": "http://res.cloudinary.com/dqhx4zitt/image/upload/v1620133669/yms29bqsydcdzvhq9kka.jpg"
     }
   ]
 }

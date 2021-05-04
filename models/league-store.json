@@ -19,17 +19,17 @@
         },
         {
           "id": "e0eae432-8496-4d63-9e71-8705664b95a0",
-          "name": "wada",
-          "position": "333",
-          "manager": "awdaw",
+          "name": "Bayern Munich",
+          "position": "2",
+          "manager": "Hansi Flick",
           "europeanleague": "https://upload.wikimedia.org/wikipedia/en/thumb/b/bf/UEFA_Champions_League_logo_2.svg/1200px-UEFA_Champions_League_logo_2.svg.png",
           "crest": "http://res.cloudinary.com/dqhx4zitt/image/upload/v1618759074/bfw98utt4fdutfw697jq.webp"
         },
         {
           "id": "50bf0ba0-7943-4359-9eb6-61b37b1e2df2",
-          "name": "wada",
+          "name": "Real Madrid",
           "position": "23",
-          "manager": "Awd ",
+          "manager": "Zinedine Zidane",
           "europeanleague": "https://upload.wikimedia.org/wikipedia/en/thumb/b/bf/UEFA_Champions_League_logo_2.svg/1200px-UEFA_Champions_League_logo_2.svg.png",
           "crest": "http://res.cloudinary.com/dqhx4zitt/image/upload/v1618765519/t1rkaktt14hpjtsgvfrc.png"
         }
