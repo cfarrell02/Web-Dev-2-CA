@@ -23,6 +23,14 @@
       "avatar": "https://res.cloudinary.com/dqhx4zitt/image/upload/v1618495132/cy0axcxog6onrgcygowv.png",
       "text": "Test comment",
       "date": "2021-04-22T16:35:08.199Z"
+    },
+    {
+      "id": "0f9615ed-e029-4a30-8107-bc2162bb9ad7",
+      "userId": "c0901f4a-7c05-4525-ae3c-dfc00ca01dc9",
+      "username": "Homer Simpson",
+      "avatar": "http://res.cloudinary.com/dqhx4zitt/image/upload/v1620134583/kzqai4lidhotgffnejog.jpg",
+      "text": "Hello!",
+      "date": "2021-05-04T13:25:07.870Z"
     }
   ]
 }

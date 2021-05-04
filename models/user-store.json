@@ -31,6 +31,14 @@
       "password": "Password1",
       "id": "5e458473-9264-4291-a094-5172d2010ce8",
       "picture": "http://res.cloudinary.com/dqhx4zitt/image/upload/v1620133669/yms29bqsydcdzvhq9kka.jpg"
+    },
+    {
+      "firstName": "Homer",
+      "lastName": "Simpson",
+      "email": "homer@simpson.com",
+      "password": "Password1",
+      "id": "c0901f4a-7c05-4525-ae3c-dfc00ca01dc9",
+      "picture": "http://res.cloudinary.com/dqhx4zitt/image/upload/v1620134583/kzqai4lidhotgffnejog.jpg"
     }
   ]
 }
