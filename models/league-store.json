@@ -102,6 +102,25 @@
       "logo": "http://res.cloudinary.com/dqhx4zitt/image/upload/v1620135308/hlvg0vvytylr1ccfrxaz.jpg",
       "date": "2021-05-04T13:35:07.977Z",
       "teams": []
+    },
+    {
+      "id": "f3818fe5-5072-433b-aac5-f3211c44baba",
+      "userid": "7bed050b-1136-463a-b0a6-a2c50a38f73d",
+      "name": "Waterford",
+      "country": "Ireland",
+      "continent": "Europe",
+      "logo": "http://res.cloudinary.com/dqhx4zitt/image/upload/v1620288849/f5qq0ucrmhpq5f3hcxgo.jpg",
+      "date": "2021-05-06T08:14:09.393Z",
+      "teams": [
+        {
+          "id": "8b0956a8-25c7-4c12-8823-d89f6af8429a",
+          "name": "Waterford",
+          "position": "11",
+          "manager": "Rosanne",
+          "europeanleague": "https://i.imgur.com/EwEBIry.png",
+          "crest": "http://res.cloudinary.com/dqhx4zitt/image/upload/v1620288881/jxuvqgtttgrrglvehbx3.jpg"
+        }
+      ]
     }
   ]
 }

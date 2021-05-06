@@ -39,6 +39,14 @@
       "password": "Password1",
       "id": "c0901f4a-7c05-4525-ae3c-dfc00ca01dc9",
       "picture": "http://res.cloudinary.com/dqhx4zitt/image/upload/v1620134583/kzqai4lidhotgffnejog.jpg"
+    },
+    {
+      "firstName": "Rosanne",
+      "lastName": "Birney",
+      "email": "rosanne@gmail.com",
+      "password": "Secret1",
+      "id": "7bed050b-1136-463a-b0a6-a2c50a38f73d",
+      "picture": "http://res.cloudinary.com/dqhx4zitt/image/upload/v1620288767/xhdbjskszleoppvoleyj.jpg"
     }
   ]
 }
